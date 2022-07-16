@@ -2,4 +2,5 @@
 /* Course #6 - JavaScript */
 /* by Steven Partlow */
 
-alert("Hello, World!"); /* Display and alert with the text 'Hello, World!' */
+window.alert("Hello, World!"); /* Display an alert with the text 'Hello, World!' */
+document.write('Hello, world!'); /* Write the text 'Hello, world!' in the browser window */
