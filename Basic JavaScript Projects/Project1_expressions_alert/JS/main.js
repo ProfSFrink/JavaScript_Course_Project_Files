@@ -33,11 +33,16 @@ var string_3 = (" - Roboute Guiliiman<br>"); /* Assign this text to 'string_3' *
 document.write(string_1 + string_2 + string_3); /* Concatenate the three string together */
 
 /* Challenge #1 */
-document.write("<br>");
+document.write("<br>"); /* Add a line-break in the browser window */
 var concat_String = ('This is a \'Concatenated\' ' + 'string'); /* Concatenate these two string together as ' concat_String' */
 document.writeln(concat_String + "<br>"); /* Display 'concat_String' in the browser window */
 
 /* Assignment #10 */
-document.write("<br>");
+document.write("<br>"); /* Add a line-break in the browser window */
 var Ultramarines = 'Roboute Guilliman', BloodAngels = 'Sanguinius', ImperialFists = 'Rogal Dorn', SonsOfHorus = 'Horus', WorldEaters = 'Angron'; /* Declare five strings in one statement */
-document.writeln(BloodAngels); /* Output the 'BloodAngels' string to the browser window */
+document.writeln(BloodAngels + "<br>"); /* Output the 'BloodAngels' string to the browser window */
+
+/* Assignment #11 */
+document.write("<br>"); /* Add a line-break in the browser window */
+var Ultramarines = Ultramarines.fontcolor("blue"), BloodAngels = BloodAngels.fontcolor("red"), ImperialFists = ImperialFists.fontcolor("Yellow"), SonsOfHorus = SonsOfHorus.fontcolor("Black"), WorldEaters = WorldEaters.fontcolor("Crimson"); /* Assign colours to the five string variables from the prior assignment */
+document.write(Ultramarines + '\\ ' + BloodAngels + '\\ ' + ImperialFists + '\\ ' + SonsOfHorus + '\\ ' + WorldEaters); /* Concatenate the five variables and make use of escape characters to display them */
