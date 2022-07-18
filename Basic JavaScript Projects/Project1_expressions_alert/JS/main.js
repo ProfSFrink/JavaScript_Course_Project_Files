@@ -29,5 +29,10 @@ document.write("<br>"); /* Add a line-break in the browser window */
 /* Took a quote from Warhammer 40k by one of the characters and divided it into three string and then concatenate them together and also make use of escape characters again */
 var string_1 = ("\"Why do I still live? What more do you want from me? I gave everything I had to you, to them. Look what they\'ve made of our dream.\""); /* Assign this text to 'string_1' */
 var string_2 = ("This bloated, rotting carcass of an empire is driven not by reason and hope but by fear, hate and ignorance. Better that we had all burned in the fires of Horus' ambition than live to see this.\""); /* Assign this text to 'string_2' */
-var string_3 = (" - Roboute Guiliiman"); /* Assign this text to 'string_3' */
+var string_3 = (" - Roboute Guiliiman<br>"); /* Assign this text to 'string_3' */
 document.write(string_1 + string_2 + string_3); /* Concatenate the three string together */
+
+/* Challenge #1 */
+document.write("<br>");
+var concat_String = ('This is a \'Concatenated\' ' + 'string'); /* Concatenate these two string together as ' concat_String' */
+document.write(concat_String); /* Display 'concat_String' in the browser window */
