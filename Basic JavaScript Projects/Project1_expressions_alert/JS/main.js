@@ -35,4 +35,9 @@ document.write(string_1 + string_2 + string_3); /* Concatenate the three string 
 /* Challenge #1 */
 document.write("<br>");
 var concat_String = ('This is a \'Concatenated\' ' + 'string'); /* Concatenate these two string together as ' concat_String' */
-document.write(concat_String); /* Display 'concat_String' in the browser window */
+document.writeln(concat_String + "<br>"); /* Display 'concat_String' in the browser window */
+
+/* Assignment #10 */
+document.write("<br>");
+var Ultramarines = 'Roboute Guilliman', BloodAngels = 'Sanguinius', ImperialFists = 'Rogal Dorn', SonsOfHorus = 'Horus', WorldEaters = 'Angron'; /* Declare five strings in one statement */
+document.writeln(BloodAngels); /* Output the 'BloodAngels' string to the browser window */
