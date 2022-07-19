@@ -45,4 +45,8 @@ document.writeln(BloodAngels + "<br>"); /* Output the 'BloodAngels' string to th
 /* Assignment #11 */
 document.write("<br>"); /* Add a line-break in the browser window */
 var Ultramarines = Ultramarines.fontcolor("blue"), BloodAngels = BloodAngels.fontcolor("red"), ImperialFists = ImperialFists.fontcolor("Yellow"), SonsOfHorus = SonsOfHorus.fontcolor("Black"), WorldEaters = WorldEaters.fontcolor("Crimson"); /* Assign colours to the five string variables from the prior assignment */
-document.write(Ultramarines + '\\ ' + BloodAngels + '\\ ' + ImperialFists + '\\ ' + SonsOfHorus + '\\ ' + WorldEaters); /* Concatenate the five variables and make use of escape characters to display them */
+document.write(Ultramarines + '\\ ' + BloodAngels + '\\ ' + ImperialFists + '\\ ' + SonsOfHorus + '\\ ' + WorldEaters + "<br>"); /* Concatenate the five variables and make use of escape characters to display them */
+
+/* Assignment #12 */
+document.write("<br>"); /* Add a line-break in the browser window */
+document.write(Math.pow(2,8) + "<br>"); /* Calulate 2 to the power of 8 then display the output in the browser window */
