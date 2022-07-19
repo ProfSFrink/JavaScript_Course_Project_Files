@@ -50,3 +50,9 @@ document.write(Ultramarines + '\\ ' + BloodAngels + '\\ ' + ImperialFists + '\\ 
 // Assignment #12
 document.write("<br>"); // Add a line-break in the browser window
 document.write(Math.pow(2,8) + "<br>"); // Use an expression to calculate 2 to the power of 8 using the math.pow module, then display the output in the browser window
+
+// Challenge #2
+document.write("<br>"); // Add a line-break in the browser window
+function displayQuote() { // Define a function called 'displayQuote'
+    document.getElementById("quote").innerHTML = "In the Grim Darkness of the far future there is only war!"; // Assign the string to the id 'quote'
+}
