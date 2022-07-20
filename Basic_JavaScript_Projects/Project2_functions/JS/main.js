@@ -14,3 +14,8 @@ function assign14() { // Define function assign14
     about += " and I am a Software Developer in Training with The Tech Academy"; // Add the following on to the end of the string'about'
     document.getElementById("concatenate").innerHTML = about; // Assign the varaible 'about' to the element id 'concatenate'
 }
+
+// Challenge # 3
+function challenge3(x, y) { // Define function challenge3
+    document.getElementById("Answer").innerHTML = x * y; // Calculate the sum of 2 * 4 and store the result in the id 'Answer'
+}
