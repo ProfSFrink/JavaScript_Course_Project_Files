@@ -1,5 +1,5 @@
 // Advanced Software and Web Developer Diploma
-// Course #6 - JavaScript
+// Course #6 - JavaScript Project 2: Functions
 // by Steven Partlow
 
 // Assignment # 13
