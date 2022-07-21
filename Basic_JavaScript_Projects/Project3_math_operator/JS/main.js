@@ -14,11 +14,17 @@ function assign17(a, b) { // Define function 'assign17' and have two parameters 
 }
 
 // Assignment #18 - Multiplication
-function assign18_Multiply(a, b) { // Define 'assign18_Multiply' and have two parameters 'a' and 'b' to pass in
+function assign18_Multiply(a, b) { // Define function 'assign18_Multiply' and have two parameters 'a' and 'b' to pass in
     document.getElementById("Multiply").innerHTML = a * b; // Calculate a * b and assign the result to 'Multiply' id  
 }
 
 // Assignment #18 - Division
-function assign18_Division(a ,b) { // Define 'assign18_Divison' and have two parameters 'a' and 'b' to pass in
+function assign18_Division(a ,b) { // Define function 'assign18_Divison' and have two parameters 'a' and 'b' to pass in
     document.getElementById("Division").innerHTML = a / b; // Calculate a / b and assign the result to 'Division' id
+}
+
+// Assignment #19 Multiple Operations
+function assign19(a, b, c, d) { // Define function 'assign19' and have four parameters 'a, b, c, and d'
+    result = (a + b) * c / d - 2; // Calculate (a+b) * c / d - 2
+    document.getElementById("Multiple_Operators").innerHTML = result; // and assign the result to 'Multiple_Operators' id
 }
