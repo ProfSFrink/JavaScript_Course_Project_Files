@@ -35,6 +35,20 @@ function assign20(x ,y) { // Define function 'assign20' and have two parameters 
 }
 
 // Assignment #21 Negation Operator
-function assign21(n) {// Define function 'assign21' and have one parameters 'x'
+function assign21(n) { // Define function 'assign21' and have one parameters 'x'
     document.getElementById("Negation").innerHTML = -n; // Negate 'n' and store the result in id 'Negation'
+}
+
+// Assignment #22 Increment and Decrement Operators
+
+var i = 1; d = 10; // Declare two variables 'i' = 1 and 'd' = 10
+
+// Increment Operator
+function assign22_increment() { // Define function 'assign22'
+    document.getElementById("Increment").innerHTML = i++; // Increment 'i' by 1 every time function executes
+}
+
+// Decrement Operator
+function assign22_decrement() { // Define function 'assign22'
+    document.getElementById("Decrement").innerHTML = d--; // Decrement 'd' by 1 every time function executes
 }
