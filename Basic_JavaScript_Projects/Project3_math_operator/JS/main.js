@@ -53,7 +53,12 @@ function assign22_decrement() { // Define function 'assign22'
     document.getElementById("Decrement").innerHTML = d--; // Decrement 'd' by 1 every time function executes
 }
 
-// Assignment # 23 Math.random() Function
+// Assignment #23 Math.random() Function
 function assign23(r) { // Define function assign23 with one parameter 'r' 
-    document.getElementById("Random").innerHTML = (Math.random() * 55); // Generate a random number between 0 and the value of 'r' and store the result in id 'Random'
+    document.getElementById("Random").innerHTML = Math.floor((Math.random() * 55) + 1); // Generate a random number between 0 and the value of 'r' and store the result in id 'Random'
+}
+
+// Challenge #4 Math Object and Methods
+function challenge4(s) { // Define function challenge4 with one parameter 's'
+    document.getElementById("SquareRoot").innerHTML = Math.sqrt(s); // Calculate the square root and 's' and store the result in the id 'SquareRoot'
 }
