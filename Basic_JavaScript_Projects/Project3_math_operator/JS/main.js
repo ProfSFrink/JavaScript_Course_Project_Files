@@ -28,3 +28,8 @@ function assign19(a, b, c, d) { // Define function 'assign19' and have four para
     result = (a + b) * c / d - 2; // Calculate (a+b) * c / d - 2
     document.getElementById("Multiple_Operators").innerHTML = result; // and assign the result to 'Multiple_Operators' id
 }
+
+// Assignment #20 Modulus Operators
+function assign20(x ,y) { // Define function 'assign20' and have two parameters 'x, and y'
+    document.getElementById("Modulus").innerHTML = x % y; // Calculate the remainder of 'x dividied by y' and store the result in id 'Modulus'
+}
