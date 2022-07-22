@@ -29,7 +29,12 @@ function assign19(a, b, c, d) { // Define function 'assign19' and have four para
     document.getElementById("Multiple_Operators").innerHTML = result; // and assign the result to 'Multiple_Operators' id
 }
 
-// Assignment #20 Modulus Operators
+// Assignment #20 Modulus Operator
 function assign20(x ,y) { // Define function 'assign20' and have two parameters 'x, and y'
     document.getElementById("Modulus").innerHTML = x % y; // Calculate the remainder of 'x dividied by y' and store the result in id 'Modulus'
+}
+
+// Assignment #21 Negation Operator
+function assign21(n) {// Define function 'assign21' and have one parameters 'x'
+    document.getElementById("Negation").innerHTML = -n; // Negate 'n' and store the result in id 'Negation'
 }
