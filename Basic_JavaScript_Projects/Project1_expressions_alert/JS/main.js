@@ -1,5 +1,5 @@
 // Advanced Software and Web Developer Diploma
-// Course #6 - JavaScript
+// Course #6 - JavaScript Project 1: Alert Expressions
 // by Steven Partlow
 
 // Assignment #4
