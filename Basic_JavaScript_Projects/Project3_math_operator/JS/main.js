@@ -43,12 +43,17 @@ function assign21(n) { // Define function 'assign21' and have one parameters 'x'
 
 var i = 1; d = 10; // Declare two variables 'i' = 1 and 'd' = 10
 
-// Increment Operator
+// 22.a - Increment Operator
 function assign22_increment() { // Define function 'assign22'
     document.getElementById("Increment").innerHTML = i++; // Increment 'i' by 1 every time function executes
 }
 
-// Decrement Operator
+// 22-b - Decrement Operator
 function assign22_decrement() { // Define function 'assign22'
     document.getElementById("Decrement").innerHTML = d--; // Decrement 'd' by 1 every time function executes
+}
+
+// Assignment # 23 Math.random() Function
+function assign23(r) { // Define function assign23 with one parameter 'r' 
+    document.getElementById("Random").innerHTML = (Math.random() * 55); // Generate a random number between 0 and the value of 'r' and store the result in id 'Random'
 }
