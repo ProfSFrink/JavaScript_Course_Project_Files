@@ -22,7 +22,7 @@ document.write("<b>" + typeof test_number + "</b><br>");
 document.write("The variable 'test_string' is of data type ");
 document.write("<b>" + typeof test_boolean + "</b><br><br>");
 
-// Challenge #6
+// Challenge #6 - Not A Number
 document.write("<b>Challenge #6 - Not A Number</b><br><br>");
 
 // Declare variable 'not_a_number' and attempt to divide 0 by 0 which will result in NaN
@@ -31,3 +31,12 @@ var not_a_number = 0 / 0; some_text = isNaN('Hi my name is Steven'); a_value = i
 document.write("<b>1) </b>0 divided by 0 results in " + "<b>" + not_a_number + "</b><br>"); // Attempt to output the value of 'not_a_number'
 document.write("<b>2) </b>Is variable <b>'some_text'</b> \(\"Hi my name is Steven\"\) NOT a number " + "<b>(" + some_text + ")</b><br>"); // Check if the value of 'some_text' is a number
 document.write("<b>3) </b>Is variable <b>'a_value'</b> \(56) NOT a number " + "<b>(" + a_value + ")</b><br>"); // Check if the value of 'a_value' is a number
+
+// Assignment #27 - Displaying Infinity
+function assign27_infinity_plus(x) { // Define function 'assign27_infinity_plus' 
+    document.getElementById("Plus Infinity").innerHTML = "You cannot display it as it is higher than the maximum positive floating point number that JavaScript can display, so instead we output: " + "<b>" + x + "</b>"; // Inform the user we cannot display the number as it is higher than the maximum FP number that JS can handle
+}
+
+function assign27_infinity_neg(x) { // Define function 'assign27_infinity_plus' 
+    document.getElementById("Negative Infinity").innerHTML = "You cannot display it as it is higher than the maximum negative floating point number that JavaScript can display, so instead we output: " + "<b>" + x + "</b>"; // Inform the user we cannot display the number as it is higher than the maximum FP number that JS can handle
+}
