@@ -46,3 +46,6 @@ function assign28() { // Define function 'assign28'
     document.getElementById("Is it true").innerHTML = (84 >= 35); // Evaulate if 84 is greater or equal to 35 and store the result in id 'Is it true'
     document.getElementById("Is it false").innerHTML = (84 < 35); // Evaulate if 84 is less than 35 and store the result in id 'Is it flase'
 }
+
+// Assignment #29 - console.log() Method
+console.log(2 ** 8) // Calculate 2 to the power 0f 8 and output the result to the console within devtools
