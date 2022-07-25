@@ -49,3 +49,8 @@ function assign28() { // Define function 'assign28'
 
 // Assignment #29 - console.log() Method
 console.log(2 ** 8) // Calculate 2 to the power 0f 8 and output the result to the console within devtools
+
+// Assignment #30 - Type Coercion
+function assign30() { // Define function 'assign30()'
+    document.getElementById("Type Coercion").innerHTML = ("5395" + 87); // Test type coercion by adding string "5395" to number 87 and store the result in id 'Type Coercion'
+}
