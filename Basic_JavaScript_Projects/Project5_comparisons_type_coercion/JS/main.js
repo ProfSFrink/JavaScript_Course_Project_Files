@@ -40,3 +40,9 @@ function assign27_infinity_plus(x) { // Define function 'assign27_infinity_plus'
 function assign27_infinity_neg(x) { // Define function 'assign27_infinity_plus' 
     document.getElementById("Negative Infinity").innerHTML = "You cannot display it as it is higher than the maximum negative floating point number that JavaScript can display, so instead we output: " + "<b>" + x + "</b>"; // Inform the user we cannot display the number as it is higher than the maximum FP number that JS can handle
 }
+
+// Assignment #28 - Boolean Logic
+function assign28() { // Define function 'assign28'
+    document.getElementById("Is it true").innerHTML = (84 >= 35); // Evaulate if 84 is greater or equal to 35 and store the result in id 'Is it true'
+    document.getElementById("Is it false").innerHTML = (84 < 35); // Evaulate if 84 is less than 35 and store the result in id 'Is it flase'
+}
