@@ -54,3 +54,6 @@ console.log(2 ** 8) // Calculate 2 to the power 0f 8 and output the result to th
 function assign30() { // Define function 'assign30()'
     document.getElementById("Type Coercion").innerHTML = ("5395" + 87); // Test type coercion by adding string "5395" to number 87 and store the result in id 'Type Coercion'
 }
+
+// Challenge #7 - Boolean Logic in the Console
+console.log(26 > 25) // Evaulate if 26 is greater than 25 and output the result to the console
