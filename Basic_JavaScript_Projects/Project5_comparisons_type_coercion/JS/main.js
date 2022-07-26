@@ -33,11 +33,11 @@ document.write("<b>2) </b>Is variable <b>'some_text'</b> \(\"Hi my name is Steve
 document.write("<b>3) </b>Is variable <b>'a_value'</b> \(56) NOT a number " + "<b>(" + a_value + ")</b><br>"); // Check if the value of 'a_value' is a number
 
 // Assignment #27 - Displaying Infinity
-function assign27_infinity_plus(x) { // Define function 'assign27_infinity_plus' 
+function assign27_infinity_plus(x) { // Define function 'assign27_infinity_plus' with one parameters 
     document.getElementById("Plus Infinity").innerHTML = "You cannot display it as it is higher than the maximum positive floating point number that JavaScript can display, so instead we output: " + "<b>" + x + "</b>"; // Inform the user we cannot display the number as it is higher than the maximum FP number that JS can handle
 }
 
-function assign27_infinity_neg(x) { // Define function 'assign27_infinity_plus' 
+function assign27_infinity_neg(x) { // Define function 'assign27_infinity_plus' with one parameters 
     document.getElementById("Negative Infinity").innerHTML = "You cannot display it as it is higher than the maximum negative floating point number that JavaScript can display, so instead we output: " + "<b>" + x + "</b>"; // Inform the user we cannot display the number as it is higher than the maximum FP number that JS can handle
 }
 
@@ -57,3 +57,9 @@ function assign30() { // Define function 'assign30()'
 
 // Challenge #7 - Boolean Logic in the Console
 console.log(26 > 25) // Evaulate if 26 is greater than 25 and output the result to the console
+
+// Assignment #31 - Double Equals Sign
+function assign31() { // Define function 'assign31'
+    document.getElementById("Equals True").innerHTML = ((5 * 6) == 30); // Evaluate if (5*6) is equal to 30 and store the result in id 'Equals True'
+    document.getElementById("Equals False").innerHTML = ((25-6) == 20); // Evalute if (25-6) is equal to 20 and store the result in id 'Equals False'
+}
