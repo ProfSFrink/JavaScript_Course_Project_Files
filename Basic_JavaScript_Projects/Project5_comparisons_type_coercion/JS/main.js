@@ -63,3 +63,23 @@ function assign31() { // Define function 'assign31'
     document.getElementById("Equals True").innerHTML = ((5 * 6) == 30); // Evaluate if (5*6) is equal to 30 and store the result in id 'Equals True'
     document.getElementById("Equals False").innerHTML = ((25-6) == 20); // Evalute if (25-6) is equal to 20 and store the result in id 'Equals False'
 }
+
+// Asssignment #32 Triple Equals Sign
+function assign32() { // Define function 'assign32'
+
+    // 32.1 - Same data type and value
+    var age_1 = 42; age_2 = 42; // Define two variables, both number with a value of 42
+    document.getElementById("Check 1").innerHTML  = (age_1 === age_2); // Check if 'age_1' are both the same data type and value of 'age_2', store result in id 'Check 1' (true)
+
+    // 32.2 - Different data type and value
+    var name = "Steven"; age = 42; // Define two variables, a string equals "Steven" and a number equals 42
+    document.getElementById("Check 2").innerHTML = (name === age); // Check if 'name' and 'age' are both the same data type and value, store result in id 'Check 2' (false)
+
+    // 32.3 - Different data type but same value
+    var phone_num = 125689; var phone_str = "125689"; // Define two variables, a number and a string both with the same value
+    document.getElementById("Check 3").innerHTML = (phone_num === phone_str); // Check if 'phone_num' and 'phone_str' are both the same data type and value, store the result in id 'Check 3' (false)
+
+    // 32.4 - Same data type but different value
+    var name_1 = "Steven"; name_2 = "Chris"; // Define two variables, both strings but with different values
+    document.getElementById("Check 4").innerHTML = (name_1 === name_2); // Check if 'name_1' and 'name_2' are both the same data type and value, store the result in id 'Check 4' (false)
+}
