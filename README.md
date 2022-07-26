@@ -21,4 +21,4 @@ Multiple functions that show the use of dictionaries and key-value pairs, includ
 
 ### Project 5 - Comparisons / Type Coercion / Logical Operators
 ---
-Multiple code examples of Type coercion through use of the 'typeof' method that show various different data types. Show the data type 'Not A Number' in the browser window, along with example uses of the isNaN() method being used. Then multiple comparisons operatations which make use of various logical operators such as <, >, >=, <=, ==, ===, &&, ||, and !.
+Multiple code examples of Type coercion through use of the 'typeof' method that show various different data types. Show the data type 'Not A Number' in the browser window, along with example uses of the isNaN() method being used. Then multiple comparisons operations which make use of various logical operators such as <, >, >=, <=, ==, ===, &&, ||, and !.
