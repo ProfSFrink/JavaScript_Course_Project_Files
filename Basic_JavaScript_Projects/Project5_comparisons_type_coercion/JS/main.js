@@ -56,7 +56,7 @@ function assign30() { // Define function 'assign30()'
 }
 
 // Challenge #7 - Boolean Logic in the Console
-console.log(26 > 25) // Evaulate if 26 is greater than 25 and output the result to the console
+console.log(26 > 25); // Evaulate if 26 is greater than 25 and output the result to the console
 
 // Assignment #31 - Double Equals Sign
 function assign31() { // Define function 'assign31'
@@ -83,3 +83,21 @@ function assign32() { // Define function 'assign32'
     var name_1 = "Steven"; name_2 = "Chris"; // Define two variables, both strings but with different values
     document.getElementById("Check 4").innerHTML = (name_1 === name_2); // Check if 'name_1' and 'name_2' are both the same data type and value, store the result in id 'Check 4' (false)
 }
+
+// Assigment #33 - AND / OR Operators
+// USING THE CONSOLE WINDOW FOR THIS ONE TO MIX THINGS US A BIT
+console.log("Assignment #33 - AND / OR Operators")
+
+// 33.1 AND Operator
+console.log("33.1 - AND Operator")
+console.log("Is 42 greater or equal than 40 AND is 70 greater or equal than 65:"); // Print this string to the console developer window
+console.log(42 >= 40 && 70 >= 65); // Evaluate if 42 is greater or equal to 40 AND if 70 is greater or equal than 65 (This will return "true")
+console.log("Is 843 less or equal to 568 AND is 568 less or equal to 539:"); // Print this string to the console developer window
+console.log(843 <= 587 && 568 <= 539); // Evaluate if 843 is less or equal to 568 and if 568 is less or equal to 539 (This will return "false")
+
+// 33.2 OR Operators
+console.log("33.2 OR Operator");
+console.log("Is 687 greater than 294 OR is 601 less than 222: "); // Print this string to the console developer window
+console.log(687 > 294 || 601 < 222); // Evaluate if 687 is greater than 294 OR 601 is less than 222 (This will return "true")
+console.log("is 000 greater or equal to 219 OR is 687 < 294: "); // Print this string to the console developer window
+console.log(000 >= 219 || 687 < 294); //Evaluate if 000 is greter or equal to 219 OR 687 is less than 294 (This will return "false") 
