@@ -18,3 +18,7 @@ Several examples of the use of math operators in JavaScript such as the +, -, *,
 ### Project 4 - Dictionaries
 ---
 Multiple functions that show the use of dictionaries and key-value pairs, including declaring a dictionary with multiple KVPs and pulling values from them based on their keys, making use of the getDocumentById() method and HTML event handlers. Then demonstrate what happens when using duplicate keys and how the delete operator works on a dictionary and the resulting output.
+
+### Project 5 - Comparisons / Type Coercion / Logical Operators
+---
+Multiple code examples of Type coercion through use of the 'typeof' method that show various different data types. Show the data type 'Not A Number' in the browser window, along with example uses of the isNaN() method being used. Then multiple comparisons operatations which make use of various logical operators such as <, >, >=, <=, ==, ===, &&, ||, and !.
