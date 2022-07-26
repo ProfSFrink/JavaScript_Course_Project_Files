@@ -101,3 +101,10 @@ console.log("Is 687 greater than 294 OR is 601 less than 222: "); // Print this 
 console.log(687 > 294 || 601 < 222); // Evaluate if 687 is greater than 294 OR 601 is less than 222 (This will return "true")
 console.log("is 000 greater or equal to 219 OR is 687 < 294: "); // Print this string to the console developer window
 console.log(000 >= 219 || 687 < 294); //Evaluate if 000 is greter or equal to 219 OR 687 is less than 294 (This will return "false") 
+
+// Assignment #34 - NOT Operator
+function assign34() { // Define function 'assign34'
+    document.write("<b>" + "Assignment #34 - NOT Operator" + "</b>" + "<br><br>");
+    document.write("<b>" + "Is 2022 equal to 2022: " +"</b>" + !(2022 === 2022) + "<br>"); // Evaluate if 2022 is truly equal to 2022 and if so return 'false'
+    document.write("<b>" + "Is 50 < 25 AND 15 > 43: " + "</b>" + !( (50 < 25) && !(15 > 43) )); // Evaluate if 50 is less than 25 AND if 15 is greater than 43 is both these statements are true then return "false"
+}
