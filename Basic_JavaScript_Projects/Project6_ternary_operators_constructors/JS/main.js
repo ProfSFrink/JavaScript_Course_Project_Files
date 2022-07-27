@@ -28,7 +28,7 @@ function Vehicle(Make, Model, Year, Colour) { // Define function 'Vehicle' which
     this.Vehicle_Colour = Colour; // Assign value of parameter 'Colour' to object property 'Vehicle_Colour'
 }
 
-// Define three instances of a Vehicle object using the provided parameters
+// Define three instances of a 'Vehicle' object using the provided parameters
 var Steven = new Vehicle("Dodge", "Viper", 2020, "Red");
 var Emma = new Vehicle("Jeep", "Trail Hawk", 2019, "White and Black");
 var Chris = new Vehicle("Ford", "Pinto", 1971, "Mustard");
@@ -47,3 +47,28 @@ function assign37() { // Define function 'assign37'
     // Concatenate this to the id 'New_and_This' using the 'Pat' instance of the Vehicle object
     document.getElementById("New_and_This").innerHTML = "Pat owns a " + Pat.Vehicle_Make + " "+ Pat.Vehicle_Model + " made in the year " + Pat.Vehicle_Year + " ,which is the colour " + Pat.Vehicle_Colour;
 }
+
+// Challenge #9 - Reserved Keywords
+
+// 9.1 - Attempt to use a reserved keyword
+function challenge9_reserved_word() { // Define function 'challenge9_reserved_word'
+    var reserved = "break"; // Attempt to define a variable with a variable name 'break' (A reserved word)
+    document.getElementById("Reserved").innerHTML = reserved; // Assign the value of 'Reserved_Word' to the id 'Reserved'
+}
+
+// 9.2 - Game object constructor function
+function Game(Name, Developer, Genre, Platform, Year) { // Define function 'Game' which acts as a constructor for object 'Game' with five parameters 'Name', 'Developer', 'Genre', 'Platform' and 'Year'
+    this.Game_Name = Name; // Assign value of parameter 'Name' to object property 'Game_Name'
+    this.Game_Developer = Developer; // Assign value of parameter 'Developer' to object property 'Game_Developer'
+    this.Game_Genre = Genre; // Assign value of parameter 'Genre' to object property 'Game_Genre'
+    this.Game_Platform = Platform; // Assign value of parameter 'Platform' to object property 'Game_Platform'
+    this.Game_Year = Year; // Assign value of parameter 'Year' to object property 'Game_Year'
+}
+
+// Define an instance of the 'Game' object
+var Live_A_Live = new Game("Live A Live", "Square Enix", "Japanese Role-Playing Game", "Nintendo Switch", 2022);
+
+function challenge9_constructor() { // Define function 'challenge9_constructor'
+    // Concatenate a string to the id 'Game_Object' using the 'Live_A_Live' instance of the object
+    document.getElementById("Game_Object").innerHTML = "NAME: " + Live_A_Live.Game_Name + " DEVELOPER: " + Live_A_Live.Game_Developer + " GENRE: " + Live_A_Live.Game_Genre + " PLATFORM: " + Live_A_Live.Game_Platform + " YEAR: " + Live_A_Live.Game_Year;
+ }
