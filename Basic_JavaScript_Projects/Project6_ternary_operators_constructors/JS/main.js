@@ -37,3 +37,13 @@ function assign36() { // Define function 'assign36'
     // Concatenate this string to the id 'Keywords_and_Constructors' using the 'Chris' instance of the Vehicle object
     document.getElementById("Keywords_and_Constructors").innerHTML = "Chris drives a " + Chris.Vehicle_Colour + "-Coloured " + Chris.Vehicle_Model + " manufactured in " + Chris.Vehicle_Year; 
 }
+
+// Assignment #37 - New and This Keywords
+
+// Define a new instance of the Vehivle object using the provided paraemters
+var Pat = new Vehicle("Mazda", "CX-5", 2022, "Blue");
+
+function assign37() { // Define function 'assign37'
+    // Concatenate this to the id 'New_and_This' using the 'Pat' instance of the Vehicle object
+    document.getElementById("New_and_This").innerHTML = "Pat owns a " + Pat.Vehicle_Make + " "+ Pat.Vehicle_Model + " made in the year " + Pat.Vehicle_Year + " ,which is the colour " + Pat.Vehicle_Colour;
+}
