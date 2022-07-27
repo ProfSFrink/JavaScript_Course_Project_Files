@@ -17,3 +17,23 @@ function challenge8() { // Define function 'challenge8'
     Can_Vote = (Age >= 18) ? "You can vote!" : "You are not old enough to vote!"; // Make use of the ternary operator '?' to check if value of variable 'Age' is greater or equal to 18, if it is assign 'Can_Vote' to "You can vote!" if is not then assign 'Can_Vote' to "You are not old enough to vote!"
     document.getElementById("Vote").innerHTML = Can_Vote; // Assign the value of 'Can_Vote' to HTML id 'Vote'
 }
+
+// Assignment #36 - Object Constructors
+
+// Vehicle object constructor
+function Vehicle(Make, Model, Year, Colour) { // Define function 'Vehicle' which acts as a constructor for object 'Vehicle' with four parameters 'Make', 'Model', 'Year', and 'Colour'
+    this.Vehicle_Make = Make; // Assign value of parameter 'Make' to object property 'Vehicle_Make'
+    this.Vehicle_Model = Model; // Assign value of parameter 'Model' to object property 'Vehicle_Model'
+    this.Vehicle_Year = Year; // Assign value of parameter 'Year' to object property 'Vehicle_Year'
+    this.Vehicle_Colour = Colour; // Assign value of parameter 'Colour' to object property 'Vehicle_Colour'
+}
+
+// Define three instances of a Vehicle object using the provided parameters
+var Steven = new Vehicle("Dodge", "Viper", 2020, "Red");
+var Emma = new Vehicle("Jeep", "Trail Hawk", 2019, "White and Black");
+var Chris = new Vehicle("Ford", "Pinto", 1971, "Mustard");
+
+function assign36() { // Define function 'assign36'
+    // Concatenate this string to the id 'Keywords_and_Constructors' using the 'Chris' instance of the Vehicle object
+    document.getElementById("Keywords_and_Constructors").innerHTML = "Chris drives a " + Chris.Vehicle_Colour + "-Coloured " + Chris.Vehicle_Model + " manufactured in " + Chris.Vehicle_Year; 
+}
