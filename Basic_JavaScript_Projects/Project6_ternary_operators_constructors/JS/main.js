@@ -72,3 +72,18 @@ function challenge9_constructor() { // Define function 'challenge9_constructor'
     // Concatenate a string to the id 'Game_Object' using the 'Live_A_Live' instance of the object
     document.getElementById("Game_Object").innerHTML = "NAME: " + Live_A_Live.Game_Name + " DEVELOPER: " + Live_A_Live.Game_Developer + " GENRE: " + Live_A_Live.Game_Genre + " PLATFORM: " + Live_A_Live.Game_Platform + " YEAR: " + Live_A_Live.Game_Year;
  }
+
+ // Assignment #38 - Nested Functions
+
+ function assign38() { // Define function 'assign38' 
+    document.getElementById("Nested_Function").innerHTML = PowerOf(); // Execute 'PowerOf' function and store the result it returns to id 'Nested_Function'
+    
+    function PowerOf() { // Define function 'PowerOf'
+        var Starting_Value = 2; // Declare variable 'Starting_Value' and assign it the value of 2
+
+        function Power_Eight() {Starting_Value = Starting_Value ** 8;} // Define function 'Power_Eight' which takes the value of 'Starting_Value' and calculate it to the power of 8, here the entire function is written as one line of code
+
+        Power_Eight(); // Execute function 'Power_Eight'
+        return Starting_Value; // function 'PowerOf' return the current value of 'Starting_Value'
+    } // End of function 'PowerOf'
+ } // End of function 'assign38'
