@@ -1,5 +1,5 @@
 // Advanced Software and Web Developer Diploma
-// Course #6 - JavaScript Project 6: Ternary Operators Constructors
+// Course #6 - JavaScript Project 6: Ternary Operators / Constructors
 // by Steven Partlow
 
 // Assignment #35 - Tenerary Operators
