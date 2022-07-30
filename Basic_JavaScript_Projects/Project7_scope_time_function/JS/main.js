@@ -55,3 +55,20 @@ function assign42() { // Define function 'assign42'
         document.getElementById("Can_You_Serve_Them").innerHTML = "No, you must ID the customer first!";
     } // End ELSE
 }
+
+// Assignment #43 - ELSE IF Statements
+
+function assign43() { // Define function 'assign43'
+    var Time = new Date().getHours(); // Declare a new variable and assign the current hour of the day
+    var Reply; // Declare variable 'Reply' which will be a string
+    if (Time < 12 == Time > 0) { // If 'Time' is between zero and twelve then set reply to morning
+        Reply = "It's morning time!"; 
+    } // End IF
+    else if (Time >= 12 == Time < 18) { // Else if 'Time' is greater than 12 and less than 18 set reply to afternoon 
+        Reply = "It is the afternoon.";
+    } // End ELSE IF
+    else {
+        Reply = "It is evening time."; // Else set 'Reply' to evening
+    } // End ELSE
+    document.getElementById("Time_of_Day").innerHTML = Reply; // Set ID 'Time_of_Day' to value of variable 'Reply'
+}
