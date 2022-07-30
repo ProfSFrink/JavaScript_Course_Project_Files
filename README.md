@@ -9,6 +9,7 @@ A repository for all of the coding projects we will undertake as on the JavaScri
 ## __Basic JavaScript Projects__
 
 ---
+These projects are simple excerises which demonstrate the various aspects of JavaScript as a programming language.
 
 ### __Project 1: Expression Alerts__
 
@@ -39,3 +40,8 @@ Multiple code examples of Type coercion through use of the 'typeof' method that 
 
 ---
 Two example functions which show the user of ternary operators, one using the provided example of a function which determines if a person is tall enough to go on a ride, then a second example of a person being old enough to vote. Then examples of object constructors making use of the 'new' and 'this' keyword, again using a provided example as a vehicle as one example of a constructor and then one of my making which is a video game object. Then finally an example of a nested function which calculates a set number to the power of 8 and displays the output in an HTML element.
+
+### __Project 7: Scope / Time Function and Conditional Statements__
+
+---
+Examples of the user of both local and global variable as well use of the console.log() method to show what happens when we attempt to access a local variable outside the function that it is declare in. Then examples of conditional statements If / Else and Else If along with use of the Date() module.
