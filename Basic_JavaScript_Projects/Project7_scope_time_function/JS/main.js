@@ -22,10 +22,25 @@ assign39_scope(); // Execute function 'assign39_scope'
 // 39.3 - Local variable error
 console.log(num_2 ** 4); // Gives an error in the developer console 'Uncaught ReferenceError: num_2 is not defined at main.js:23:13' this is because we are attempting to make use of the local variable 'num_2' which can onlt be used by function 'assign39_scope' as this is declare within that function so can only be used by it.
 
-// Assignment #40 - If Statements
+// Assignment #40 - Date Module
 function assign40() { // Define function 'assign40'
     if (new Date().getHours() < 12) { // If it's before 12 noon set id 'Lunch' to 'It's morning'
         document.getElementById("Lunch").innerHTML = 
         "It's morning!";
-    } // End IF Statement
+    } // End IF
+}
+
+// Assignment #41 - IF Statements
+
+// This function is an example of the 'Challenge 25' scheme we operate at work were we ID customers based on if the look over the age of 25 and ID them if they look younger then so there is no risk of serving someone who is under the age of 18
+
+function assign41() { // Define function 'assign41()
+    var Customer_Age; // Define variable 'Customer_Age'
+    Customer_Age = document.getElementById("Challenge_25").value; // Assign the value of HTML id 'Challenge_25' to JS variable 'Customer_Age'
+    if (Customer_Age >= 25) { // If the value of 'Customer_Age' is greater or equal to 25 then inform the user that yes you can serve them as the customer looks over the age of 25
+        document.getElementById("Can_You_Serve_Them").innerHTML = "Yes, you can serve the customer!";
+    } // End IF
+    else { // Else they must look younger than 25 so you must ID them
+        document.getElementById("Can_You_Serve_Them").innerHTML = "No, you must ID the customer first!";
+    } // End ELSE
 }

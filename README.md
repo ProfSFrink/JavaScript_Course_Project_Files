@@ -44,4 +44,4 @@ Two example functions which show the user of ternary operators, one using the pr
 ### __Project 7: Scope / Time Function and Conditional Statements__
 
 ---
-Examples of the user of both local and global variable as well use of the console.log() method to show what happens when we attempt to access a local variable outside the function that it is declare in. Then examples of conditional statements If / Else and Else If along with use of the Date() module.
+Examples of the user of both local and global variable as well use of the console.log() method to show what happens when we attempt to access a local variable outside the function that it is declare in. Then examples of conditional statements IF / ELSE and ELSE IF along with use of the Date() module. An example of using both IF and ELSE statements to see if a customer is old enough to be served at the checkout of a grocery store.
