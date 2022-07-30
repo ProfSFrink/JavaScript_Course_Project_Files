@@ -31,10 +31,21 @@ function assign40() { // Define function 'assign40'
 }
 
 // Assignment #41 - IF Statements
+function assign41() { // Define function 'assign41'
+    var Coin = Math.floor(Math.random() * 2); // Declare variable 'Coin' and assign it a random value of either 0 or 1 (the Math.Random() method generates a random form zero up to but not including 2)
+    if (Coin == 0) { // If 'Coin' is equal to zero set ID 'Coin' to heads
+        document.getElementById("Coin").innerHTML = "The coin is heads!"; 
+    } // End IF
+    else { // Else 'Coin' must be equal to one so set ID 'Coin' to tails
+        document.getElementById("Coin").innerHTML = "The coin is tails!";
+    } // End ELSE
+}
+
+// Assignment #42 - ELSE Statements
 
 // This function is an example of the 'Challenge 25' scheme we operate at work were we ID customers based on if the look over the age of 25 and ID them if they look younger then so there is no risk of serving someone who is under the age of 18
 
-function assign41() { // Define function 'assign41()
+function assign42() { // Define function 'assign42'
     var Customer_Age; // Define variable 'Customer_Age'
     Customer_Age = document.getElementById("Challenge_25").value; // Assign the value of HTML id 'Challenge_25' to JS variable 'Customer_Age'
     if (Customer_Age >= 25) { // If the value of 'Customer_Age' is greater or equal to 25 then inform the user that yes you can serve them as the customer looks over the age of 25
