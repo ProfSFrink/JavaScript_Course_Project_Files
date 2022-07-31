@@ -22,3 +22,9 @@ function challenge10() { // Define function 'challenge10'
     document.getElementById("Uppercase_Text").innerHTML = Book.toUpperCase(); // Will take the value of 'Book' convert to ALL uppercase and store it in ID 'Uppercase_Text' (NOTE: As strings in JavaScript are immutable the original string 'Book' will be unchanged and still the same case, we are converting it and storing the result in a different place)
     document.getElementById("Search").innerHTML = "The word 'Book' starts at index position " + Book.search("Book"); // Will run the search method off the 'Book' string object which will search the string for the word 'Book' and then output the index position where it starts in the string
 } // End Function 'Challenge10'
+
+// Assignment #46 - toString Method
+function assign46() { // Define function 'assign46'
+    var Number = 687294; // Declare variable 'Number' with an inital value
+    document.getElementById("Num_to_String").innerHTML = Number.toString() + " is now a string!"; // Through use of the built in method 'toString' which we will run off the Number object convert the integer value 'Nummber' to a string value ond store the result in ID 'Num_to_String'
+} // End Function 'Assign46'
