@@ -34,3 +34,10 @@ function assign47() { // Define function 'assign 47'
     var Big_Number = 84.3568; // Define variable 'Big_Number' with an inital value
     document.getElementById("Precision").innerHTML = Big_Number.toPrecision(3); // Run method 'toPrecision' off object 'Big_Number' and round it to 3 digits long and assign the result to ID 'Precision'
 } // End of Function 'Assign47'
+
+// Challenge #11 - toFixed and valueOf Methods
+function challenge11() { // Define function 'challenge11' 
+    var Float_Number = 123456.789; // Define variable 'Float_Number' with an inital value
+    document.getElementById("Fixed_Number").innerHTML = Float_Number.toFixed(2); // Converts 'Float_Mumber' to a string with to 2 decimal places
+    document.getElementById("Value").innerHTML = Float_Number.valueOf(); // Runs the 'valueOf()' method off the 'Float_Number' object and stores the returned value in the ID 'Value'
+} // End of Function 'challenge11'

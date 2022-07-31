@@ -53,11 +53,24 @@
         <button onclick = "assign46()">Click me convert 687294 to a number</button> <!-- When the user clicks the button execute JS function 'assign46' -->
         <p id = "Num_to_String"></p> <!-- Output the the value of ID 'Num_to_String' and display it in the browser window-->
 
-        <!-- Assignment # 47 - toPrecision Method -->
+        <!-- Assignment #47 - toPrecision Method -->
         <h3>Assignment #47 - to Precision Method</h3>
         <p><Strong>Number: </Strong>84.3568</p>
         <p>This assignment will use the <strong>toPrecision()</strong> method to round the number to six-digits.</p>
         <button onclick = "assign47()">Click me to round the above number to 3 digits</button> <!-- When user click button JS function 'assign47' executes which rounds the number above to 3 digits -->
         <p id = "Precision"></p> <!-- Output the value of ID 'Precision' to the browser window -->
+
+        <!-- Challenge #11 - toFixed and valueOf Method -->
+        <h3>Challenge #11 - toFixed and valueOf Method</h3>
+        
+        <!-- 11.1 - toFixed Method -->
+        <h4>11.1 - toFixed() Method</h4>
+        <p>The <strong>'toFixed()'</strong> method converts a number to a string by a specified number of decimal places.</p>
+        <p>123456.789 to 2 decimal places is <button id = "Fixed_Number" onclick = "challenge11()">?</button></p> <!-- When the user clicks the button the JS function 'challenge11' is invoked which converts the above number to a string to 2 decimal places and display the output within the browser window -->
+
+        <!-- 11.2 - valueOf Method -->
+        <h4>11.2 - valueOf() Method</h4>
+        <p>The <strong>valueOf()</strong> method returns the primitive value of an object JavaScript automatically invokes the method when a primitive value is expected. We will rarly need to use the method ourselves in our code. In the case of the above number it will simply return the number itself.</p>
+        <p>The <strong>valueOf()</strong> method returns the following when run of the number 123456.789 <button id = "Value" onclick="challenge11()">?</button></p> <!-- When the user clicks the button again the JS function 'challenge11' is executed and runs the 'valueOf()' method off the above number which in this case will simply return it's value and output in the browser window. -->
     </body> <!-- END OF BODY SECTION-->
 </html>
