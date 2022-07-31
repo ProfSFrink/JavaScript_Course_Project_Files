@@ -45,3 +45,8 @@ Two example functions which show the user of ternary operators, one using the pr
 
 ---
 Examples of the use of both local and global variables as well use of the console.log() method to show what happens when we attempt to access a local variable outside the function that it's declared in. Then examples of conditional statements using IF / ELSE and ELSE IF along with uses of the Date() module, getHours() method. These include using an IF statement and the Math() modules Random() method to determine a coin toss then use of both IF and ELSE statements to see if a customer is old enough to be served at the checkout of a grocery store and the Time_function() (Named assign43() here) to workout what time of the day it is.
+
+### __Project 8: String Methods__
+
+---
+Several examples that show use of strings methods such as concat(), slice(), toString(), and toPrecision() and accompanying HTML elements to display them in the browser window. Then an example of the toUpperCase() method to convert a string to uppercase and the search() method to find a word within a string and return it's index position then an example of the toFixed() method which converts a number to a string to a specified number of decimal places and finally a explanation of the valueOf() method and what it does and why we should rarely have to use it.
