@@ -28,3 +28,9 @@ function assign46() { // Define function 'assign46'
     var Number = 687294; // Declare variable 'Number' with an inital value
     document.getElementById("Num_to_String").innerHTML = Number.toString() + " is now a string!"; // Through use of the built in method 'toString' which we will run off the Number object convert the integer value 'Nummber' to a string value ond store the result in ID 'Num_to_String'
 } // End Function 'Assign46'
+
+// Assignment #47 - toPrecision Method
+function assign47() { // Define function 'assign 47'
+    var Big_Number = 84.3568; // Define variable 'Big_Number' with an inital value
+    document.getElementById("Precision").innerHTML = Big_Number.toPrecision(3); // Run method 'toPrecision' off object 'Big_Number' and round it to 3 digits long and assign the result to ID 'Precision'
+} // End of Function 'Assign47'
