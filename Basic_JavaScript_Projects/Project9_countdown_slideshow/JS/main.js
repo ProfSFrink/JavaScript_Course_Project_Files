@@ -22,7 +22,7 @@ function assign48() { // Define function'assign48'
 let slideIndex = 1; // Variable which tracks which image is currently selected, default to 1
 showSlides(slideIndex); // Execute function showSlides and pass in 'slideIndex'
 
-function plusSLides(n) { // Define function 'plusSlides'
+function plusSlides(n) { // Define function 'plusSlides'
     showSlides(slideIndex += n); // This function act as the controls for the 'Next' and 'Prev' buttons
 } // End function 'plusSlides'
 
