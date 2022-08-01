@@ -50,3 +50,8 @@ Examples of the use of both local and global variables as well use of the consol
 
 ---
 Several examples that show use of strings methods such as concat(), slice(), toString(), and toPrecision() and accompanying HTML elements to display them in the browser window. Then an example of the toUpperCase() method to convert a string to uppercase and the search() method to find a word within a string and return it's index position then an example of the toFixed() method which converts a number to a string to a specified number of decimal places and finally a explanation of the valueOf() method and what it does and why we should rarely have to use it.
+
+### __Project 9: Countdown / Slideshow__
+
+---
+

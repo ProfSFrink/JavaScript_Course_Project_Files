@@ -1,13 +1,13 @@
 <!-- Advanced Software and Web Developer Diploma -->
-<!-- Course #6 - JavaScript Project 9: Countdown Slideshow -->
+<!-- Course #6 - JavaScript Project 9: Countdown / Slideshow -->
 <!-- by Steven Partlow -->
 
 <!DOCTYPE html>
 <html lang = "en">
     <head> <!-- HEAD Section -->
-        <title>JavaScript Course - Project 9: Countdown Slideshow</title>
-        <script src = "./JS/main.js"></script>
-        <link rel = "stylesheet" type = "text/css" href = "">
+        <title>JavaScript Course - Project 9: Countdown / Slideshow</title>
+        <link rel = "stylesheet" type = "text/css" href = "./CSS/main.css">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
     </head> <!-- END OF HEAD SECTION -->
 
     <body>
@@ -19,6 +19,51 @@
         <input id = "seconds" value = "" /> <!-- Assign what the user inputs to the ID ' seconds' -->
         <button onclick = "assign48()">Click here</button> <!-- When the user clicks the button the JS function 'assign48' is executed -->
         <p id = "timer"></p> <!-- Output the value of the ID 'value' to the browser window -->
-    </body> <!-- END OF BODY SECTIOn-->
+
+        <!-- Challenge #12 - Slideshow -->
+        <h3>Challenge #12 - Slideshow</h3>
+
+      <!-- Slideshow container holds our slideshow -->
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+
+        <!-- Slideshow Image #1 -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="./Images/img1.jpg" style="width:100%">
+          <div class="text">Image #1</div>
+        </div> <!-- End of First Image DIV -->
+
+        <!-- Slideshow Image #2 -->
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="./Images/img2.jpg" style="width:100%">
+          <div class="text">Image #2</div>
+        </div> <!-- End of Second Image DIV -->
+
+        <!-- Slideshow Image #3 -->
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="./Images/img3.jpg" style="width:100%">
+          <div class="text">Image #3</div>
+        </div> <!-- End of Third Image DIV -->
+  
+        <!-- Next and previous buttons (THESE DO NOT WORK AT THIS TIME) -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+      </div>
+      <br>
+  
+      <!-- The dots/circles at the bottom of each image -->
+      <div style="text-align:center"> ><!-- Center dots beneath the images -->
+        <span class="dot" onclick="currentSlide(1)"></span> <!-- Executes JS function 'currentSlide' which set the gallary to the first image -->
+        <span class="dot" onclick="currentSlide(2)"></span> <!-- Executes JS function 'currentSlide' which set the gallary to the second image -->
+        <span class="dot" onclick="currentSlide(3)"></span> <!-- Executes JS function 'currentSlide' which set the gallary to the third image -->
+      </div>
+
+      <script src = "./JS/main.js"></script> <!-- The script tag has to go here for the slideshow to display in the browser properly -->
+    </body> <!-- END OF BODY SECTION-->
 
 </html> <!-- END OF HTML DOCUMENT -->

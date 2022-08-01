@@ -1,0 +1,111 @@
+/* Advanced Software and Web Developer Diploma */
+/* Course #6 - JavaScript Project 9: Countdown / Slideshow */
+/* by Steven Partlow */
+
+/* Challennge #12 - Slideshow */
+
+/* Set all elements to use 'border-box' box sizing */
+* {box-sizing: border-box}
+
+/* Body styling */
+body {
+    font-family: Verdana, sans-serif; /* Set main body tag font to Verdana */
+    margin:0; /* No margin */
+}
+
+/* Image styling */
+img {
+    vertical-align: middle; /* Align all images in the centre of the browser */
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+/* slideshow-container class styling */
+.slideshow-container {
+    max-width: 1000px; /* Set image width to 1000 pixels */
+    position: relative; /* Set image position to relative depending on size of browser window */
+    margin: auto; /* Set margin depending on the size of the browser window */
+} /* End 'slideshow-container' styling */
+
+/* mySlides class styling */
+.mySlides {
+    display: none; /* Hide images by default */
+} /* End 'mySlides' styling */
+
+/* Next & Previous button styling */
+.prev, .next {
+    cursor: pointer; /* Set cursor type to pointer */
+    position: absolute; /* Set button position to absolute */
+    top: 50%;
+    width: auto; /* Have the buttons afjust in size depending on the size of the browser window */
+    margin-top: -22px;
+    padding: 16px; /* Add 16 pixels of padding around the image */
+    color: white; /* Set button colour to white */
+    font-weight: bold; /* Set button text to be bold */
+    font-size: 18px; /* Set button font-size to 18 */
+    transition: 0.6s ease; /* Image change takes 0.6 of a second */
+    border-radius: 0 3px 3px 0; /* SLightly curve the buttons */
+    user-select: none; /* Specifies if the user can select the element */
+} /* end Next & Previous button styling */
+
+/* Additional next button styling so the 'Next' button is to the right */
+.next {
+    right: 0; /* Place button as far to the right as possible */
+    border-radius: 3px 0 0 3px; /* Slightly curve the button */
+} /* End Styling */
+
+/* Make the 'Prev' and 'Next' buttons slightly transparent and change the background colour */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Set background to black and make it slightly transparent */
+} /* End Styling */ 
+
+/* Text Styling */
+.text {
+    color: #f2f2f2; /* Set text colour to white */
+    font-size: 15px; /* Set font size to 15 pixels */
+    padding: 8px 12px; /* Set text padding at the top-right to 8 and 12 pixels respectivley */
+    position: absolute; /* The text is positioned relative to it's nearest element */
+    bottom: 8px; /* Set the text 8px from the bottom of it's nearest element */
+    width: 100%;
+    text-align: center; /* Allign image text to the centre of the image */
+} /* End of text styling */
+
+/* Number text (Appears in top-left of image) styling */
+.numbertext {
+    color: #f2f2f2; /* Set text-color to white */
+    font-size: 12px; /* Font-size to 12 pixels */
+    padding: 8px 12px; /* Padding at the top and the right */
+    position: absolute; /* The text is positioned relative to it's nearest element */
+    top: 0; /* But text near the top of the image */
+ /* End styling for Number Text */}
+
+/* Dots / Bullets / Indicators Styling */
+.dot {
+    cursor: pointer; /* Set cursor type to a pointer */
+    height: 15px; /* Set dot height to 15 pixels */
+    width: 15px; /* Set dot width to 15 pixels */
+    margin: 0 2px; /* Give dots a small margin at the top */
+    background-color: #bbb; /* Set dot background colour to grey */
+    border-radius: 50%; /* Make dots curved */
+    display: inline-block; /* */
+    transition: background-color 0.6s ease; /* Change the background colour over 0.6 of a second */
+} /* End of DOT styling */
+
+/* Styling of the active dot when the user hovers over it */
+.active, .dot:hover {
+    background-color: #717171; /* Change background colour of active dot to a darker grey */
+} /* End of Styling */
+
+/* Fading animation on image change */
+.fade {
+    animation-name: fade; /* Run animation 'fade' */
+    animation-duration: 1.5s; /* Change image over 1.5 seconds */
+} /* End of Fade animation */
+
+@keyframes fade { /* Adjust opacity of image */
+    from {opacity: .4}
+    to {opacity: 1}
+}
