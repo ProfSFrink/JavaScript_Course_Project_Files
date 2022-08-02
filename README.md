@@ -55,3 +55,8 @@ Several examples that show use of strings methods such as concat(), slice(), toS
 
 ---
 An example of a countdown timer using JavaScript which allows the user to input a time in seconds and then show the timer countdown and then pop an alert when the timer reaches zero, this is done through use of the setTimeout() method and the tick keyword. Then finally an example of a basic slideshow which uses HTML, CSS and JavaScript following the w3schools tutorial, this shows the first use of for loops on this course along with using JavaScript to adjust CSS class names and properties on the fly.
+
+### __Challenges: Async / Defer__
+
+---
+Two examples which show how the Async and Defer attributes work within JavaScript.
