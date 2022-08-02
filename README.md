@@ -60,3 +60,8 @@ An example of a countdown timer using JavaScript which allows the user to input 
 
 ---
 Two examples which show how the Async and Defer attributes work within JavaScript by attempt to display the content of a HTML element within an alert window but the alert method references the ID before it is parsed in the HTML code. Plus a simple piece of code to demonstrate how to catch syntax errors using dev tools.
+
+### __Project 10: Loops and Arrays__
+
+---
+

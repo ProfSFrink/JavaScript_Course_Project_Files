@@ -14,3 +14,10 @@ function assign50() { // Define function 'assign50'
 
     document.getElementById("Loop").innerHTML = Output; // Assign the current value of 'Output' to ID 'Loop'
 } // End of function 'assign50'
+
+// Challenge #13 - String Length Property
+function challenge13() { // Define function 'Challenge13'
+    var How_Long_Am_I = "Live A Live is a remake of a previously Japan-only 1994 J-RPG which was released for the Super Famicom"; // Declare variable 'How_Long_Am_I' with an inital value
+
+    document.getElementById("Length").innerHTML = "The string is " + How_Long_Am_I.length + " characters long"; // Using the '.length()' method will work out how many characters long 'How_long_Am_I' and output the result to ID 'Length'
+} // End of function 'Challenge 13'
