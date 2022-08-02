@@ -1,0 +1,33 @@
+<!-- Advanced Software and Web Developer Diploma -->
+<!-- Course #6 - JavaScript - Assignment #49 - Uncaught Syntax Error -->
+<!-- by Steven Partlow -->
+
+<!DOCTYPE html>
+<html lang = "eng">
+    <head>
+        <meta charset = "UTF-8">
+    </head>
+    <body>
+
+        <!-- Assignment #49 - Uncaught Syntax Error -->
+        <script>
+            
+            // Declare two variables A and B with inital values
+            A = "Always ";
+            B = "remember: ";
+            document.write(A + B); // Concatenate A with B and output to the browser window
+
+            // Declare two variables X and Y with inital values
+            X = "you ";
+            Y = "are ";
+            document.write(X + Y); // Concatenate X with Y and output to the browser window
+
+            // Declare two variables M and N with inital values
+            M = "unique, " ;
+            N = "just like everyone else."
+            // ORGINAL CODE: document.write(N + Z); This was the source of the error as variable Z has not been defined and we want to concatenate M and N together, and we have put N in left hand side of the operation when it should be the righ hand side
+            document.write(M + N);
+        </script>
+
+    </body>
+</html>
