@@ -48,3 +48,16 @@ function assign52() { // Define function 'assign52'
     // Generate a random number between zero and four and use it to pull the corresponding element from array 'Play_Next' then assign that element to ID 'Next'
     document.getElementById("Next").innerHTML = Play_Next[Math.floor((Math.random() * 5))];
 } // End of function 'assign52'
+
+// Assignment #53 - Constants
+function assign53() { // Define 'assign53'
+    
+    // Const object creation
+    const Video_Game = {name: "The Legend of Heroes: Trails of Cold Steel", developer: "Nihon Falcom", genre: "J-RPG", price: "£25"}; // Define const 'Video_Game' object with four properties 'name', 'developer', 'genre', and 'price'
+    document.getElementById("Constant").innerHTML = "The game " + Video_Game.name + " is developed by " + Video_Game.developer + " and is a game in the " + Video_Game.genre + " genre"; // Concatenate a string using some of the properties of the above 'Video_Game' object then store the resulting string in ID 'Constant'
+
+    // Const obkect updated
+    Video_Game.platform = "Playstation 4"; // Add a new property 'Platform' to the 'Video_Game' object an give it an inital value
+    Video_Game.genre = "Action RPG"; // Change the property "genre"
+    document.getElementById("Updated_Constant").innerHTML = "The game " + Video_Game.name + " is developed by " + Video_Game.developer + " and is a game in the " + Video_Game.genre + " genre and is available on the " + Video_Game.platform + " platform."; // Concatenate a string using some of the properties of the above 'Video_Game' object then store the resulting string in ID 'Updated_Constant'
+} // End of function 'assign53'
