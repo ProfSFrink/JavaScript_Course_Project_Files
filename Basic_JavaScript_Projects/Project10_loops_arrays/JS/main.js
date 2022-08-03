@@ -49,7 +49,7 @@ function assign52() { // Define function 'assign52'
     document.getElementById("Next").innerHTML = Play_Next[Math.floor((Math.random() * 5))];
 } // End of function 'assign52'
 
-// Assignment #53 - Constants
+// Assignment #53 - Const Keyword
 function assign53() { // Define 'assign53'
     
     // Const object creation
@@ -61,3 +61,19 @@ function assign53() { // Define 'assign53'
     Video_Game.genre = "Action RPG"; // Change the property "genre"
     document.getElementById("Updated_Constant").innerHTML = "The game " + Video_Game.name + " is developed by " + Video_Game.developer + " and is a game in the " + Video_Game.genre + " genre and is available on the " + Video_Game.platform + " platform."; // Concatenate a string using some of the properties of the above 'Video_Game' object then store the resulting string in ID 'Updated_Constant'
 } // End of function 'assign53'
+
+// Assignment #54 - Let Keyword
+function assign54() { // Define function 'assign54'
+    document.write("Clicking on the button will show how the let and var keywords differ. The middle string is assigned using the let keyword in it's own block of code and can only be accessed from within that block. When we try to access the same variable again outside the block we access the first version again as that has global scope whereas the let version does not." + "<br><br>");
+
+    var Scope = "VAR Declaration: I can be accessed anywhere in the function!"; // Define variable 'Scope' with inital value
+
+    document.write(Scope);
+   
+    { // Start a code block
+        let Scope = "LET Declaration: I can only be accessed from within the set of curly brackets!"
+        document.write("<br>" + Scope); // Do a line-break then take the value of variable 'Scope' and assign it to ID 'Scope'
+    } // End this code block
+
+    document.write("<br>" + Scope); // Do a line-break then take the value of variable 'Scope' and assign it to ID 'Scope'
+} // End of function 'assign54'
