@@ -33,3 +33,18 @@ function assign51() { // Define function 'assign51'
     } // End FOR loop
     document.getElementById("Games").innerHTML = Content; // Set HTML ID 'Games' to value of variable 'Content'
 } // End of function 'assign51'
+
+// Assignment #52 - Arrays
+function assign52() { // Define function 'assign52'
+    var Play_Next = []; // Define an empty array 'Play_Next'
+
+    // Add five elements from index 0 to 4 to the 'Play_Next' array
+    Play_Next[0] = "Phantom Brave: The Hermuda Trianlge Remastered (NS)";
+    Play_Next[1] = "The Legend of Heroes: Trails in the Sky (PC STEAM)";
+    Play_Next[2] = "Yakuza 3 Remastered (PS4)";
+    Play_Next[3] = "Sonic Mania (NS)";
+    Play_Next[4] = "Xenoblade Chronicles: Definitive Edition - Future Connected (NS)";
+
+    // Generate a random number between zero and four and use it to pull the corresponding element from array 'Play_Next' then assign that element to ID 'Next'
+    document.getElementById("Next").innerHTML = Play_Next[Math.floor((Math.random() * 5))];
+} // End of function 'assign52'
