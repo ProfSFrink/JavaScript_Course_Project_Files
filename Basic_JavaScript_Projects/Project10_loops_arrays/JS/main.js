@@ -77,3 +77,10 @@ function assign54() { // Define function 'assign54'
 
     document.write("<br>" + Scope); // Do a line-break then take the value of variable 'Scope' and assign it to ID 'Scope'
 } // End of function 'assign54'
+
+// Challenge #14 - Return Statement
+function challenge14(x, y) { // Define function 'challenge 14' with two parameters 'x' and 'y' 
+    return x ** y; // Return 'x' to the power of 'y'
+} // End of function 'challenge14'
+
+document.getElementById("Return").innerHTML = "4 to the power of 16 is " + challenge14(4,16); // Execute function 'challenge14' pass in parameters 4 and 16 and store the value the function returns to ID 'Return'
