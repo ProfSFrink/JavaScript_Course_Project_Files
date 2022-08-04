@@ -100,3 +100,25 @@ let product = { // Define object 'Product' this is example of something that app
     } // End of 'notes' function
 } // End of definition for 'product' object
 document.getElementById("Object").innerHTML = product.notes(); // Execute the 'notes' function off the 'product' object, store the result in returns in ID 'Object'
+
+// Challenge #15 - Break / Continue Statements
+function challenge15() { // Define function 'challenge15'
+    var Count = 0; // Define variable 'Count' with an inital value
+    var Status = "" // Define variable 'Status' with no value
+
+    while (true) { // This is an infinite while loop which will not end until we break it
+        if (Count < 10) { // If the variable 'Count' is less than 10
+
+            // Output to the ID 'Counter' the current value of 'Count' and that we are continuing
+            document.getElementById("Counter").innerHTML = Status += "<br>Counter is currently <b>" + Count + "</b> so will <b>continue</b> as it is less than ten";
+            Count++; // Increment 'Count' by one
+            continue; // We continue the loop, this end the current iteration of the loop and starts a new one going back to the while statement at the top
+        } // End IF
+        else { // If 'Count' is equal or greater than 10
+
+            // Output to the ID 'Counter' the current value of 'Count' and that we are breaking the loop
+            document.getElementById("Counter").innerHTML = Status += "<br>Counter is currently <b>" + Count + "</b> so will <b>break</b> as it now equal to ten";
+            break; // Ends the while loop instantly at this point and carries on with the program
+        } // End ELSE
+    } // End WHILE
+} // End function 'challenge15'
