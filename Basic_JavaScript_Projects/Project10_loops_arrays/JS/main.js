@@ -84,3 +84,19 @@ function challenge14(x, y) { // Define function 'challenge 14' with two paramete
 } // End of function 'challenge14'
 
 document.getElementById("Return").innerHTML = "4 to the power of 16 is " + challenge14(4,16); // Execute function 'challenge14' pass in parameters 4 and 16 and store the value the function returns to ID 'Return'
+
+// Assignment #55 - Objects
+
+let product = { // Define object 'Product' this is example of something that appears in our stock system at work
+    name: "Pepsi MAX Cherry", // Product name
+    manufacturer: "Pepsi", // Product manufacturer
+    size: "2 Litre", // Product size
+    type: "Soft Drink", // Product type
+    price: "£1.50", // Product price
+    barcode: "4060800166531", // Product barcode (This is unique to the product and act as it primary key in our database)
+    stock: 44, // Product current stock level
+    notes: function() { // Define 'notes' function, creates a string using the objects properties, which acts as a description of the product
+        return "This product is " + this.name + " is made by the " + this.manufacturer + " company " + " and comes in a size of " + this.size + " is a " + this.type + " and costs " + this.price;
+    } // End of 'notes' function
+} // End of definition for 'product' object
+document.getElementById("Object").innerHTML = product.notes(); // Execute the 'notes' function off the 'product' object, store the result in returns in ID 'Object'
