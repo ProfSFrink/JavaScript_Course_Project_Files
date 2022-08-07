@@ -51,3 +51,17 @@ function challenge16() { // Define function 'challenge16'
     c.font = "80px Helvectica"; // Set the font for the canvas 'c' 80 pixel, Helvectica
     c.fillText("JavaScript drew this!", 40, 150); // Draw text "JavaScript drew this!" 40 across X axis and 150 pixel down the Y axis
 } // End of function 'challenge16'
+
+// Challenge #17 - createLinerGradiant() Method
+function challenge17() { // Define function 'challenge17'
+    var myCanvas = document.getElementById("Challenge17"); // Assign the canvas element with ID 'Challenge17' to variable 'myCanvas'
+    var c = myCanvas.getContext("2d"); // Define variable 'c' and assign it a version of 'MyCanvas' that is set to work with '2D' JavaScript drawing methods
+    
+    // Create the effect of our gradient
+    var gradiant = c.createLinearGradient(0, 0, 500, 0); // Use 'createLinearGradient' to create a gradient effect that will go all the way acros our canvas from left to right and assign it to variable 'gradient'
+    gradiant.addColorStop(0, "navy"); // Start the gradient with a navy blue colour
+    gradiant.addColorStop(1, "white"); // End the gradient with a white colour
+
+    c.fillStyle = gradiant; // Assign the gradient we have created to our canvas 'c'
+    c.fillRect(0, 0, 500, 300); // Apply the gradient starting at the top-left (0,0) and all the way to the bottom-right (500, 300)
+} // End of function 'challenge17'
