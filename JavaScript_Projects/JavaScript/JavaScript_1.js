@@ -34,3 +34,9 @@ function assign56() { // Define function 'assign56'
     } // End SWITCH
     document.getElementById("Output").innerHTML = Game_Output; // Set ID output to the current value of 'Game_Output'
 } // End of function 'assign56'
+
+// Assignment #57 - getElementsByClassName Method
+function assign57() { // Define function 'assign57'
+    var gameArray = document.getElementsByClassName("JRPG"); // Take all HTML elements of the class 'JRPG' and assign each of them to an element of the array 'gameArray'
+    document.getElementById("Choice").innerHTML = gameArray[Math.floor(Math.random() * 6)].innerHTML; // We will randomly choose a number between zero and five and then using that number access the index position of array 'gameArray' and assign the value at that position to ID 'Choice'
+} // End of function 'assign57'
