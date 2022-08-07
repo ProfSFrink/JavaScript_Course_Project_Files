@@ -42,3 +42,12 @@ function assign57() { // Define function 'assign57'
 } // End of function 'assign57'
 
 // Assignment #58 - Canvas Element (HTML ONLY)
+
+// Challenge #16 - Using JavaScript to draw in a Canvas Element
+function challenge16() { // Define function 'challenge16'
+    var myCanvas = document.getElementById("Challenge16"); // Assign the canvas element with ID 'Challenge16' to variable 'myCanvas'
+    var c = myCanvas.getContext("2d"); // Define variable 'c' and assign it a version of 'MyCanvas' that is set to work with '2D' JavaScript drawing methods
+
+    c.font = "80px Helvectica"; // Set the font for the canvas 'c' 80 pixel, Helvectica
+    c.fillText("JavaScript drew this!", 40, 150); // Draw text "JavaScript drew this!" 40 across X axis and 150 pixel down the Y axis
+} // End of function 'challenge16'
