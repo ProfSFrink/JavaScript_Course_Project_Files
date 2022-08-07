@@ -40,3 +40,5 @@ function assign57() { // Define function 'assign57'
     var gameArray = document.getElementsByClassName("JRPG"); // Take all HTML elements of the class 'JRPG' and assign each of them to an element of the array 'gameArray'
     document.getElementById("Choice").innerHTML = gameArray[Math.floor(Math.random() * 6)].innerHTML; // We will randomly choose a number between zero and five and then using that number access the index position of array 'gameArray' and assign the value at that position to ID 'Choice'
 } // End of function 'assign57'
+
+// Assignment #58 - Canvas Element (HTML ONLY)
