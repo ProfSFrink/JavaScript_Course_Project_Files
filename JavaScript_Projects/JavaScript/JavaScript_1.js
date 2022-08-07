@@ -1,5 +1,5 @@
 // Advanced Software and Web Developer Diploma
-// Course #6 - JavaScript Switch Statment
+// Course #6 - JavaScript Project
 // by Steven Partlow
 
 // Assignment #56 - Switch Statement

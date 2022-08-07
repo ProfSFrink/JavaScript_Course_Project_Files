@@ -1,0 +1,42 @@
+<!-- Advanced Software and Web Developer Diploma -->
+<!-- Course #6 - JavaScript Project -->
+<!-- by Steven Partlow -->
+
+<!DOCTYPE html>
+<html lang = "eng">
+    
+    <head> <!-- HEAD Section -->
+        <meta charset = "UTF-8" name = "viewport" content = "width = device-width, initial-scale = 1"></meta>
+        <title>JavaScript Course - JavaScript Projects</title>
+        <link rel = "stylesheet" type = "text/css" href = "CSS/CSS_1.css">
+        <script src = "JavaScript/JavaScript_2.js" defer></script>
+    </head> <!-- End of HEAD Section-->
+
+    <body>
+        <h1>JavaScript Projects</h1>
+
+        <!-- Challenge #18 - Form Validation -->
+        <h2>Challenge #18 - Form Validation</h2>
+        <p>The purpose of theis challenge is to create and style a contact form and utilise JavaScript to implement form validation. Which involves checking to make sure the user has entered something in each box when they click the submit button.</p>
+        <div class ="form-container"> <!-- Container for our contact form -->
+            <!-- Start of CONTACT Form -->
+            <form name = "contact" action = "" onsubmit = "return challenge18()" method = "post">
+                <!-- Create text label for first name -->
+                <label for = "first_name">First name:</label>
+                <!-- Create input box for user to enter first name --> 
+                <input type = "text" id = "first_name" name = "first_name" value = "Enter your first name"><br>
+                <!-- Create text label for surname -->
+                <label for = "surname">Second name:</label>
+                <!-- Create input box for user to enter surname -->
+                <input type = "text" id = "surname" name = "surname" value = "Enter your second name"><br>
+                <!-- Create text label for email address -->
+                <label for = "email">E-mail:</label>
+                <!-- Create input box for user to enter email address -->
+                <input type = "text" id = "email" name = "email" value = "Enter your email address"><br>
+                <!-- Add submit button to submit the users information -->
+                <div class = "submit-align"><input type = "submit" value = "Submit"></div>
+            </form> <!-- End of CONTACT Form -->
+        </div>
+    </body> <!-- End of BODY Section-->
+
+</html> <!-- End of Document-->

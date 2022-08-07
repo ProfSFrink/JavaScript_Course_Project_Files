@@ -1,0 +1,56 @@
+/* Advanced Software and Web Developer Diploma */
+/* Course #6 - JavaScript Project */
+/* by Steven Partlow */
+
+h1 { /* Styling for headline one elements */
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h2 { /* Styling for headline teo elements */
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p { /* Styling for paragraph elements */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 11pt;
+}
+
+.form-container { /* Styling for the contact form contraine */
+    padding: 15px 0px 10px 0px; /* Add padding to the top and bottom of the form */
+    border: 5px double black; /* Black double lined border */
+    border-radius: 10px; /* Slightly curved edges */
+    box-shadow: 5px 5px grey; /* Give the box a shadow */
+    margin: 0px 10px 0px 10px; /* Add margins to the left and right */
+    width: 50%; /* Set container width to 50% of browser window */
+}
+
+label { /* Display input label to the left of the input boxes */ 
+    display: inline-block; /* This will align our input boxes */
+    width: 150px; /* Set the labels to 150 pixels wide */
+    text-align: right; /* Align the label text to the left of the input boxes*/
+    text-shadow: 1px 1px grey; /* Give the input label a slight shadow */
+    font-family: Arial, Helvetica, sans-serif; /* Set this font for the text labels */
+}
+
+input[type=text] { /* Styling for input boxes */
+    width: 50%; /* Set input boxes to 50 percent of page width */
+    padding: 5px 5px; /* Add some padding */
+    margin-bottom: 5px; /* Add a small gap between boxes */
+    box-sizing: border-box; 
+    border: 2px solid black; /* Give each box a border */
+    box-shadow: 1px 1px grey; /* Give input boxes a slight shadow */
+}
+
+input[type=submit] { /* Style the submit button */
+    background-color: black; /* Make it have a black background */
+    color: white; /* Give it white text */
+    border: none; /* Remove the border and text decoration */
+    text-decoration: none;
+    padding: 8px; /* Add some padding around the text*/
+    margin: 4px 2px; 
+    cursor: pointer;
+}
+
+.submit-align { /* Style for to center the submit button */
+    text-align: center;
+}
