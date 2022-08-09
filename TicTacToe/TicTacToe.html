@@ -1,3 +1,42 @@
 <!-- Advanced Software and Web Developer Diploma -->
 <!-- Course #6 - JavaScript Project / Project # 1 - Tic Tac Toe Game -->
 <!-- by Steven Partlow -->
+
+<!DOCTYPE html>
+<html lang = 'en'> <!-- Set document langauge to English -->
+    <head> <!-- HEAD Section -->
+        <title>Tic Tac Toe</title>
+        <meta charset = "UTF-8"> <!-- Set the document to use the UTF-8 character set -->
+        <meta name = 'viewport' content = 'width=device-width, inital-scale = 1.0'> <!-- Adjust the size of the website depending on the size of the display -->
+    </head> <!-- End of HEAD Section -->
+
+    <body id = 'body'> <!-- BODY Section -->
+        <!-- This container is needed to overlay our canvas over our table -->
+        <div class = 'center-container'>
+            <!-- NOTE: Canvas width and height must be set within the element -->
+            <canvas id = 'win-lines' width = '608' height = '608'></canvas>
+            
+            <table> <!-- GAME BOARD -->
+                <!-- Top three rows -->
+                <tr>
+                    <td id = '0' onclick = 'placeXOrO("0")'></td>
+                    <td id = '1' onclick = 'placeXOrO("1")'></td>
+                    <td id = '2' onclick = 'placeXOrO("2")'></td>
+                </tr>
+                <!-- Middle three rows -->
+                <tr>
+                    <td id = '3' onclick = 'placeXOrO("3")'></td>
+                    <td id = '4' onclick = 'placeXOrO("4")'></td>
+                    <td id = '5' onclick = 'placeXOrO("5")'></td>
+                </tr>
+                <!-- Bottom three rows -->
+                <tr>
+                    <td id = '6' onclick = 'placeXOrO("6")'></td>
+                    <td id = '7' onclick = 'placeXOrO("7")'></td>
+                    <td id = '8' onclick = 'placeXOrO("8")'></td>
+                </tr>
+            </table> <!-- End of GAME Board -->
+
+        </div> <!-- End of class 'center-container' -->
+    </body> <!-- End of BODY Section -->
+</html> <!-- End of Document -->
