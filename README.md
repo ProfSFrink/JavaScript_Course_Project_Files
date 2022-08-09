@@ -1,10 +1,15 @@
 # __JavaScript Course Project Files__
 
-## __Advanced Software and Web Developer: Part VI: JavaScript__
+## __Advanced Software and Web Developer__ 
+## __Part VI: JavaScript__
 
 ## __by Steven Partlow__
 
 A repository for all of the coding projects we will undertake as on the JavaScript Course as part of the Advanced Software and Web Developer Diploma.
+## __JavaScript Projects__
+
+---
+The main JavaScript Projects for this course.
 
 ## __Basic JavaScript Projects__
 

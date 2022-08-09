@@ -6,13 +6,24 @@ h1 { /* Styling for headline one elements */
     font-family: Helvetica, Arial, sans-serif;
 }
 
-h2 { /* Styling for headline teo elements */
+h2 { /* Styling for headline two elements */
     font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3 { /* Styling for headline three */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 p { /* Styling for paragraph elements */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 11pt;
+}
+
+ul { /* Styling for unordered lists */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 14pt;
+    font-weight: 500;
+    list-style: inside;
 }
 
 .form-container { /* Styling for the contact form contraine */

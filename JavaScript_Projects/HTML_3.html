@@ -1,0 +1,32 @@
+<!-- Advanced Software and Web Developer Diploma -->
+<!-- Course #6 - JavaScript Project -->
+<!-- by Steven Partlow -->
+
+<!DOCTYPE html>
+<html lang = "eng">
+
+    <head> <!-- HEAD Section -->
+        <meta charset = "UTF-8" name = "viewport" content = "width = device-width", inital-scale = 1>
+        <title>JavaScript Course - JavaScript Projects - HTML Data Attribute</title>
+        <link rel = "stylesheet" type = "text/css" href = "./CSS/CSS_1.css">
+        <script src = "JavaScript/JavaScript_3.js" defer></script>
+    </head> <!-- End of HEAD Section -->
+
+    <body> <!-- BODY Section -->
+        <h1>JavaScript Projects</h1>
+
+        <!-- Assignment #59 - HTML Data Attribute -->
+        <h2>Assignment #59 - HTML Data Attribute</h2>
+        <p>This assignment is a demonstration of the HTML data attribute, each element in the unordered list below has a 'data-genre-type' which will be displayed when the respective element is clicked on.</p>
+        <h3>Video Game Genres</h3>
+        <p>Click on the name of game to discover more about it.</p>
+        <!-- Create an unordered list which when clicked on will reveal each elements 'data-' attribute by executing JS function 'assign59' -->
+        <ul>
+            <li onclick = "assign59(this)" id = "JRPG" data-genre-type = "JRPG">Live A Live</li>
+            <li onclick = "assign59(this)" id = "2D Platformer" data-genre-type = "2D Platformer">Sonic Mania</li>
+            <li onclick = "assign59(this)" id = "Real-Time Strategy" data-genre-type = "Real-Time Strategy">StarCraft Remastered</li>
+            <li onclick = "assign59(this)" id = "Visual Novel" data-genre-type = "Visual Novel">Citizen Sleeper</li>
+        </ul>
+    </body> <!-- End of BODY Section -->
+    
+</html> <!-- End of Document -->
