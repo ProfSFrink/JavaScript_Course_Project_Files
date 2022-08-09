@@ -9,7 +9,12 @@ A repository for all of the coding projects we will undertake as on the JavaScri
 ## __JavaScript Projects__
 
 ---
-The main JavaScript Projects for this course.
+These projects start with more examples of built in JavaScript keywords and method, starting with the switch statement and then use of the .getElementByClassName() method and use of the HTML canvas element and the use of JavaScript to draw in it, and finally an example of using JavaScript to perform form validation checks.
+
+## __Main Project #1: Tic Tac Toe Game__
+
+___
+The first major project of this course involves using HTML, CSS and JavaScript to create a Tic Tac Toe game.
 
 ## __Basic JavaScript Projects__
 

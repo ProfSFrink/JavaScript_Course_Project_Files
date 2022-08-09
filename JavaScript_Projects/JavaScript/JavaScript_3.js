@@ -1,4 +1,4 @@
-_// Advanced Software and Web Developer Diploma
+// Advanced Software and Web Developer Diploma
 // Course #6 - JavaScript Project
 // by Steven Partlow
 
