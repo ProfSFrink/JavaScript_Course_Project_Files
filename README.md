@@ -9,7 +9,7 @@ A repository for all of the coding projects we will undertake as on the JavaScri
 ## __JavaScript Projects__
 
 ---
-These projects start with more examples of built in JavaScript keywords and method, starting with the switch statement and then use of the .getElementByClassName() method and use of the HTML canvas element and the use of JavaScript to draw in it, and finally an example of using JavaScript to perform form validation checks.
+These projects start with more examples of built in JavaScript keywords and methods, starting with the switch statement and then use of the .getElementByClassName() method and use of the HTML canvas element and the use of JavaScript to draw in it, and finally an example of using JavaScript to perform form validation checks. Then an example of using the HTML data attribute in conjunction with JavaScript.
 
 ## __Main Project #1: Tic Tac Toe Game__
 
