@@ -12,8 +12,10 @@
     </head> <!-- End of HEAD Section -->
 
     <body> <!-- BODY Section-->
+        <h1>JavaScript Course</h1>
+        
         <!-- Challenge: Arrow Function -->
-        <h1>Challenge: Arrow Function</h1>
+        <h2>Challenge: Arrow Function</h2>
 
         <h3>Classic Function</h3>
         <p>This is a demonstration of how the arrow function is used to write cleaner functions in JavaScript. The number below is calculated using a classic JavaScript function called <strong>arrowChallenge(x, y)</strong> which we pass 2 and 8 in as parameters X and Y.</p>
@@ -36,5 +38,18 @@
             var power = (x, y) => x ** y; // Define variablle 'power' as a function which takes two parameters x and y and calculates x to the power of y and returns the result
             document.getElementById("Arrow").innerHTML = power(2, 8); // Execute 'power' passing 2 and 8 as parameters
         </script> <!-- End of Inline JavaScript -->
+
+        <!-- Challenge: .Some() Method -->
+        <h2>Challenge: .some() Method</h2>
+        <p>The some() method checks if some array values pass a test.</p>
+        <p id="PlayNext"></p> <!-- Display the result of our check in the browser -->
+
+        <script> // Inline JavaScript
+            var games = ["Fire Emblem Warriors Three Hopes", "Live A Live", "Xenoblade Chronicles 3", "NEOGEO Pocket Color Selection Vol 1"]; // Define an array of four strings 
+            var PlayNext = (game) => game == "Live A Live"; // Use the arrow function method to create a function 'PlayNext' which looks for a specific string in the array which is passed in as 'game'
+            
+            document.getElementById('PlayNext').innerHTML = "Live A Live is a game I can play next " + games.some(PlayNext); // Use the .some method and run 'PlayNext' to iterate through it until we find our stringf 
+        </script> <!-- End of Inline JavaScript -->
+
     </body> <!-- End of BODY Section-->
 </html> <!-- End of Document -->
