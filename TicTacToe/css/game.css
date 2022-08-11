@@ -32,7 +32,7 @@ table {
     border-style: hidden;
 }
 
-td {
+td { /* Styling for each of the nine game board elements */
     /* This property changes the cursor to the index finger hand when we hover over td elements. */
     cursor: pointer;
     /* This property sets our table border style. */
@@ -43,7 +43,7 @@ td {
     height: 200px;
 }
 
-canvas {
+canvas { /* Styling for the canvas */
     /* This property sets the position of our canva to the top left corner of our container. */
     position: absolute;
     /* This property places our canvas over the top of our table. */
@@ -51,3 +51,22 @@ canvas {
     /* This property makes our canvas invisible. */
     pointer-events: none;
 }
+
+a { /* Styling for hyperlink */
+    color: yellow; /* Set text colour to yellow */ 
+    text-decoration: none; /* Remove the underline */
+}
+
+footer { /* Styling for the footer element */
+    position: fixed; /* Fix the footer in place */
+    left: 0; /* In the bottom-left of the web page */
+    bottom: 0;
+    width: 100%; /* Make it the width of the browser window */
+    padding: 3px; /* Give it some small padding */
+    margin: 5px 0px 0px 0px; /* */
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 11pt; /* Set font size to 11 */
+    background-color: rgba(6, 98, 35); /* Make the background green */
+    color: white; /* Change text colour to white */
+}
+  
