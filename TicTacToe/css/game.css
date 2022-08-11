@@ -2,6 +2,19 @@
 /* Course #6 - JavaScript Project / Project # 1 - Tic Tac Toe Game */
 /* by Steven Partlow */
 
+h1 { /* Styling for ht headline 1 element above the game table */
+    border: 2px solid rgba(6, 98, 35); /* Add a border to the headline */
+    box-shadow: 2px 2px black; /* Give the border a slight shadow */
+    border-radius: 5px; /* With slightly curved edges */
+    padding: 8px; /* Add padding around the headline */
+    margin-bottom: 10px; /* Add a gap between the headline and the game board */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white; /* Change text colour to white */
+    text-shadow: 3px 3px black; /* Give the text a slight black shadow */
+    background-color: rgba(6, 98, 35); /* Make the background green */
+    text-align: center; /* Centre the headline element in the middle of the browser */
+}
+
 /* This container includes our table and our canvas. */
 .center-container {
     /* This property sets the width of our container. */
@@ -23,7 +36,7 @@ td {
     /* This property changes the cursor to the index finger hand when we hover over td elements. */
     cursor: pointer;
     /* This property sets our table border style. */
-    border: 4px solid rgba(252, 169, 3, 0.8);
+    border: 4px solid rgba(6, 98, 35, 0.8);
     /* This property removes default padding. */
     padding: 0px;
     width: 200px;
