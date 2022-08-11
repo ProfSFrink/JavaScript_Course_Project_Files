@@ -1,0 +1,40 @@
+<!-- Advanced Software and Web Developer Diploma -->
+<!-- Course #6 - JavaScript - Arrow Challenge -->
+<!-- by Steven Partlow -->
+
+<!DOCTYPE html>
+<html lang = "en">
+    <head> <!-- HEAD Section -->
+        <meta charset = "UTF-8" name = "viewport" content = "width = device-width, initial-scale = 1">
+        <title>JavaScript Course - Arrow Challenge</title>
+        <link rel = "stylesheet" type = "text/css" href = "">
+        <script src = "" defer></script>
+    </head> <!-- End of HEAD Section -->
+
+    <body> <!-- BODY Section-->
+        <!-- Challenge: Arrow Function -->
+        <h1>Challenge: Arrow Function</h1>
+
+        <h3>Classic Function</h3>
+        <p>This is a demonstration of how the arrow function is used to write cleaner functions in JavaScript. The number below is calculated using a classic JavaScript function called <strong>arrowChallenge(x, y)</strong> which we pass 2 and 8 in as parameters X and Y.</p>
+        <p><strong>2 to the power of 8 equals:</strong></p>
+        <p id = "Classic"></p> <!-- Output value of ID 'Classic' to the browser window -->
+        
+        <script> // Inline JavaScript
+            function arrowChallenge(x, y) { // Define function 'arrowChallenge' with two paraemters x and y
+                return x ** y; // return x to the power of y
+            }
+            document.getElementById("Classic").innerHTML = arrowChallenge(2,8); // Execute the JS function 'arrowChallenge' and output the result to the browser
+        </script> <!-- End of Inline JavaScript -->
+    
+        <h3>Arrow Function</h3>
+        <p>We will now perform the same calculation but using the arrow method you achieve the same result with less code.</p>
+        <p><strong>2 to the power of 8 equals:</strong></p>
+        <p id = "Arrow"></p> <!-- Output value of ID 'Arrow' to the browser window -->
+        
+        <script> // Inline JavaScript
+            var power = (x, y) => x ** y; // Define variablle 'power' as a function which takes two parameters x and y and calculates x to the power of y and returns the result
+            document.getElementById("Arrow").innerHTML = power(2, 8); // Execute 'power' passing 2 and 8 as parameters
+        </script> <!-- End of Inline JavaScript -->
+    </body> <!-- End of BODY Section-->
+</html> <!-- End of Document -->
