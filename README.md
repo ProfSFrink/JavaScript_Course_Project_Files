@@ -1,11 +1,13 @@
 # __JavaScript Course Project Files__
 
 ## __Advanced Software and Web Developer__ 
+
 ## __Part VI: JavaScript__
 
 ## __by Steven Partlow__
 
 A repository for all of the coding projects we will undertake as on the JavaScript Course as part of the Advanced Software and Web Developer Diploma.
+
 ## __JavaScript Projects__
 
 ---
@@ -15,6 +17,12 @@ These projects start with more examples of built in JavaScript keywords and meth
 
 ___
 The first major project of this course involves using HTML, CSS and JavaScript to create a Tic Tac Toe game. The game has you playing against the computer until either a tie or a winner is declared and then the game board is reset and you start over again. This was a code-along project were we typed the code out step-by-step and then slowly going through what each piece of the code is doing and how the various functions interact with one another. This goes over all the concepts covered in the course thus far and brings them all together, such as conditional statements, loops, functions and also covers a few new things such as using the 'Arrow' function to write simpler, cleaner functions and calling the .some() method off an array. Plus we use some CSS to style the game and also customised the graphics and sound.
+
+## __Main Project #2: Calculator__
+
+---
+The second project was again a code-along assignment where we utilise HTML, CSS and JavaScript to create a web application that functions as a calculator and allows for basic operations such as addition, subtraction, multiplication and division, along with the ability to clear the calculator and reset back to default. New coding methods introduced in this include document.querySelector() method and the parseFloat() and the use of exclamation points '!' as a 'NOT' statement. The calculator is styled using CSS with customised colours and fonts.
+
 
 ## __Basic JavaScript Projects__
 
