@@ -1,3 +1,93 @@
 /* Advanced Software and Web Developer Diploma */
 /* Course #6 - JavaScript Project / Project # 2 - Calculator */
 /* by Steven Partlow */
+
+html { /* General Styling for the whole page */
+    font-size: 70%; 
+    box-sizing: border-box;
+}
+
+*, *::before, *::after { /* Styling for all elements */
+    margin: 0; /* All elements have no margins */
+    padding: 0; /* All elements have no padding*/
+    box-sizing: inherit; /* Inherit box-sizng fron parent */
+}
+
+.calculator { /* Styling for the calculator container */
+    border: 1.2px solid darkslategray; /* Give the calculator a solid grey border */
+    border-radius: 7px; /* Curve the edges of the border */
+    /* These settings fix the calculator in the centre of the browser window */
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+    width: 500px; /* Make the calculator 500 pixels in width */
+}
+
+.calculator-screen { /* Styling for the calculator screen */
+    width: 100%; /* Fix the width of the screen to full at all times */
+    font-size: 5rem;
+    height: 80px; /* Make the screen 80 pixel high */
+    border: none; /* Remove the border */
+    /* Style the screen with a blackground and white text */
+    background-color: black;
+    color: white;
+
+    text-align: right; /* Make sure the numbers appear to the right of the screen */
+    padding-right: 20px; /* Put padding on the left and right of the screen */
+    padding-left: 20px;
+    border-radius: 7px 7px 0px 0px; /* Curve the corners of the screen */
+}
+
+button { /* Styling for the calculator buttons */
+    height: 70px; /* Make all buttons 70 pixels high */
+    border-radius: 3px; /* Slightly curve the border corners */
+    border: 1px solid darkslategray; /* Give each button a small grey border */
+    background-color: transparent; /* No background and make buttons transparent */
+    font-size: 3.2rem;
+    color: black;
+    background-image: linear-gradient(to bottom, transparent, transparent, 50%, rgba(0, 0, 0, .06));
+    text-shadow: 0 1px rgba(255, 255, 255, .4);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .05), inset 0 1px 0 0 rgba(255, 255, 255, .05), inset 0 -1px 0 0 rgba(255, 255, 255, .05), 0 1px 0 0 rgba(255, 255, 255, .05);
+}
+
+button:hover {
+    background-color: #e1e1e1; /* Change colour of buttons to white when we hover over them */
+}
+
+.operator { /* Styling for buttons that handle operations */
+    color: black;
+    /* Style the operator buttons so that the background colour changes slowly from bottom to top starting at black and ending in light grey */
+    background-image: linear-gradient(to bottom, transparent, transparent, 50%, rgba(0, 0, 0, .5));
+    background-color: lightgrey;
+}
+
+.all-clear { /* Styling for the clear button */
+    background-color: red;
+    border-color: darkslategray;
+    color: #fff
+}
+
+.all-clear:hover {
+    background-color: darkred; /* Change the colour to darkred when we hover over the clear button */
+}
+
+.equal-sign { /* Styling for the equals button */
+    background-color: blue; /* Make the button blue */
+    border-color: darkslategray; /* With a grey border */
+    color: #fff; /* With white text */
+    height: 100%;
+    grid-area: 2 / 4 / 6 / 5;
+}
+
+.equal-sign:hover { /* Change the colour of the equals sign to blue when we hover over it */
+    background-color: darkblue;
+}
+
+.calculator-keys { /* General styling for the calculator buttons */
+    display: grid; /* Place the buttons in a grid */
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px; /* Place a 20 pixel gap between buttons */
+    padding: 20px; /* Padding the text in the buttons */
+}
