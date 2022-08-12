@@ -2,6 +2,19 @@
 /* Course #6 - JavaScript Project / Project # 2 - Calculator */
 /* by Steven Partlow */
 
+h1 { /* Styling for ht headline 1 element above the game table */
+    border: 2px solid rgb(98, 6, 6); /* Add a border to the headline */
+    box-shadow: 2px 2px black; /* Give the border a slight shadow */
+    border-radius: 5px; /* With slightly curved edges */
+    padding: 8px; /* Add padding around the headline */
+    margin-bottom: 10px; /* Add a gap between the headline and the game board */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white; /* Change text colour to white */
+    text-shadow: 3px 3px black; /* Give the text a slight black shadow */
+    background-color: brown; /* Make the background brown */
+    text-align: center; /* Centre the headline element in the middle of the browser */
+}
+
 html { /* General Styling for the whole page */
     font-size: 70%; 
     box-sizing: border-box;
@@ -20,7 +33,8 @@ html { /* General Styling for the whole page */
     position: absolute; 
     top: 50%;
     left: 50%;
-    
+    background-color: brown;
+    box-shadow: 4px 4px black;
     transform: translate(-50%, -50%);
     width: 500px; /* Make the calculator 500 pixels in width */
 }
@@ -33,7 +47,7 @@ html { /* General Styling for the whole page */
     /* Style the screen with a blackground and white text */
     background-color: black;
     color: white;
-
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: right; /* Make sure the numbers appear to the right of the screen */
     padding-right: 20px; /* Put padding on the left and right of the screen */
     padding-left: 20px;
@@ -46,8 +60,9 @@ button { /* Styling for the calculator buttons */
     border: 1px solid darkslategray; /* Give each button a small grey border */
     background-color: transparent; /* No background and make buttons transparent */
     font-size: 3.2rem;
-    color: black;
+    color: white;
     background-image: linear-gradient(to bottom, transparent, transparent, 50%, rgba(0, 0, 0, .06));
+    background-color: orangered;
     text-shadow: 0 1px rgba(255, 255, 255, .4);
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .05), inset 0 1px 0 0 rgba(255, 255, 255, .05), inset 0 -1px 0 0 rgba(255, 255, 255, .05), 0 1px 0 0 rgba(255, 255, 255, .05);
 }
@@ -66,7 +81,7 @@ button:hover {
 .all-clear { /* Styling for the clear button */
     background-color: red;
     border-color: darkslategray;
-    color: #fff
+    color: black
 }
 
 .all-clear:hover {
@@ -74,7 +89,7 @@ button:hover {
 }
 
 .equal-sign { /* Styling for the equals button */
-    background-color: blue; /* Make the button blue */
+    background-color: lightyellow; /* Make the button blue */
     border-color: darkslategray; /* With a grey border */
     color: #fff; /* With white text */
     height: 100%;
@@ -90,4 +105,22 @@ button:hover {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px; /* Place a 20 pixel gap between buttons */
     padding: 20px; /* Padding the text in the buttons */
+}
+
+a { /* Styling for hyperlinks */
+    color: yellow; /* Set text colour to yellow */ 
+    text-decoration: none; /* Remove the underline */
+}
+
+footer { /* Styling for the footer element */
+    position: fixed; /* Fix the footer in place */
+    left: 0; /* In the bottom-left of the web page */
+    bottom: 0;
+    width: 100%; /* Make it the width of the browser window */
+    padding: 3px; /* Give it some small padding */
+    margin: 5px 0px 0px 0px; /* */
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 11pt; /* Set font size to 11 */
+    background-color: brown; /* Make the background brown */
+    color: white; /* Change text colour to white */
 }
