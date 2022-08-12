@@ -1,0 +1,65 @@
+<!-- Advanced Software and Web Developer Diploma -->
+<!-- Course #6 - JavaScript Project / Project # 2 - Calculator -->
+<!-- by Steven Partlow -->
+
+<!DOCTYPE html>
+<html lang = "en"> <!-- Set document langauge to English -->
+
+<head> <!--- HEAD Section -->
+    <meta charset = "UTF-8"> <!-- Set document to use UTF-8 Character Set -->
+    <meta name = 'viewport' content = 'width=device-width, inital-scale = 1.0'> <!-- Adjust the size of the website depending on the size of the display -->
+
+    <title>Calculator</title>
+    <meta name = "description" content = "A basic HTML, CSS and JavaScript Calculator">
+    <meta name = "author" content = "Steven Partlow">
+    <script src = "JavaScript/Calculator_JavaScript.js" defer></script> <!-- Load our JavaScript file but defer loading it until after the HTML is parsed -->
+    <link rel = "stylesheet" href = "CSS/Calculator_CSS.css"> <!-- Load our CSS stylesheet -->
+</head> <!-- End of HEAD Section-->
+
+<body> <!-- BODY Section-->
+    <!-- The container for the calculator -->
+    <div class = "calculator"> 
+
+        <!-- The main display for the calculator -->
+        <input type = "text" class = "calculator-screen" value = "0" disabled />
+        
+        <!-- The keys for the calculator -->
+        <div class = "calculator-keys">
+
+            <!-- Buttons for operators '+', '-', etc -->
+            <button type = "button" class = "operator" value = "+">+</button>
+            <button type = "button" class = "operator" value = "-">-</button>
+            <button type = "button" class = "operator" value = "*">&times;</button>
+            <button type = "button" class = "operator" value = "/">&divide;</button>
+
+            <!-- Buttons for 7, 8, and 9 -->
+            <button type = "button" value = "7">7</button>
+            <button type = "button" value = "8">8</button>
+            <button type = "button" value = "9">9</button>
+
+            <!-- Buttons for 4, 5, and 6 -->
+            <button type = "button" value = "4">4</button>
+            <button type = "button" value = "5">5</button>
+            <button type = "button" value = "6">6</button>
+
+            <!-- Buttons for 1, 2, and 3 -->
+            <button type = "button" value = "1">1</button>
+            <button type = "button" value = "2">2</button>
+            <button type = "button" value = "3">3</button>
+
+            <!-- Button for 0 -->
+            <button type = "button" value = "0">0</button>
+
+            <!-- Button for decimal place -->
+            <button type = "button" class = "decimal function" value ".">.</button>
+            <!-- Button to clear the calculator -->
+            <button type = "button" class = "all-clear function" value = "all-clear">AC</button>
+            <!-- Button for the equal button -->
+            <button type = "button" class = "equal-sign operator" value = "=">=</button>
+        </div> <!-- End DIV for calculator buttons -->
+
+    </div> <!-- End DIV for calculator container -->
+
+    </body> <!-- End of BODY Section -->
+
+</html> <!-- End of Document -->
