@@ -20,7 +20,7 @@
             <input id = "btnOrder" type = "button" onclick = "getReceipt()" value = "Place Order"> <!-- The place order button, executes JS function'getReceipt' when clicked -->
             <form id = "frmMenu">
 
-                <div class = "menu left">
+                <div class = "menu">
                     <!-- This section provides the user with four radio buttons to choose the size of the pizza they wish to order -->
                     <h3>Size: </h3>
                         <input class = "size" type = "radio" name = "Size" value = "Personal Pizza">Personal Pizza<br>
@@ -30,8 +30,18 @@
                         <input class = "size" type = "radio" name = "Size" value = "Extra Large Pizza">Extra Large Pizza<br>
                 </div> <!-- End of DIV for class 'menu left' -->
 
-                <div class = "menu right">
-                    <!-- This section provides the user with six checkbox buttons to choose the topping for there pizza -->
+                <div class = "menu">
+                    <!-- This section provides the user with five checkbox buttons to choose the vegatable toppings for their pizza -->
+                    <h3>Vegatables: </h3>
+                    <input class = "toppings" type = "checkbox" name = "Topping" value = "Mushrooms">Mushrooms<br>
+                    <input class = "toppings" type = "checkbox" name = "Topping" value = "Onions">Onions<br>
+                    <input class = "toppings" type = "checkbox" name = "Topping" value = "Tomatoes">Tomatoes<br>
+                    <input class = "toppings" type = "checkbox" name = "Topping" value = "Olives">Olives<br>
+                    <input class = "toppings" type = "checkbox" name = "Topping" value = "Green Peppers">Green Peppers<br>
+                </div> <!-- End of DIV for class 'menu centre' -->
+
+                <div class = "menu">
+                    <!-- This section provides the user with six checkbox buttons to choose the meat topping for there pizza -->
                     <h3>Meats: </h3>
                     <input class = "toppings" type = "checkbox" name = "Topping" value = "Pepperoni">Pepperoni<br>
                     <input class = "toppings" type = "checkbox" name = "Topping" value = "Sausage">Sausage<br>

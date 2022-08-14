@@ -19,13 +19,13 @@ h3 { /* Styling for headline three elements */
 }
 
 #menuBG { /* Styling for ID 'menuBG' */
-    width: 400px; /* Sets the width of the menu to 400 pixels */
+    width: 600px; /* Sets the width of the menu to 600 pixels */
     height: 470px; /* Sets the height of the menu to 470 pixels */
     margin: 10px auto; /* Centre the menu in the browser window */
 }
 
 #frmMenu { /* Styling for the menu form 'frmMenu' */
-    width: 400px; /* Sets the width of the form to 400 pixels */
+    width: 600px; /* Sets the width of the form to 600 pixels */
     height: 200px; /* Sets the height of the form to 200 pixels */
 }
 
@@ -36,7 +36,7 @@ h3 { /* Styling for headline three elements */
     float: right;
 }
 
-.left { /* Styling for class 'Left'*/
+.menu { /* Styling for class 'Size, Vegtable, and Meat toppings' menu */
     width: 200px; /* Sets the width of the element to 190 pixels */
     height: 200px; /* Sets the height of the element to 200 pixels */
     float: left;
@@ -46,20 +46,11 @@ h3 { /* Styling for headline three elements */
     text-shadow: 2px 2px black; /* With a small black text shadow */
 }
 
-.right { /* Styling for the class 'right' */
-    width: 200px; /* Sets the width of the element to 190 pixels */
-    height: 200px; /* Sets the height of the element to 200 pixels */
-    float: right;
+#cart { /* Styling for the ID'cart' */
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px; /* Set font size to 16 pixels */
-    color: whitesmoke; /* Set font to this colour */
-    text-shadow: 2px 2px black; /* With a small black text shadow */
-}
-
-.cart { /* Styling for the class 'cart' */
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 16px; /* Set font size to 16 pixels */
-    color:goldenrod; /* Set to this colour */
+    color: whitesmoke; /* Set to this colour */
+    text-shadow: 2px 2px black;
 }
 
 #showText { /* Styling for the ID 'showText' */
@@ -70,8 +61,7 @@ h3 { /* Styling for headline three elements */
 }
 
 #cart { /* Styling for the ID 'cart' */
-    top: 0; /* Adjust the vertical position of the element */
-    margin: 0px auto; /* Centre the element */
+    top: 0; /* Adjust the vertical position of the element */ margin: 0px auto; /* Centre the element */
     width: 400px; /* Sets the width of the element to 400 pixels */
     height: 200px; /* Sets the height of the element to 200 pixels */
 }

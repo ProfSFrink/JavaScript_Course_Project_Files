@@ -69,6 +69,7 @@ function getTopping(runningTotal, text1) { // Define function 'getTopping' with 
     } // End FOR
 
     var toppingCount = selectedTopping.length;
+    // The user gets one topping for free, this is were we check if they have at least one and deduct it from the total
     if (toppingCount > 1) {
         toppingTotal = (toppingCount - 1); 
     } // End IF
@@ -76,12 +77,15 @@ function getTopping(runningTotal, text1) { // Define function 'getTopping' with 
         toppingTotal = 0;
     } // End ELSE
 
+    // We add the number of toppings to the running total
     runningTotal = (runningTotal + toppingTotal);
     console.log("total selected topping items: " + toppingCount);
     console.log(toppingCount + " topping - 1 free topping = " + "$" + toppingTotal + ".00");
     console.log("topping text1: " + text1);
     console.log("Purchase Total: " + "$" + runningTotal + ".00");
+    // We output the list of items the user has purchased to the browser window
     document.getElementById("showText").innerHTML = text1;
-    document.getElementById("totalPrice").innerHTML = "</h3>Total: <strong>$" + runningTotal + ".00" + "</strong></h3>";
+    // We output the cost of the order to the browser window
+    document.getElementById("totalPrice").innerHTML = "<h3>Total: <strong>$" + runningTotal + ".00" + "</strong></h3>";
 
 }; // End of function 'getTopping'
