@@ -48,7 +48,7 @@ function getReceipt() { // Define function 'getReceipt'
     // these variables will get on to each function
     getTopping(runningTotal, text1);
 
-} // End of function 'getReceipt'
+}; // End of function 'getReceipt'
 
 function getTopping(runningTotal, text1) { // Define function 'getTopping' with two parameters 'runningTotal' and 'text1'
     var toppingTotal = 0;
@@ -84,4 +84,4 @@ function getTopping(runningTotal, text1) { // Define function 'getTopping' with 
     document.getElementById("showText").innerHTML = text1;
     document.getElementById("totalPrice").innerHTML = "</h3>Total: <strong>$" + runningTotal + ".00" + "</strong></h3>";
 
-} // End of function 'getTopping'
+}; // End of function 'getTopping'
