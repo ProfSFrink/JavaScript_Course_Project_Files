@@ -2,6 +2,22 @@
 /* Course #6 - JavaScript Project / Project #3 - Pizza Menu Project */
 /* by Steven Partlow */
 
+body { /* Styling for the body element */
+    background-color: orangered; /* Set page background to orange red */
+}
+
+h1 { /* Styling for headline one elements */
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    color: wheat; /* Set it to this colour */
+    text-shadow: 2px 2px black; /* With a small black text shadow */
+}
+
+h3 { /* Styling for headline three elements */
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    color: wheat; /* Set it to this colour */
+    text-shadow: 2px 2px black; /* With a small black text shadow */
+}
+
 #menuBG { /* Styling for ID 'menuBG' */
     width: 400px; /* Sets the width of the menu to 400 pixels */
     height: 470px; /* Sets the height of the menu to 470 pixels */
@@ -24,12 +40,26 @@
     width: 200px; /* Sets the width of the element to 190 pixels */
     height: 200px; /* Sets the height of the element to 200 pixels */
     float: left;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px; /* Set font size to 16 pixels */
+    color: whitesmoke; /* Set font to this colour */
+    text-shadow: 2px 2px black; /* With a small black text shadow */
 }
 
 .right { /* Styling for the class 'right' */
     width: 200px; /* Sets the width of the element to 190 pixels */
     height: 200px; /* Sets the height of the element to 200 pixels */
     float: right;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px; /* Set font size to 16 pixels */
+    color: whitesmoke; /* Set font to this colour */
+    text-shadow: 2px 2px black; /* With a small black text shadow */
+}
+
+.cart { /* Styling for the class 'cart' */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px; /* Set font size to 16 pixels */
+    color:goldenrod; /* Set to this colour */
 }
 
 #showText { /* Styling for the ID 'showText' */
