@@ -1,3 +1,53 @@
 /* Advanced Software and Web Developer Diploma */
 /* Course #6 - JavaScript Project / Project #3 - Pizza Menu Project */
 /* by Steven Partlow */
+
+#menuBG { /* Styling for ID 'menuBG' */
+    width: 400px; /* Sets the width of the menu to 400 pixels */
+    height: 470px; /* Sets the height of the menu to 470 pixels */
+    margin: 10px auto; /* Centre the menu in the browser window */
+}
+
+#frmMenu { /* Styling for the menu form 'frmMenu' */
+    width: 400px; /* Sets the width of the form to 400 pixels */
+    height: 200px; /* Sets the height of the form to 200 pixels */
+}
+
+#totalPrice { /* Styling for the 'totalPrice' element */
+    width: 200px; /* Sets the width of the element to 200 pixels */
+    height: 190px; /* Sets the height of the element to 190 pixels */
+    margin: 0 auto; /* Centre the element */
+    float: right;
+}
+
+.left { /* Styling for class 'Left'*/
+    width: 200px; /* Sets the width of the element to 190 pixels */
+    height: 200px; /* Sets the height of the element to 200 pixels */
+    float: left;
+}
+
+.right { /* Styling for the class 'right' */
+    width: 200px; /* Sets the width of the element to 190 pixels */
+    height: 200px; /* Sets the height of the element to 200 pixels */
+    float: right;
+}
+
+#showText { /* Styling for the ID 'showText' */
+    width: 200px; /* Sets the width of the element to 200 pixels */
+    height: 190px; /* Sets the height of the element to 190 pixels */
+    margin: 0px auto; /* Centre the element */
+    float: left;
+}
+
+#cart { /* Styling for the ID 'cart' */
+    top: 0; /* Adjust the vertical position of the element */
+    margin: 0px auto; /* Centre the element */
+    width: 400px; /* Sets the width of the element to 400 pixels */
+    height: 200px; /* Sets the height of the element to 200 pixels */
+}
+
+#btnOrder { /* Styling for the order button */
+    margin: 10px 0px 0px 100px; /* Add a margin of 10 pixel above the button and 100 pixels below it */
+    width: 100px; /* Sets the width of the button to 100 pixels */
+    height: 40px; /* Sets the height of the buttton to 40 pixels */
+}
