@@ -23,6 +23,11 @@ The first major project of this course involves using HTML, CSS and JavaScript t
 ---
 The second project was again a code-along assignment where we utilise HTML, CSS and JavaScript to create a web application that functions as a calculator and allows for basic operations such as addition, subtraction, multiplication and division, along with the ability to clear the calculator and reset back to default. New coding methods introduced in this include document.querySelector() method and the parseFloat() and the use of exclamation points '!' as a 'NOT' statement. The calculator is styled using CSS with customised colours and fonts.
 
+## __Main Project #3: Pizza Menu Project__
+
+---
+The third project is a Pizza Menu project which again uses HTML, CSS and JavaScript to create a web site which allows the user to order a pizza by selected a size, then a choice of both vegetable and meat toppings, then through use of JavaScript we calculate the cost of the pizza and all the toppings and output the result. We also give the user the first topping for free and account for this is in our code. This site uses most of the techniques learned on the course thus far.
+
 
 ## __Basic JavaScript Projects__
 

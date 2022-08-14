@@ -36,10 +36,10 @@ h3 { /* Styling for headline three elements */
     float: right;
 }
 
-.menu { /* Styling for class 'Size, Vegtable, and Meat toppings' menu */
+.menu { /* Styling for class 'Size, Vegtable, and Meat toppings' menus */
     width: 200px; /* Sets the width of the element to 190 pixels */
     height: 200px; /* Sets the height of the element to 200 pixels */
-    float: left;
+    float: left; /* Line up the menus floating in from the left */
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px; /* Set font size to 16 pixels */
     color: whitesmoke; /* Set font to this colour */

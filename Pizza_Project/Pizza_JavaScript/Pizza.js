@@ -41,7 +41,8 @@ function getReceipt() { // Define function 'getReceipt'
     } // End ELE IF
 
     // Adjust the running total
-    runningTotal = sizeTotal;  
+    runningTotal = sizeTotal;
+    // Log our calculations to the developer console so we can track what is happening in case of bugs  
     console.log(selectedSize + " = $" + sizeTotal + ".00"); 
     console.log("size text1: " + text1);
     console.log("subtotal: $" + runningTotal + ".00");
@@ -79,6 +80,7 @@ function getTopping(runningTotal, text1) { // Define function 'getTopping' with 
 
     // We add the number of toppings to the running total
     runningTotal = (runningTotal + toppingTotal);
+    // Log our calculations to the developer console so we can track what is happening in case of bugs
     console.log("total selected topping items: " + toppingCount);
     console.log(toppingCount + " topping - 1 free topping = " + "$" + toppingTotal + ".00");
     console.log("topping text1: " + text1);
