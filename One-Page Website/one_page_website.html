@@ -5,10 +5,11 @@
  <!DOCTYPE html>
  <html lang = "en">
      <head> <!-- WEBSITE HEADER -->
-         <meta charset = "utf-8"> <!-- Use the UTF-8 Character set for the website -->
+         <meta charset = "UTF-8"> <!-- Use the UTF-8 Character set for the website -->
          <title>Steven's Gaming Blog</title>
-         <link rel = "stylesheet" type = "text/css" href = "one_page_website.css"> <!-- SETTING UP THE CSS NOW SO IT'S READY FOR LATER IN THE COURSE -->
-     </head>
+         <link rel = "stylesheet" type = "text/css" href = "./CSS/one_page_website.css">
+         <script src = "./JS/one_page_website.js" defer></script>
+    </head>
 
      <div id = "home"></div> <!-- HOME SECTION -->
 
@@ -53,135 +54,94 @@
                         
                         <br>This does lead to one issue with the game as there are a lot of cutscenes in between story battles, sometimes over an hours worth and this can hurt the games pacing, the story and characters are actually very good but the dialogue is very wordy, the script could have done with an editor. The battles themselves however are excellent with fantastic map design where based on the level layout you may need to bring in different party memebers to utilize the terrain to your advantage, if a level has a lot of high ground for example you may want to bring extra archers as they give bonus damage when attacking from elevated positions.</p>
                     </article> <!-- Trianlge Strategy Article -->
+
+                    <!-- JavaScript Course: Challenge #22 - Add a Lightbox -->
                 
+                    <!-- Images used to open the lightbox -->
+                    <div class = "row">
+                        <!-- Screenshot #1 -->
+                        <div class = "column">
+                            <img src = "images/triangle_strategy_screenshot_1.png" onclick = "openModal();currentSlide(1)" class = "hover-shadow">
+                        </div> <!-- End of DIV for Screenshot #1 -->
+                        <!-- Screenshot #2 -->
+                        <div class = "column">
+                            <img src = "images/triangle_strategy_screenshot_2.png" onclick = "openModal();currentSlide(2)" class = "hover-shadow">
+                        </div> <!-- End of DIV for Screenshot #2 -->
+                        <!-- Screenshot #3 -->
+                        <div class = "column">
+                            <img src = "images/triangle_strategy_screenshot_3.png" onclick = "openModal();currentSlide(3)" class = "hover-shadow">
+                        </div> <!-- End of DIV for Screenshot #3 -->
+                        <!-- Screenshot #4 -->
+                        <div class = "column">
+                            <img src = "images/triangle_strategy_screenshot_4.png" onclick = "openModal();currentSlide(4)" class = "hover-shadow">
+                        </div> <!-- End of DIV for Screenshot #4 -->
+                    </div> <!-- End of DIV for class 'row' -->
 
-                    <div id = "screenshots"> <!-- Screenshot Section-->
-                        <h2>Screenshots</h2>
+                    <!-- The Modal / Lightbox -->
+                    <div id = "myModal" class = "modal">
+                        <span class = "close cursor" onclick = "closeModal()">&times;</span>
+                        <div class = "modal-content">
 
-                        <div class = "media_container"> <!-- Container for holding general media -->
+                            <!-- Screenshot #1 -->
+                            <div class = "mySlides">
+                                <div class = "numbertext">1 / 4</div>
+                                <img src = "images/triangle_strategy_screenshot_1.png" style = "width:100%">
+                            </div> <!-- End of Screenshot #1 -->
 
-                            <div class = "screenshots-container"> <!-- Container for holding each individual screenshot -->
-                                <div class = "screenshots"> 
-                                <!-- Screenshot 1 -->
-                                    <img src="./images/triangle_strategy_screenshot_1.png" alt="Triangle Strategy Screenshot #1">
-                                    <div class = "screenshot_overlay">
-                                        <h3>Title Screen</h3>
-                                    </div>
-                                </div>
-                            </div> <!-- END OF SCREENSHOT 1 -->
+                            <!-- Screenshot #2 -->
+                            <div class = "mySlides">
+                                <div class = "numbertext">2 / 4</div>
+                                <img src = "images/triangle_strategy_screenshot_2.png" style = "width:100%">
+                            </div> <!-- End of Screenshot #2 -->
+                            
+                            <!-- Screenshot #3 -->
+                            <div class = "mySlides">
+                                <div class = "numbertext">3 / 4</div>
+                                <img src = "images/triangle_strategy_screenshot_3.png" style = "width:100%">
+                            </div> <!-- End of Screenshot #3 -->
 
-                            <div class = "screenshots-container">
-                                <div class = "screenshots"> 
-                                    <!-- Screenshot 2 -->
-                                    <img src="./images/triangle_strategy_screenshot_2.png" alt="Triangle Strategy Screenshot #2">
-                                    <div class = "screenshot_overlay">
-                                        <h3>The party discuss an important matter</h3>
-                                    </div>
-                                </div>
-                            </div> <!-- END OF SCREENSHOT 2 -->
+                            <!-- Screenshot #4 -->
+                            <div class = "mySlides">
+                                <div class = "numbertext">4 / 4</div>
+                                <img src = "images/triangle_strategy_screenshot_4.png" style = "width:100%">
+                            </div> <!-- End of Screenshot #4 -->
 
-                            <div class = "screenshots-container">
-                                <div class = "screenshots"> 
-                                    <!-- Screenshot 3 -->
-                                    <img src="./images/triangle_strategy_screenshot_3.png" alt="Triangle Strategy Screenshot #3">
-                                    <div class = "screenshot_overlay">
-                                        <h3>Serenoa explores Wolfort Castle</h3>
-                                    </div>
-                                </div>
-                            </div> <!-- END OF SCREENSHOT 3 -->
+                            <!-- Next / previous controls -->
+                            <a class = "prev" onclick = "plusSlides(-1)">&#10094;</a>
+                            <a class = "next" onclick = "plusSlides(1)">&#10095;</a>
 
-                            <div class = "screenshots-container">
-                                <div class = "screenshots">
-                                    <!-- Screenshot 4 -->
-                                    <img src="./images/triangle_strategy_screenshot_4.png" alt="Triangle Strategy Screenshot #4">
-                                    <div class = "screenshot_overlay">
-                                        <h3>The World Map where you initate story battles</h3>
-                                    </div>
-                                </div>
-                            </div> <!-- END OF SCREENSHOT 4 -->
+                            <!-- Caption text -->
+                            <div class = "caption-container">
+                                <p id = "caption"></p>
+                            </div> <!-- End of DIV for 'caption-container' -->
 
-                            <div class = "screenshots-container">
-                                <div class = "screenshots">
-                                    <!-- Screenshot 5 -->
-                                    <img src="./images/triangle_strategy_screenshot_5.png" alt="Triangle Strategy Screenshot #5">
-                                    <div class = "screenshot_overlay">
-                                        <h3>The encampment where you customise your party</h3>
-                                    </div>
-                                </div>
-                            </div> <!-- END OF SCREENSHOT 5 -->
+                            <!-- Thumbnail image controls -->
 
-                            <div class = "screenshots-container">
-                                <div class = "screenshots">
-                                    <!-- Screenshot 6 -->
-                                    <img src="./images/triangle_strategy_screenshot_6.png" alt="Triangle Strategy Screenshot #6">
-                                    <div class = "screenshot_overlay">
-                                        <h3>The Party Roster</h3>
-                                    </div>
-                                </div>
-                            </div> <!-- END OF SCREENSHOT 6 -->
+                            <!-- Image controls for Screenshot #1 -->
+                            <div class = "column">
+                                <img class = "demo" src = "images/triangle_strategy_screenshot_1.png" onclick = "currentSlide(1)" alt = "Screenshot 1">
+                            </div> <!-- End of DIV for image controls for Screenshot #1 -->
 
-                            <div class = "screenshots-container">
-                                <div class = "screenshots">
-                                    <!-- Screenshot 7 -->
-                                    <img src="./images/triangle_strategy_screenshot_7.png" alt="Triangle Strategy Screenshot #7">
-                                    <div class = "screenshot_overlay">
-                                        <h3>Battle movement</h3>
-                                    </div>
-                                </div>
-                            </div> <!-- END OF SCREENSHOT 7 -->
+                            <!-- Image controls for Screenshot #2 -->
+                            <div class = "column">
+                                <img class = "demo" src = "images/triangle_strategy_screenshot_2.png" onclick = "currentSlide(2)" alt = "Screenshot 2">
+                            </div> <!-- End of DIV for image controls for Screenshot #2 -->
 
-                            <div class = "screenshots-container">
-                                <div class = "screenshots">
-                                    <!-- Screenshot 8 -->
-                                    <img src="./images/triangle_strategy_screenshot_8.png" alt="Triangle Strategy Screenshot #8">
-                                    <div class = "screenshot_overlay">
-                                        <h3>Serenoa attacking</h3>
-                                    </div>
-                                </div>
-                            </div> <!-- END OF SCREENSHOT 8 -->
+                            <!-- Image controls for Screenshot #3 -->
+                            <div class = "column">
+                                <img class = "demo" src = "images/triangle_strategy_screenshot_3.png" onclick = "currentSlide(3)" alt = "Screenshot 3">
+                            </div> <!-- End of DIV for image controls for Screenshot #3 -->
 
-                            <div class = "screenshots-container">
-                                <div class = "screenshots">
-                                    <!-- Screenshot 9 -->
-                                    <img src="./images/triangle_strategy_screenshot_9.png" alt="Triangle Strategy Screenshot #9">
-                                    <div class = "screenshot_overlay">
-                                        <h3>Julio can share TP with allies</h3>
-                                    </div>
-                                </div>
-                            </div> <!-- END OF SCREENSHOT 9 -->
+                            <!-- Image controls for Screenshot #4 -->
+                            <div class = "column">
+                                <img class = "demo" src = "images/triangle_strategy_screenshot_4.png" onclick = "currentSlide(4)" alt = "Screenshot 4">
+                            </div> <!-- End of DIV for image controls for Screenshot #4 -->
+            
+                        </div> <!-- End of DIV for 'modal-content'-->
 
-                            <div class = "screenshots-container">
-                                <div class = "screenshots">
-                                    <!-- Screenshot 10 -->
-                                    <img src="./images/triangle_strategy_screenshot_10.png" alt="Triangle Strategy Screenshot #10">
-                                    <div class = "screenshot_overlay">
-                                        <h3>Hughette is archer with high-mobility</h3>
-                                    </div>
-                                </div>
-                            </div> <!-- END OF SCREENSHOT 10 -->
+                    </div> <!-- End of DIV for the Modal -->
 
-                            <div class = "screenshots-container">
-                                <div class = "screenshots">
-                                    <!-- Screenshot 11 -->
-                                    <img src="./images/triangle_strategy_screenshot_11.png" alt="Triangle Strategy Screenshot #11">
-                                    <div class = "screenshot_overlay">
-                                        <h3>Character Status Screen</h3>
-                                    </div>
-                                </div>
-                            </div> <!-- END OF SCREENSHOT 11 -->
-
-                            <div class = "screenshots-container">
-                                <div class = "screenshots">
-                                    <!-- Screenshot 12 -->
-                                    <img src="./images/triangle_strategy_screenshot_12.png" alt="Triangle Strategy Screenshot #12">
-                                    <div class = "screenshot_overlay">
-                                        <h3>Path Traveled shows the story branches you have chosen</h3>
-                                    </div>
-                                </div>
-                            </div> <!-- END OF SCREENSHOT 12 -->
-
-                        </div>
-                    </div>  <!-- END OF SCREENSHOTS SECTION -->
+                    <!-- End of Challenge #22 -->
 
                         <div id = "videos"> <!-- Videos section -->
                             <h2>Videos</h2>
