@@ -76,17 +76,16 @@ h2, h3 { /* Style h2, h3 elements */
 .media_container { /* Styles the container that screenshots and videos appear in */
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
-    border-radius: 25px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    border-radius: 20px;
     border: 1px solid #424549;
     background-color: rgb(164, 14, 14);
+    box-shadow: 2px 2px black;
 }
 
 /* JavaScript Course - Challenge #22: Add a Lightbox */
-
-.row > .column { /* Rows and Columns have no padding at the top but some on the right-hand side */
-    padding: 0 8px;
-}
 
 .row:after {
     content: "";
@@ -94,44 +93,46 @@ h2, h3 { /* Style h2, h3 elements */
     clear: both;
 }
 
-/* Create four equal columns that floats next to each other */
+/* Styling for the individual screenshot thumbnails on the main web site */
 .column {
-    float: left;
-
-    position: relative;
+    float: left; /* Start positioning the image from the left */
+    width: 276px; /* Sets the width and height of each screenshot */
+    height: 155px;
+    position: relative; /* Then position each image releative to the last one */
     line-height: 0;
-    margin-bottom: 2cm;
+    margin-right: 0.1cm; /* Small gap to right of each image */
+    margin-bottom: 0.1cm; /* Small gap beneath each image */
     overflow: hidden;
-    border-radius: 8px;
-    padding: 1px;
-    border: 1px solid #021a40;
+    border: 1px solid black; /* Give each image a small border */
+    box-shadow: 2px 2px black;
 }
 
-/* The modal (background) */
+/* The modal background that appears behind the image */
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
+    display: none; /* By default the modal is hidden */
+    position: fixed; /* It's postion is fixed in the middle of the browser */
+    z-index: 1;  /* Puts the modal above the main web page*/
+    padding-top: 25px; /* Gap between the top of the page and the start of the image */
+    left: 0; /* The modal starts in the top-left corner of the display */
     top: 0;
-    width: 100%;
+    width: 100%; /* The modal fills the full screen */
     height: 100%;
     overflow: auto;
-    background-color: black;
+    background-color: rgb(164, 14, 14, 0.75);
 }
 
-/* Modal Content */
+/* Modal Content - the image that appears when we click on one */
 .modal-content {
     position: relative;
     background-color: #fefefe;
     margin: auto;
     padding: 0;
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
+    box-shadow: 5px 5px black;
 }
 
-/* The Close Button */
+/* Styling for the button that closes the modal */
 .close {
     color: white;
     position: absolute;
@@ -141,6 +142,7 @@ h2, h3 { /* Style h2, h3 elements */
     font-weight: bold;
 }
 
+/* Change the styling when we hover over the close button in the top-right of the modal */
 .close:hover,
 .close:focus {
     color: #999;
@@ -153,7 +155,7 @@ h2, h3 { /* Style h2, h3 elements */
     display: none;
 }
 
-/* Next & previous buttons */
+/* Styling for next & previous buttons */
 .prev,
 .next {
     cursor: pointer;
@@ -183,31 +185,36 @@ h2, h3 { /* Style h2, h3 elements */
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Number text (1 / 3 etc) */
+/* Styling for the number text (1 / 12 etc) that appears in the top-left of the modal */
 .numbertext {
     color: #f2f2f2;
-    font-size: 12px;
+    font-size: 20px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
 }
 
-img {
+img { 
     margin-bottom: -4px;
 }
 
-/* Caption text */
+/* Styling caption text that appears beneath each modal image */
 .caption-container {
     text-align: center;
-    background-color: black;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    background-color: rgb(56, 56, 56);
     padding: 2px 16px;
+    margin-bottom: 10px;
     color: white;
 }
 
 .demo {
+    /* Make the thumbnail images at the bottom of the modal slightly transparent */
     opacity: 0.6;
 }
 
+/* Make any thumbnail image within the modal be fully visiable when they are either the active image or being hovered over by the user */
 .active,
 .demo:hover {
     opacity: 1;
@@ -217,6 +224,7 @@ img.hover-shadow {
     transition: 0.3s;
 }
 
+/* Give each thumbnail image on the main site a shadow effect when we hover over it */
 .hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -230,6 +238,8 @@ img.hover-shadow {
 .contact_form { /* Styles the background and border around the contact form */
     background-color: rgb(164, 14, 14);
     border: 2px;
+    box-shadow: 2px 2px black;
+    border-radius: 20px;
 }
 
 .contact_form_input { /* Styles the text labels for the contact form inputs */

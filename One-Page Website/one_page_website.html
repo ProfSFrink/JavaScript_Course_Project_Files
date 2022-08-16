@@ -6,6 +6,7 @@
  <html lang = "en">
      <head> <!-- WEBSITE HEADER -->
          <meta charset = "UTF-8"> <!-- Use the UTF-8 Character set for the website -->
+         <meta content = "width = device-width, inital-scale = 1.0" name = "viewport">
          <title>Steven's Gaming Blog</title>
          <link rel = "stylesheet" type = "text/css" href = "./CSS/one_page_website.css">
          <script src = "./JS/one_page_website.js" defer></script>
@@ -56,90 +57,232 @@
                     </article> <!-- Trianlge Strategy Article -->
 
                     <!-- JavaScript Course: Challenge #22 - Add a Lightbox -->
+
+                    <div id = "screenshots"> <!-- Start of screenshot section -->
+                        <h2>Screenshots</h2>
+                        <div class = "media_container"> <!-- The container for our images and videos -->
                 
-                    <!-- Images used to open the lightbox -->
-                    <div class = "row">
-                        <!-- Screenshot #1 -->
-                        <div class = "column">
-                            <img src = "images/triangle_strategy_screenshot_1.png" onclick = "openModal();currentSlide(1)" class = "hover-shadow">
-                        </div> <!-- End of DIV for Screenshot #1 -->
-                        <!-- Screenshot #2 -->
-                        <div class = "column">
-                            <img src = "images/triangle_strategy_screenshot_2.png" onclick = "openModal();currentSlide(2)" class = "hover-shadow">
-                        </div> <!-- End of DIV for Screenshot #2 -->
-                        <!-- Screenshot #3 -->
-                        <div class = "column">
-                            <img src = "images/triangle_strategy_screenshot_3.png" onclick = "openModal();currentSlide(3)" class = "hover-shadow">
-                        </div> <!-- End of DIV for Screenshot #3 -->
-                        <!-- Screenshot #4 -->
-                        <div class = "column">
-                            <img src = "images/triangle_strategy_screenshot_4.png" onclick = "openModal();currentSlide(4)" class = "hover-shadow">
-                        </div> <!-- End of DIV for Screenshot #4 -->
-                    </div> <!-- End of DIV for class 'row' -->
+                            <!-- Images used to open the lightbox -->
+                            <div class = "row">
+                                <!-- Clicking on any image will execute JS function 'openModal' which will display the modal in the browser window, then execute JS function 'currentSlide' and pass in the number of the image clicked on display it on screen -->
+                                
+                                <!-- Screenshot #1 -->
+                                <div class = "column">
+                                    <img src = "./Thumbnail/triangle_strategy_screenshot_1_thumbnail.jpg" onclick = "openModal();currentSlide(1)" class = "hover-shadow">
+                                </div> <!-- End of DIV for Screenshot #1 -->
 
-                    <!-- The Modal / Lightbox -->
-                    <div id = "myModal" class = "modal">
-                        <span class = "close cursor" onclick = "closeModal()">&times;</span>
-                        <div class = "modal-content">
+                                <!-- Screenshot #2 -->
+                                <div class = "column">
+                                    <img src = "./Thumbnail/triangle_strategy_screenshot_2_thumbnail.jpg" onclick = "openModal();currentSlide(2)" class = "hover-shadow">
+                                </div> <!-- End of DIV for Screenshot #2 -->
 
-                            <!-- Screenshot #1 -->
-                            <div class = "mySlides">
-                                <div class = "numbertext">1 / 4</div>
-                                <img src = "images/triangle_strategy_screenshot_1.png" style = "width:100%">
-                            </div> <!-- End of Screenshot #1 -->
+                                <!-- Screenshot #3 -->
+                                <div class = "column">
+                                    <img src = "./Thumbnail/triangle_strategy_screenshot_3_thumbnail.jpg" onclick = "openModal();currentSlide(3)" class = "hover-shadow">
+                                </div> <!-- End of DIV for Screenshot #3 -->
 
-                            <!-- Screenshot #2 -->
-                            <div class = "mySlides">
-                                <div class = "numbertext">2 / 4</div>
-                                <img src = "images/triangle_strategy_screenshot_2.png" style = "width:100%">
-                            </div> <!-- End of Screenshot #2 -->
+                                <!-- Screenshot #4 -->
+                                <div class = "column">
+                                    <img src = "./Thumbnail/triangle_strategy_screenshot_4_thumbnail.jpg" onclick = "openModal();currentSlide(4)" class = "hover-shadow">
+                                </div> <!-- End of DIV for Screenshot #4 -->
+
+                                <!-- Screenshot #5 -->
+                                <div class = "column">
+                                    <img src = "./Thumbnail/triangle_strategy_screenshot_5_thumbnail.jpg" onclick = "openModal();currentSlide(5)" class = "hover-shadow">
+                                </div> <!-- End of DIV for Screenshot #5 -->
+
+                                <!-- Screenshot #6 -->
+                                <div class = "column">
+                                    <img src = "./Thumbnail/triangle_strategy_screenshot_6_thumbnail.jpg" onclick = "openModal();currentSlide(6)" class = "hover-shadow">
+                                </div> <!-- End of DIV for Screenshot #6 -->
+
+                                <!-- Screenshot #7 -->
+                                <div class = "column">
+                                    <img src = "./Thumbnail/triangle_strategy_screenshot_7_thumbnail.jpg" onclick = "openModal();currentSlide(7)" class = "hover-shadow">
+                                </div> <!-- End of DIV for Screenshot #7 -->
+
+                                <!-- Screenshot #8 -->
+                                <div class = "column">
+                                    <img src = "./Thumbnail/triangle_strategy_screenshot_8_thumbnail.jpg" onclick = "openModal();currentSlide(8)" class = "hover-shadow">
+                                </div> <!-- End of DIV for Screenshot #8 -->
+
+                                <!-- Screenshot #9 -->
+                                <div class = "column">
+                                    <img src = "./Thumbnail/triangle_strategy_screenshot_9_thumbnail.jpg" onclick = "openModal();currentSlide(9)" class = "hover-shadow">
+                                </div> <!-- End of DIV for Screenshot #9 -->
+
+                                <!-- Screenshot #10 -->
+                                <div class = "column">
+                                    <img src = "./Thumbnail/triangle_strategy_screenshot_10_thumbnail.jpg" onclick = "openModal();currentSlide(10)" class = "hover-shadow">
+                                </div> <!-- End of DIV for Screenshot #10 -->
+
+                                <!-- Screenshot #11 -->
+                                <div class = "column">
+                                    <img src = "./Thumbnail/triangle_strategy_screenshot_11_thumbnail.jpg" onclick = "openModal();currentSlide(11)" class = "hover-shadow">
+                                </div> <!-- End of DIV for Screenshot #11 -->
+
+                                <!-- Screenshot #12 -->
+                                <div class = "column">
+                                    <img src = "./Thumbnail/triangle_strategy_screenshot_12_thumbnail.jpg" onclick = "openModal();currentSlide(12)" class = "hover-shadow">
+                                </div> <!-- End of DIV for Screenshot #12 -->
+
+                            </div> <!-- End of DIV for class 'row' -->
+
+                            <!-- The Modal / Lightbox -->
+                            <div id = "myModal" class = "modal">
+                                <span class = "close cursor" onclick = "closeModal()">&times;</span>
+                                <div class = "modal-content">
+
+                                    <!-- Screenshot #1 -->
+                                    <div class = "mySlides">
+                                        <div class = "numbertext">1 / 12</div>
+                                        <img src = "images/triangle_strategy_screenshot_1.png" style = "width:100%">
+                                    </div> <!-- End of Screenshot #1 -->
+
+                                    <!-- Screenshot #2 -->
+                                    <div class = "mySlides">
+                                        <div class = "numbertext">2 / 12</div>
+                                        <img src = "images/triangle_strategy_screenshot_2.png" style = "width:100%">
+                                    </div> <!-- End of Screenshot #2 -->
+                                    
+                                    <!-- Screenshot #3 -->
+                                    <div class = "mySlides">
+                                        <div class = "numbertext">3 /12</div>
+                                        <img src = "images/triangle_strategy_screenshot_3.png" style = "width:100%">
+                                    </div> <!-- End of Screenshot #3 -->
+
+                                    <!-- Screenshot #4 -->
+                                    <div class = "mySlides">
+                                        <div class = "numbertext">4 / 12</div>
+                                        <img src = "images/triangle_strategy_screenshot_4.png" style = "width:100%">
+                                    </div> <!-- End of Screenshot #4 -->
+
+                                                                        <!-- Screenshot #4 -->
+                                    <div class = "mySlides">
+                                        <div class = "numbertext">5 / 12</div>
+                                        <img src = "images/triangle_strategy_screenshot_5.png" style = "width:100%">
+                                    </div> <!-- End of Screenshot #5 -->
                             
-                            <!-- Screenshot #3 -->
-                            <div class = "mySlides">
-                                <div class = "numbertext">3 / 4</div>
-                                <img src = "images/triangle_strategy_screenshot_3.png" style = "width:100%">
-                            </div> <!-- End of Screenshot #3 -->
+                                    <!-- Screenshot #6 -->
+                                    <div class = "mySlides">
+                                        <div class = "numbertext">6 / 12</div>
+                                        <img src = "images/triangle_strategy_screenshot_6.png" style = "width:100%">
+                                    </div> <!-- End of Screenshot #6 -->
 
-                            <!-- Screenshot #4 -->
-                            <div class = "mySlides">
-                                <div class = "numbertext">4 / 4</div>
-                                <img src = "images/triangle_strategy_screenshot_4.png" style = "width:100%">
-                            </div> <!-- End of Screenshot #4 -->
+                                    <!-- Screenshot #7 -->
+                                    <div class = "mySlides">
+                                        <div class = "numbertext">7 / 12</div>
+                                        <img src = "images/triangle_strategy_screenshot_7.png" style = "width:100%">
+                                    </div> <!-- End of Screenshot #7 -->
 
-                            <!-- Next / previous controls -->
-                            <a class = "prev" onclick = "plusSlides(-1)">&#10094;</a>
-                            <a class = "next" onclick = "plusSlides(1)">&#10095;</a>
+                                    <!-- Screenshot #8 -->
+                                    <div class = "mySlides">
+                                        <div class = "numbertext">8 / 12</div>
+                                        <img src = "images/triangle_strategy_screenshot_8.png" style = "width:100%">
+                                    </div> <!-- End of Screenshot #8 -->
 
-                            <!-- Caption text -->
-                            <div class = "caption-container">
-                                <p id = "caption"></p>
-                            </div> <!-- End of DIV for 'caption-container' -->
+                                    <!-- Screenshot #9 -->
+                                    <div class = "mySlides">
+                                        <div class = "numbertext">9 / 12</div>
+                                        <img src = "images/triangle_strategy_screenshot_9.png" style = "width:100%">
+                                    </div> <!-- End of Screenshot #9 -->
 
-                            <!-- Thumbnail image controls -->
+                                    <!-- Screenshot #10 -->
+                                    <div class = "mySlides">
+                                        <div class = "numbertext">10 / 12</div>
+                                        <img src = "images/triangle_strategy_screenshot_10.png" style = "width:100%">
+                                    </div> <!-- End of Screenshot #10 -->
 
-                            <!-- Image controls for Screenshot #1 -->
-                            <div class = "column">
-                                <img class = "demo" src = "images/triangle_strategy_screenshot_1.png" onclick = "currentSlide(1)" alt = "Screenshot 1">
-                            </div> <!-- End of DIV for image controls for Screenshot #1 -->
+                                    <!-- Screenshot #11 -->
+                                    <div class = "mySlides">
+                                        <div class = "numbertext">11 / 12</div>
+                                        <img src = "images/triangle_strategy_screenshot_11.png" style = "width:100%">
+                                    </div> <!-- End of Screenshot #11 -->
 
-                            <!-- Image controls for Screenshot #2 -->
-                            <div class = "column">
-                                <img class = "demo" src = "images/triangle_strategy_screenshot_2.png" onclick = "currentSlide(2)" alt = "Screenshot 2">
-                            </div> <!-- End of DIV for image controls for Screenshot #2 -->
+                                    <!-- Screenshot #12 -->
+                                    <div class = "mySlides">
+                                        <div class = "numbertext">12 / 12</div>
+                                        <img src = "images/triangle_strategy_screenshot_12.png" style = "width:100%">
+                                    </div> <!-- End of Screenshot #12 -->
 
-                            <!-- Image controls for Screenshot #3 -->
-                            <div class = "column">
-                                <img class = "demo" src = "images/triangle_strategy_screenshot_3.png" onclick = "currentSlide(3)" alt = "Screenshot 3">
-                            </div> <!-- End of DIV for image controls for Screenshot #3 -->
+                                    <!-- Next / previous controls -->
+                                    <a class = "prev" onclick = "plusSlides(-1)">&#10094;</a>
+                                    <a class = "next" onclick = "plusSlides(1)">&#10095;</a>
 
-                            <!-- Image controls for Screenshot #4 -->
-                            <div class = "column">
-                                <img class = "demo" src = "images/triangle_strategy_screenshot_4.png" onclick = "currentSlide(4)" alt = "Screenshot 4">
-                            </div> <!-- End of DIV for image controls for Screenshot #4 -->
-            
-                        </div> <!-- End of DIV for 'modal-content'-->
+                                    <!-- Caption text -->
+                                    <div class = "caption-container">
+                                        <p id = "caption"></p>
+                                    </div> <!-- End of DIV for 'caption-container' -->
 
-                    </div> <!-- End of DIV for the Modal -->
+                                    <!-- Thumbnail image controls -->
+
+                                    <!-- Image controls for Screenshot #1 -->
+                                    <div class = "column">
+                                        <img class = "demo" src = "./Thumbnail/triangle_strategy_screenshot_1_thumbnail.jpg" onclick = "currentSlide(1)" alt = "Screenshot 1">
+                                    </div> <!-- End of DIV for image controls for Screenshot #1 -->
+
+                                    <!-- Image controls for Screenshot #2 -->
+                                    <div class = "column">
+                                        <img class = "demo" src = "./Thumbnail/triangle_strategy_screenshot_2_thumbnail.jpg" onclick = "currentSlide(2)" alt = "Screenshot 2">
+                                    </div> <!-- End of DIV for image controls for Screenshot #2 -->
+
+                                    <!-- Image controls for Screenshot #3 -->
+                                    <div class = "column">
+                                        <img class = "demo" src = "./Thumbnail/triangle_strategy_screenshot_3_thumbnail.jpg" onclick = "currentSlide(3)" alt = "Screenshot 3">
+                                    </div> <!-- End of DIV for image controls for Screenshot #3 -->
+
+                                    <!-- Image controls for Screenshot #4 -->
+                                    <div class = "column">
+                                        <img class = "demo" src = "./Thumbnail/triangle_strategy_screenshot_4_thumbnail.jpg" onclick = "currentSlide(4)" alt = "Screenshot 4">
+                                    </div> <!-- End of DIV for image controls for Screenshot #4 -->
+
+                                    <!-- Image controls for Screenshot #5 -->
+                                    <div class = "column">
+                                        <img class = "demo" src = "./Thumbnail/triangle_strategy_screenshot_5_thumbnail.jpg" onclick = "currentSlide(5)" alt = "Screenshot 5">
+                                    </div> <!-- End of DIV for image controls for Screenshot #4 -->
+
+                                    <!-- Image controls for Screenshot #6 -->
+                                    <div class = "column">
+                                        <img class = "demo" src = "./Thumbnail/triangle_strategy_screenshot_6_thumbnail.jpg" onclick = "currentSlide(6)" alt = "Screenshot 6">
+                                    </div> <!-- End of DIV for image controls for Screenshot #6 -->
+
+                                    <!-- Image controls for Screenshot #7 -->
+                                    <div class = "column">
+                                        <img class = "demo" src = "./Thumbnail/triangle_strategy_screenshot_7_thumbnail.jpg" onclick = "currentSlide(7)" alt = "Screenshot 7">
+                                    </div> <!-- End of DIV for image controls for Screenshot #7 -->
+
+                                    <!-- Image controls for Screenshot #8 -->
+                                    <div class = "column">
+                                        <img class = "demo" src = "./Thumbnail/triangle_strategy_screenshot_8_thumbnail.jpg" onclick = "currentSlide(8)" alt = "Screenshot 8">
+                                    </div> <!-- End of DIV for image controls for Screenshot #8 -->
+
+                                    <!-- Image controls for Screenshot #9 -->
+                                    <div class = "column">
+                                        <img class = "demo" src = "./Thumbnail/triangle_strategy_screenshot_9_thumbnail.jpg" onclick = "currentSlide(9)" alt = "Screenshot 9">
+                                    </div> <!-- End of DIV for image controls for Screenshot #9 -->
+
+                                    <!-- Image controls for Screenshot #10 -->
+                                    <div class = "column">
+                                        <img class = "demo" src = "./Thumbnail/triangle_strategy_screenshot_10_thumbnail.jpg" onclick = "currentSlide(10)" alt = "Screenshot 10">
+                                    </div> <!-- End of DIV for image controls for Screenshot #10 -->
+
+                                    <!-- Image controls for Screenshot #11 -->
+                                    <div class = "column">
+                                        <img class = "demo" src = "./Thumbnail/triangle_strategy_screenshot_11_thumbnail.jpg" onclick = "currentSlide(11)" alt = "Screenshot 11">
+                                    </div> <!-- End of DIV for image controls for Screenshot #11 -->
+
+                                    <!-- Image controls for Screenshot #12 -->
+                                    <div class = "column">
+                                        <img class = "demo" src = "./Thumbnail/triangle_strategy_screenshot_10_thumbnail.jpg" onclick = "currentSlide(12)" alt = "Screenshot 12">
+                                    </div> <!-- End of DIV for image controls for Screenshot #12 -->
+                    
+                                </div> <!-- End of DIV for 'modal-content'-->
+
+                            </div> <!-- End of DIV for the Modal -->
+
+                        </div> <!-- End of CLass 'media_container' -->
+
+                    </div> <!-- End of Screenshot Section -->
 
                     <!-- End of Challenge #22 -->
 
