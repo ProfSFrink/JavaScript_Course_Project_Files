@@ -28,6 +28,11 @@ The second project was again a code-along assignment where we utilise HTML, CSS 
 ---
 The third project is a Pizza Menu project which again uses HTML, CSS and JavaScript to create a web site which allows the user to order a pizza by selected a size, then a choice of both vegetable and meat toppings, then through use of JavaScript we calculate the cost of the pizza and all the toppings and output the result. We also give the user the first topping for free and account for this is in our code. This site uses most of the techniques learned on the course thus far.
 
+## __Main Project #4: One-page Website JavaScript Update__
+
+---
+We return to the One-page Web site from the HTML and CSS courses, this time we add a lightshow (modal) to replace the existing screenshot section of the site, which whenever you click on one of the screenshots it will display that image full screen, you also have buttons to cycle through the images as well as thumbnail images beneath the main image which will display the relevant image when clicked on. This was done using HTML, CSS and JavaScript, the Javascript tracks the current active screenshot and through use of HTML elements decided which is currently visable to the user. This lightshow is based off the demo one found on w3schools.com but I customised it to work with the code of my site.
+
 
 ## __Basic JavaScript Projects__
 
