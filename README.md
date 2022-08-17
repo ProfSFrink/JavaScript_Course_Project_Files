@@ -93,3 +93,8 @@ Two examples which show how the Async and Defer attributes work within JavaScrip
 
 ---
 This project cover loops with examples of both while and for loops shown alongwith use of the length property to use a loop to iterate through an array, which the use of is also demonstarted here including using the Math.random() method to randomly select and output a value from within an array. Then use of both the const and let keywords are shown also with an explaination of both function and block scope, this also shows using the let keyword to create an object with both properties and methods. Then finally examples of use of the return statement in functions and utilizing the break and continue statement to control loops.
+
+### __Challenge: AJAX Challenge__
+
+---
+A quick follow-on tutorial on how to use AJAX through installing XAMPP. This is a simple website which demonstrates setting up an XMLHttpRequest and then successfully executing it. Shows use of the XMLHttpRequest object in JavaScript and use of the onreadystatechange and readyState properties to pull some text from a web server.
