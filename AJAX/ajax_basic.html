@@ -1,0 +1,58 @@
+ <!-- Advanced Software and Web Developer Diploma - Part VI - JavaScript Course -->
+ <!-- Basic AJAX Tutorial Demo and Challenge #23 - onreadystatechange property -->
+ <!-- by Steven Partlow -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head> <!-- HEAD Section -->
+        <meta charset="utf-8">
+        <title>Basic AJAX Demo / Challenge #23 - onreadystatechange property</title>
+		<link rel="stylesheet" href="style.css">
+    </head> <!-- End of HEAD Section -->
+
+    <body> <!-- BODY Section-->
+
+        <div class="main">
+			<h2>Get The Latest Content:</h2>
+            <!-- Display a button which will execute JS function 'getContent' and then the button is hidden from the user so we can display the response -->
+			<div class='content' id="content">
+				<input type="button" class="button" value="Get Content" id="btn_content" onclick="getContent();"/>
+			</div> <!-- End of DIV ID 'content' -->
+        </div> <!-- End of DIV CLASS 'main' -->
+
+		<script type="text/javascript"> // Start of SCRIPT Section
+
+            // STEP 1: Setup the XML HTTP request object
+            var ajax = new XMLHttpRequest(); // This creates a new XMLHttpRequest object named 'ajax'
+
+            // STEP 2: Prepare the open AJAX request
+            ajax.open('GET', 'content.html'); // We prepare the AJAX request in this case we are requesting file 'content.html'
+
+            // Challenge #23 - onreadystatechange property
+
+            // STEP 3: Define the AJAX response callback method
+            ajax.onreadystatechange = function() { // The 'onreadystatechange' is a function we define if the property 'readyState' changes, when that happens the function we define is executed
+            // The request can have five states:
+            // 0 - Request not initialized
+            // 1 - Server connection established
+            // 2 - Request received
+            // 3 - Processing request
+            // 4 - Request finished and the response is ready
+
+                // The readyState property tells us the status of the request for our demo we are only looking for the state to change to 4
+                if (ajax.readyState == 4) { // This IF statement chceck that the status of our request has changed to 4 and if it has
+                    document.getElementById('content').innerHTML = ajax.responseText; // Takes the text that ajax received as it's response which is now part of the .responseText property, then we assign the value of that property to the ID 'content'
+                } // End IF
+            } // End function 'onreadystatechange' we have defined
+
+            // STEP 4: Send the AJAX request for data
+			function getContent() { // Define function 'getContent'
+                ajax.send(); // Use the send() method to send the request we defined in step 2
+                document.getElementById('btn_content').style.display = 'none'; // We then hide the button after the request is sent so we can display the response in it's place
+            } // End FUNCTIOn 'getContent'
+
+		</script> <!-- End of SCRIPT Section -->
+    </body> <!-- End of BODY Section -->
+</html> <!-- End of DOCUMENT-->
