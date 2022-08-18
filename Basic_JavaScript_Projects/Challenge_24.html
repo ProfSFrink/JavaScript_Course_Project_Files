@@ -1,0 +1,48 @@
+<!-- Advanced Software and Web Developer Diploma -->
+<!-- Course #6 - JavaScript - Challenge #24 - Utilize a new element / property -->
+<!-- by Steven Partlow -->
+
+<!DOCTYPE html>
+<html lang = "en">
+
+    <head> <!-- HEAD Section -->
+        <meta charset = "UTF-8">
+        <meta content = "width = device-width, inital-scale = 1.0" name = "viewport">
+        <title>Challenge #24 - Utilize a New Element / Property</title>
+        <link rel = "stylesheet" type = "text/css" href = "">
+        <script src = ""></script>
+    </head> <!-- END OF HEAD SECTION -->
+
+    <body> <!-- BODY SECTION -->
+
+        <!-- Challenge #24 - Utilize a new element / property -->
+
+        <!-- For this challenge we will make use of the links properties to find out the number of <a> and <area> elements that have a href attribute. -->
+        <h1>JavaScript Course</h1>
+        <h2>Challenge #24 - Utilizing the Links property</h2>
+        <p>For this challenge I will demonstrate use of the .links properties which can be used to find the number links within a HTML document.</p>
+        <p><a href = "https://www.learncodinganywhere.com/">Link #1</a></p>
+        <p><a href = "https://www.pitman-training.com/">Link #2</a></p>
+        <p><a href = "https://www.w3schools.com/">Link #3</a></p>
+
+        <p>The number of links in the document is:</p>
+        <!-- Here we will display hoe many links this HTML document contains -->
+        <p id = "Number of Links"></p>
+
+        <p>The URL of the first link in the document is:</p>
+        <p id = "URL of Link #1"></p>
+
+        <!-- Start of JavaScript -->
+        <script>
+            // Returns the number of links within the document then outputs the result to ID 'Number of Links'
+            let num_of_links = document.links.length; // This is an array with each element being a link from the HTML document
+            document.getElementById("Number of Links").innerHTML = num_of_links;
+            
+            // Returns the URL of the first link in the HTML document then outputs the result to ID 'URL of Link #1'
+            let URL_of_Link_1 = document.links[0].href; // Access the first element in the array and get the URL from it
+            document.getElementById("URL of Link #1").innerHTML = URL_of_Link_1;
+        </script>
+        <!-- End of JavaScript -->
+    
+    </body> <!-- END OF BODY SECTION -->
+</html> <!-- END OF DOCUMENT -->
