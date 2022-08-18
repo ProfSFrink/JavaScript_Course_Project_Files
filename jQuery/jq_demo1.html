@@ -1,0 +1,45 @@
+<!-- Advanced Software and Web Developer Diploma -->
+<!-- Course #6 - JavaScript - jQuery Tutorial -->
+<!-- by Steven Partlow -->
+
+<!DOCTYPE html>
+<html lang = "en">
+
+    <head> <!-- Start of HEAD Element -->
+        <meta charset = "UTF-8">
+        <meta content = "width = device-width, inital-scale = 1.0" name = "viewport">
+        <title>jQuery Tutorial</title>
+        <link rel = "stylesheet" type = "text/css" href = "">
+        <!-- Link to the current version of jQuery provided by the Google API -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head> <!-- End of HEAD Element-->
+
+    <body> <!-- Start of BODY Element -->
+
+    </body> <!-- End of BODY Element -->
+
+    <!-- jQuery code starts here -->
+    <script>
+        // We target the entire 'document'
+        $(document).ready(function() { // We execute this function when the 'document' is ready (This will execute when the HTML document is successfully loaded)
+            $("html").append( // We will append content to the HTML element
+                "<body>\
+                    <div id = 'container'>\
+                        <div id = 'inner'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id = '1'>Paragraph 1</p>\
+                            <p id = '2'>Paragraph 2</p>\
+                            <p id = '3'>Paragraph 3</p>\
+                        </div>\
+                    </div>\
+                </body>"
+            ); // End of Appended content
+            $("#2").css({"color":"red"}); // Change the color of ID '2' to red
+            $("#3").click(function() { // When the user clicks on the element with ID '3' we hide all <h1> tags
+                $('h1').hide();
+            }); // End of FUNCTION
+        }); // End of FUNCTION
+    </script>
+    <!-- jQuery code ends here -->
+
+</html> <!-- End of Document -->
