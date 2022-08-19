@@ -98,3 +98,8 @@ This project cover loops with examples of both while and for loops shown alongwi
 
 ---
 A quick follow-on tutorial on how to use AJAX through installing XAMPP. This is a simple website which demonstrates setting up an XMLHttpRequest and then successfully executing it. Shows use of the XMLHttpRequest object in JavaScript and use of the onreadystatechange and readyState properties to pull some text from a web server.
+
+### __Challenge: jQuery Challenge__
+
+---
+Another quick follow-on tutorial on how to link to and use the jQuery JavaScript library then a demonstration of and use of jQuery events through use of the .hover() method and jQuery effects with the .hide() method.
