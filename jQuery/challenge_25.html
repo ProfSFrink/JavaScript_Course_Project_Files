@@ -1,0 +1,58 @@
+<!-- Advanced Software and Web Developer Diploma -->
+<!-- Course #6 - JavaScript - Challenge # 25 - jQuery Events & Effects -->
+<!-- by Steven Partlow -->
+
+<!DOCTYPE html>
+<html lang = "en"> <!-- Start of HTML Document -->
+
+    <head> <!-- HEAD Section -->
+        <meta charset = "UTF-8">
+        <meta content = "width = device-width, inital-scale = 1.0" name = "viewport">
+        <title>JavaScript Course - Challenge #25 - jQuery Events & Effects</title>
+        <link rel = "stylesheet" type = "text/css" href = "">
+        <!-- Link to the jQuery Library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head> <!-- End of HEAD Section -->
+
+    <body> <!-- BODY Section -->
+        <h1>JavaScript Course - Challenge #25 - jQuery Events & Effects</h1>
+
+        <!-- Challenge #25-A: jQuery Events -->
+        <h2>Challenge #25-A - jQuery Events</h2>
+        <!-- READ: https://www.w3schools.com/jquery/jquery_events.asp -->
+        <!-- READ: https://www.w3schools.com/jquery/jquery_events.asp -->
+
+        <p id = "P_Hover">To demonstrate a jQuery event we will use the .hover() method which will execute one function when the user moves the mouse cursor over this element and then executes a second function when they move the mouse cursor away from it.</p> <!-- Hovering over this content will change the content of the below P element moving away from will change it again-->
+        <p id = "Hover_Content"></p>
+
+        <!-- Challenge #25-B: jQuery Effects -->
+        <h2>Challenge #25-B: jQuery Effects</h2>
+        <!-- READ: https://learn.jquery.com/effects/intro-to-effects -->
+        <!-- READ: https://www.w3schools.com/jquery/jquery_ref_effects.asp -->
+        <p id = "P_Hide">One of the other things that we can use jQuery for is hiding an element and using animation to make it disappear, in this example when the user clicks the button beneath this paragraph the element will disappear.</p>
+        <button class = "Hide_Button">Hide</button> <!-- Clicking this button will hide the above p element -->
+    </body> <!-- End of BODY Section -->
+
+    <!-- jQuery Syntax begin here-->
+    <script>
+        // Challenge #25-A - jQuery Events
+        $("#P_Hover").hover(function(){ // This function executes when the user hovers element 'P Hover'
+            // Change content of ID 'Hover_Content' when we hover over it
+            document.getElementById("Hover_Content").innerHTML = "<strong>You just hovered over this element!</strong>";
+        }, // End FUNCTION
+        function(){ // This function executes when the user moves the mouse away from element 'P Hover'
+            // Change content of ID 'Hover_Content' when we move away from it
+            document.getElementById("Hover_Content").innerHTML = "<strong>You moved away from this element!</strong>";
+        }); // End FUNCTION
+
+        // Challenge #25-B: jQuery Effects
+        $(document).ready(function() { // This function executes when the document has been fully parsed
+            $(".Hide_Button").click(function() { // This function executes when the button with class 'Hide_Button' is clicked
+                $("#P_Hide").hide(1000); // Hide the element with ID 'P_Hide' using an animation that last 1 second
+            }) // End .hide FUNCTION
+        }); // End .ready FUNCTION
+
+    </script>
+    <!-- jQuery Syntax ends here-->
+
+</html> <!-- End of HTML Document-->
