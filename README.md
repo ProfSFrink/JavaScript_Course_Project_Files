@@ -33,6 +33,11 @@ The third project is a Pizza Menu project which again uses HTML, CSS and JavaScr
 ---
 We return to the One-page Web site from the HTML and CSS courses, this time we add a lightshow (modal) to replace the existing screenshot section of the site, which whenever you click on one of the screenshots it will display that image full screen, you also have buttons to cycle through the images as well as thumbnail images beneath the main image which will display the relevant image when clicked on. This was done using HTML, CSS and JavaScript, the Javascript tracks the current active screenshot and through use of HTML elements decided which is currently visable to the user. This lightshow is based off the demo one found on w3schools.com but I customised it to work with the code of my site.
 
+## __Main Project #5: Bootstrap 4 Tutorial Website JavaScript Update__
+
+---
+We add JavaScript to the Hobby Blog site we did as part of the CSS course by adding a popover to the submit e-mail address button then we add a modal form so the user can sign up to the site and be updated about new releases. Then for challenge 26 the new bootstrap component I choose to add was simple set of list boxes showing some new releases.
+
 
 ## __Basic JavaScript Projects__
 
