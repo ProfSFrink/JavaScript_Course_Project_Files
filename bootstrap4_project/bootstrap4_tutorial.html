@@ -1,0 +1,300 @@
+<!-- Advanced Software and Web Developer Diploma - Part VI - JavaScript Course -->
+<!-- Bootstrap Project Website - JavaScript Update -->
+<!-- by Steven Partlow -->
+
+<!doctype html>
+<html lang="en">
+  <head> <!-- HEAD Section -->
+  <!-- Required Meta Tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    <title>Steven's Hobby Blog</title>
+  </head> <!-- End of HEAD Section -->
+
+  <body> <!-- BODY Section-->
+    <div class = "container"> <!-- CONTAINER FOR THE BODY OF THE SITE -->
+
+      <nav class="navbar navbar-expand-lg bg-danger">
+        
+        <div class="container-fluid">
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link text-light" href="#home">Home</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link text-light" href="#games">Games</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link text-light" href="#books">Books</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link text-light" href="#updates">Updates</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-primary bg-dark text-light" type="submit">Search</button>
+            </form>
+          </div>
+
+        </div>
+      </nav>
+
+      <div id ="home" class="container-fluid text-sm-center bg-danger p-5 bg-info"> <!-- bg-light is background color & p-5 is padding -->
+        <h1 class="display-2">Steven's Hobby Blog</h1>
+        <p class="lead text-light">Games and Books</p>
+      </div>
+
+      <div class="container my-4"> <!-- CONTAINER FOR COLUMNS -->
+        <div class="row">
+          
+          <div class="col-sm"> <!-- FIRST COLUMN -->
+            <img class = "img-fluid" src = "./img/hobby_blog_main.jpg" alt = "">
+          </div> <!-- END OF FIRST COLUMN -->
+        
+          <div class="col-sm"> <!-- SECOND COLUMN -->
+        
+            <h3>My Hobbies</h3>
+            <p>My name is Steven and welcome to my hobby blog which will mostly cover the video games that I am currently playing and the books that I am reading.</p>
+            <p>Gaming is my main hobby and has been since I was 7-years old when we got an Amstrad CPC-464 Computer, this also when my love of tech also developed.</p>
+            <p>Reading is my other main hobby with Warhammer fiction being something that I really enjoy at the moement.</p>
+          </div> <!-- END OF SECOND COLUMN -->
+          
+          <div class="col-sm"> <!-- THIRD COLUMN -->
+            
+            <h3>Currently Enjoying:</h3>
+            
+            <ul class = "list-group">
+              
+              <li class = "list-group-item">
+                <a class = "nav-link-active" href = "a">Triangle Strategy</a>
+              </li>
+              
+              <li class = "list-group-item">
+                <a class = "nav-link-active" href = "a">G-Darius HD</a>
+              </li>
+              
+              <li class = "list-group-item">
+                <a class = "nav-link-active" href = "a">Total War: Warhammer III</a>
+              </li>
+
+              <li class = "list-group-item">
+                <a class = "nav-link-active" href = "a">Cthonia's Reckoning</a>
+              </li>
+              <li class = "list-group-item">
+                <a class = "nav-link-active" href = "a">Dawn of Fire IV: Throne of Light</a>
+              </li>
+              <li class = "list-group-item">
+                <a class = "nav-link-active" href = "a">Retro Gamer: Issue 235</a>
+              </li>
+
+            </ul>
+          </div> <!-- END OF THRID COLUMN -->
+
+        </div>
+      </div> <!-- END OF CONTAINER FOR COLUMNS -->
+
+      <!-- GAMES COLUMNS -->
+
+      <div id = "games" class="container my-5"> <!-- CONTAINER FOR COLUMNS -->
+        
+        <!-- GAME SECTION HEADING -->
+        <div class="container-fluid text-sm-center bg-danger text-light p-5 bg-info"> <!-- bg-light is background color & p-5 is padding -->
+          <h1 class="display-2 text-dark ">GAMES</h1>
+          <p class="lead">Currently playing the following games</p>
+        </div>
+        
+        <div class="row my-4">
+
+          <div class="col-sm"> <!-- FIRST COLUMN -->
+
+            <div class="card bg-secondary" style="width: 18rem;"> <!-- TRIANGLE STRATEGY CARD -->
+              <img src="./img/triangle_strategy_box_art.jpg" class="card-img-top" alt="Triangle Strategy Box Art">
+              <div class="card-body">
+
+                <!-- GAME DESCRIPTION -->
+                <h5 class="card-title">Triangle Strategy</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Turn-based Strategy RPG</h6>
+                <p class="card-text my-">A fantastic turn-based strategy RPG by the makers of Octopath Traveler.
+               
+                  <span class="badge badge-pill bg-info my-2">ARTDINK</span> <!-- PILL BADGE FOR GAME DEVELOPER -->
+                  <span class="badge badge-pill bg-info">SQUARE-ENIX</span> <!-- PILL BADGE FOR GAME PUBLISHER -->
+                  <span class="badge badge-pill bg-info">2022</span><br> <!-- PILL BADGE FOR GAMES YEAR OF RELEASE -->
+
+                  <!-- BUTTONS WITH LINKS TO PURCHASE THE GAME -->
+                  <a href="https://www.nintendo.co.uk/Games/Nintendo-Switch-games/TRIANGLE-STRATEGY--1923371.html#Overview" target = "_blank" class="btn btn-danger my-1">eShop</a>
+                  <a href="https://smile.amazon.co.uk/Project-Triangle-Strategy-Nintendo-Switch/dp/B09HT418NX/ref=sr_1_1?crid=17NF8J80VOTGI&keywords=triangle%2Bstrategy%2Bswitch&qid=1656272836&sprefix=triangle%2Caps%2C74&sr=8-1&th=1" target = "_blank" class="btn btn-dark">Amazon</a><br>
+                </p>
+              </div>
+            </div> <!-- END OF TRIANGLE STRATEGY CARD -->
+
+          </div> <!-- END OF FIRST COLUMN -->
+            
+          <div class="col-sm"> <!-- SECOND COLUMN -->
+
+            <div class="card bg-light" style="width: 18rem;"> <!-- G-DARIUS HD CARD -->
+              <img src="./img/g_darius_hd_box_art.jpg" class="card-img-top" alt="G-Darius HD Box Art">
+              <div class="card-body bg-danger">
+                
+                <!-- GAME DESCRIPTION -->
+                <h5 class="card-title">G Darius HD</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Horizontal Shoot Em Up</h6>
+                <p class="card-text ">A brilliant HD update of the best game in the Darius series. One of the best side-scrolling shooter of all time.<br>
+                  
+                  <span class="badge badge-pill bg-info my-2">TAITO</span> <!-- PILL BADGE FOR GAME DEVELOPER -->
+                  <span class="badge badge-pill bg-info">ININ</span> <!-- PILL BADGE FOR GAME PUBLISHER -->
+                  <span class="badge badge-pill bg-info">2021</span><br> <!-- PILL BADGE FOR GAMES YEAR OF RELEASE -->
+                  
+                  <!-- BUTTONS WITH LINKS TO PURCHASE THE GAME -->
+                  <a href="https://www.nintendo.co.uk/Games/Nintendo-Switch-games/G-Darius-HD-2036010.html" target = "_blank" class="btn btn-light my-1">eShop</a>
+                  <a href="https://store.playstation.com/en-gb/product/EP8204-CUSA20683_00-GDARIUSHD00000EU" target = "_blank" class="btn btn-primary">PSN</a>
+                  <a href="https://store.steampowered.com/app/1640160/GDarius_HD/" class="btn btn-dark" target = "_blank">STEAM</a>
+                </p>
+              </div>
+            </div> <!-- END OF G-DARIUS HD CARD -->
+
+          </div> <!-- END OF SECOND COLUMN -->
+          
+          <div class="col-sm"> <!-- THIRD COLUMN -->
+
+            <div class="card bg-light" style="width: 18rem;"> <!-- TOTAL WAR CARD -->
+              <img src="./img/total_war_warhammer_3_box_art.jpg" class="card-img-top" alt="Total War: Wahmmer III Box Art">
+              <div class="card-body bg-warning">
+
+                <!-- GAME DESCRIPTION -->
+                <h5 class="card-title">Total War: Warhammer III</h5>
+                <h6 class="card-subtitle mb-2 text-muted">4X Grand Strategy Game</h6>
+                <p class="card-text ">The third installment in the Total War: Warhammer series. This game finallly adds chaos daemons to the series.<br>
+                  
+                  <span class="badge badge-pill bg-info my-2">CREATIVE ASSEMBLY</span> <!-- PILL BADGE FOR GAME DEVELOPER -->
+                  <span class="badge badge-pill bg-info">SEGA</span> <!-- PILL BADGE FOR GAME PUBLISHER -->
+                  <span class="badge badge-pill bg-info">2022</span><br> <!-- PILL BADGE FOR GAMES YEAR OF RELEASE -->
+                  
+                  <!-- BUTTONS WITH LINKS TO PURCHASE THE GAME -->
+                  <a href="https://store.steampowered.com/app/1142710/Total_War_WARHAMMER_III/" target = "_blank" class="btn btn-dark my-1">STEAM</a>
+                  <a href="https://store.epicgames.com/en-US/p/total-war-warhammer-3" target = "_blank" class="btn btn-primary">EPIC</a>
+                  <a href="https://www.xbox.com/en-gb/games/store/total-war-warhammer-iii/9NGGB0GZPB9D" class="btn btn-success" target = "_blank">WINDOWS</a>
+                </p>
+              </div>
+            </div> <!-- END OF TOTAL WAR CARD -->
+
+          </div> <!-- END OF THRID COLUMN -->
+            
+        </div>
+      </div> <!-- END OF CONTAINER FOR GAMES COLUMNS -->
+
+      <!-- BOOKS COLUMNS -->
+      <div id = "books" class="container my-5"> <!-- CONTAINER FOR COLUMNS -->
+
+        <!-- BOOK SECTION HEADING -->
+        <div class="container-fluid text-sm-center bg-danger text-light p-5 bg-info"> <!-- bg-light is background color & p-5 is padding -->
+          <h1 class="display-2 text-dark">BOOKS</h1>
+          <p class="lead">These are the books and magazines I have read recently</p>
+        </div>
+        
+        <div class="row my-4">
+
+          <div class="col-sm"> <!-- FIRST COLUMN -->
+
+              <div class="card"> <!-- CTHONIA'S RECKONING CARD -->
+              <div class="card-body bg-dark text-light">
+
+                <!-- BOOK DESCRIPTION -->
+                <h5 class="card-title">CTHONIA'S RECKONING</h5>
+                <h6 class="card-subtitle mb-2">Various Authors</h6>
+                <p class="card-text">A short story anthology release to alongside the new Horus Heresy table-top board game.</p>
+                <p>Features seven short-stories covering the battle above, on and below the planet Cthonia between the Sons of Horus and the Imperial Fists.</p>
+                
+                <span class="badge badge-pill bg-info my-2">HORUS HERESY</span> <!-- PILL BADGE FOR SETTING -->
+                <span class="badge badge-pill bg-warning">BLACK LIBRARY</span><br> <!-- PILL BADGE FOR PUBLISHER -->
+              </div>
+              <img src="./img/cthonias_reckoning_cover_art.jpg" class="card-img-bottom" alt="Cthonia's Reckoning Cover Art">
+            </div> <!-- END OF CTHONIA'S RECKONING CARD -->
+
+          </div> <!-- END OF FIRST COLUMN -->
+            
+          <div class="col-sm"> <!-- SECOND COLUMN -->
+            
+            <div class="card"> <!-- THRONE OF LIGHT CARD -->
+              <div class="card-body bg-primary text-light">
+
+                <!-- BOOK DESCRIPTION -->
+                <h5 class="card-title">Dawn of Fire IV: Throne of Light</h5>
+                <h6 class="card-subtitle mb-2">Guy Haley</h6>
+                <p class="card-text">The fourth book in the Dawn of Fire  Series from black library covering the Indomitus Crusade.</p>
+                <p>Robute Guilliman and defeated the Orc threat to Fenris but an ancient foe Kor Phaeron has return to threaten the Segmentum Solar.<br>
+                  
+                  <span class="badge badge-pill bg-dark my-2">40K</span> <!-- PILL BADGE FOR SETTING -->
+                  <span class="badge badge-pill bg-info">BLACK LIBRARY</span><br> <!-- PILL BADGE FOR PUBLISHER -->
+                </p>
+              </div>
+              <img src="./img/throne_of_light_cover_art.jpg" class="card-img-bottom" alt="Throne of Light Cover Art">
+            </div> <!-- END OF THRONE OF LIGHT CARD -->
+
+          </div> <!-- END OF SECOND COLUMN -->
+          
+          <div class="col-sm"> <!-- THIRD COLUMN -->
+
+            <div class="card"> <!-- RETRO GAMER ISSUE 235 CARD -->
+              <div class="card-body bg-success">
+
+                <!-- BOOK DESCRIPTION -->
+                <h5 class="card-title">Retro Gamer: Issue 235</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Darran Jones</h6>
+                <p class="card-text">Issue 235 covers the release of Sonic Origins as well the Driver franchise, the amiga classic Hunter and ZX Spectrum Classic School Daze.</p>
+                <p class="card-text">Plus reviews of thre re-release of Makai Kingdom and much more.
+                  return to threaten the Segmentum Solar.<br>
+
+                  <span class="badge badge-pill bg-danger my-2">RETRO</span> <!-- PILL BADGES FOR THEME OF MAGAZINE -->
+                  <span class="badge badge-pill bg-primary">SONIC</span><br>
+                </p>
+              </div>
+              <img src="./img/retro_gamer_235.png" class="card-img-bottom" alt="Throne of Light Cover Art">
+            </div> <!-- RETRO GAMER ISSUE 235 CARD -->
+
+          </div> <!-- END OF THRID COLUMN -->
+            
+        </div>
+
+      </div> <!-- END OF CONTAINER FOR BOOKS COLUMNS -->
+
+      <div id = "updates" class = "text-center"> <!-- CONTACT ME SECTION -->
+        <form>
+          <h1 class = "text-primary my-5">Sign up to follow my blog</h1>
+          <div class="mb-3">
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div> <!-- END OF CONTACT ME SECTION -->
+
+      <div class = "container my-5"> <!-- FOOTER SECTION -->
+          <ul class = "nav nav-inline">
+              <li class = "nav-item">
+                <small><a class = "nav-link active" href = "http://www.eurogamer.net">Gaming News</a></small>
+              </li>
+              <li class = "nav-item">
+                <small><a class = "nav-link active" href = "http://https://www.warhammer-community.com/">Warhammer Community</a></small>
+              </li>
+              <li class = "nav-item">
+                <small><a class = "nav-link active" href = "#">profsfrink@gmail.com</a></small>
+              </li>
+              <li class = "nav-item">
+                <small class = "nav-link">&copy;2022 Steven Partlow BSc</small>
+              </li>
+          </ul>
+      </div> <!-- END OF FOOTER SECTION -->
+    
+    </div>  <!-- END OF CONTAINER FOR THE BODY OF THE SITE -->
+
+    <!-- Optional JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body> <!-- End of Body Section -->
+
+ </html>
