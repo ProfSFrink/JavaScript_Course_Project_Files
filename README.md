@@ -36,7 +36,7 @@ We return to the One-page Web site from the HTML and CSS courses, this time we a
 ## __Main Project #5: Bootstrap 4 Tutorial Website JavaScript Update__
 
 ---
-We add JavaScript to the Hobby Blog site we did as part of the CSS course by adding a popover to the submit e-mail address button then we add a modal form so the user can sign up to the site and be updated about new releases. Then for challenge 26 the new bootstrap component I choose to add was simple set of list boxes showing some new releases.
+We add JavaScript to the Hobby Blog site we did as part of the CSS course by adding a popover to the submit e-mail address button then we add a modal form so the user can sign up to the site and be updated about new releases both of these are done using jQuery. Then for challenge 26 the new bootstrap component I choose to add was simple set of list boxes showing some new releases.
 
 
 ## __Basic JavaScript Projects__

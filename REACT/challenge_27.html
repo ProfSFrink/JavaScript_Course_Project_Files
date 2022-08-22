@@ -1,0 +1,48 @@
+<!-- Advanced Software and Web Developer Diploma -->
+<!-- Course #6 - JavaScript - Challenge #26 - XML -->
+<!-- by Steven Partlow -->
+
+<!DOCTYPE html>
+<html lang = "en">
+
+    <head> <!-- HEAD Section -->
+        <meta charset = "UTF-8">
+        <meta content = "width = device-width, inital-scale = 1.0" name = "viewport">
+        <title></title>
+        <link rel = "stylesheet" type = "text/css" href = "">
+    </head> <!-- End of HEAD Section -->
+
+    <body> <!-- BODY Section -->
+        <!-- Challenge #26 - XML -->
+        <h1>Challenge #26 - XML Tags</h1>
+        <p>This is an example of parsing a XML tag that we defined and displaying data from it.</p>
+        <p><strong>XML Tag: </strong>GAME</p>
+        <p><strong>TITLE Tag: </strong>Xenoblade Chronicles 3</p>
+        <p><strong>DEVELOPER Tag: </strong>Monolith Software</p>
+        <p><strong>GENRE Tag: </strong>Japanese Role-playing Game</p>
+        <p><strong>YEAR Tag: </strong>2022</p>
+        <p>We then create an XML DOM object using the information above. Then we extract the value of the title tag at index position 0 in the XML DOM and display it below.</p>
+        <strong><p id = "XML_Example"></p></strong>
+        <script> // JavaScript Starts Here
+            var XML_Parser, XML_Document;
+
+            // Creates a text string
+            var Game = "<game>" +
+                "<title>Xenoblade Chronicles 3</title>" +
+                "<developer>Monolith Software</developer>" +
+                "<genre>Japanese Role-playing Game</genre>" +
+                "<year>2022</year>" +
+                "</game>";
+
+            // Creates an XML DOM Parseer
+            XML_Parser = new DOMParser();
+
+            // Use the text string we created above to make an XML DOM object
+            XML_Document = XML_Parser.parseFromString(Game, "text/xml");
+
+            // We then extract the value of tags called 'title' from the XML DOM object at index position 0
+            document.getElementById("XML_Example").innerHTML = XML_Document.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+        </script> <!-- JavaScript Ends Here-->
+    </body> <!-- End of BODY Section -->
+
+</html> <!--- End of HTML Document-->
