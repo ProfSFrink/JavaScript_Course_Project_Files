@@ -1,0 +1,56 @@
+<!-- Advanced Software and Web Developer Diploma -->
+<!-- Course #6 - JavaScript - Assignment #72: REACT: A Like Button -->
+<!-- by Steven Partlow -->
+
+<!DOCTYPE html>
+<html lang = "en"> <!-- -Start of HTML document -->
+
+    <head> <!-- HEAD Section -->
+        <meta charset = "UTF-8" content = "width = device-width, inital-scale = 1.0" name = "viewport">
+        <title>JavaScript Course - Assignment #74 - REACT: A Like Button</title>
+        <link rel = "stylesheet" type = "text/css" href = ""> <!-- Link to Stylesheet -->
+        <script src = "https://unpkg.com/react@16/umd/react.development.js" crossorigin></script> <!-- Link to React Library -->
+        <script src = "https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script> <!-- Link to React Library -->
+    </head> <!-- End of HEAD Section -->
+
+    <body> <!-- BODY Section -->
+
+        <h1>JavaScript Course</h1>
+
+        <!-- Assignment #74 - REACT: A Like Button -->
+        <h2>Assignment #72: REACT: A Like Button</h2>
+        <p>The below like button works using REACT code.</p>
+        <div id = "like_button_container"></div>
+
+        <script> 
+            // React code STARTS here
+            const X = React.createElement; // Create an element called X
+
+            class likeButton extends React.Component { // We create a 'Like Button' component
+                constructor(props) { // We want to create 'properties' for the component 
+                    super(props);
+                    this.state = { liked: false }; // We set the state of the 'liked' property to false by default on creating an instanc of this component
+                } // End of Component construction
+            
+                render() {
+                    if (this.state.liked) { // If the value of the 'liked' property is true then..
+                        return 'You clicked on the like button!'; // Return this text
+                    } // End iF
+
+                    return X(// If the 'liked' property of the 'likeButton' is set to 'true' then return 'Like'
+                        'button',
+                        { onClick: () => this.setState({ liked: true }) },
+                        'Like'
+                    ); // End return
+                } // End render
+            } // End class likeButton
+
+            const domContainer = document.querySelector('#like_button_container'); // The ID were we want out 'likeButton' to go
+            ReactDOM.render(X(likeButton), domContainer); // Render our 'likeButton' object to the DOM by passing in an instance of the 'likeButton' class and assigning it to 'X' then passing in 'domContainer' which is the ID of the DOM object we want the 'likeButton' to be
+
+            // React code ENDS here
+        </script>
+
+    </body> <!-- End of BODY Section -->
+
+</html> <!--End of HTML Document -->
