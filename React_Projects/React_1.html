@@ -1,0 +1,46 @@
+<!-- Advanced Software and Web Developer Diploma -->
+<!-- Course #6 - JavaScript -->
+<!-- by Steven Partlow -->
+
+<!DOCTYPE html>
+<html lang = "en"> <!-- -Start of HTML document -->
+
+    <head> <!-- HEAD Section -->
+        <meta charset = "UTF-8" content = "width = device-width, inital-scale = 1.0" name = "viewport">
+        <title>JavaScript Course - Assignment #73: React</title>
+        <link rel = "stylesheet" type = "text/css" href = ""> <!-- Link to Stylesheet -->
+        <script src = "react.js"></script> <!-- Link to React Library -->
+        <script src = "react-dom.js"></script> <!-- Link to React Library -->
+    </head> <!-- End of HEAD Section -->
+
+    <body> <!-- BODY Section -->
+        <h1>JavaScript Course</h1>
+
+        <!-- Assignment # 73 React-->
+        <h2>Assignment #73 - React</h2>
+
+        <div id = "My_React_Code"></div> <!-- End of DIV for ID 'My_React_Code'-->
+            <script>
+                var Counter = React.createClass({
+                    render: function() {
+                        var time_Passed = Math.round(this.props.time_Passed / 100); // Divide the value of time_Passed by 100 and round up the answer
+                        var seconds_Passed = time_Passed / 10 + (time_Passed % 10 ? '' : '.0' ); // Calculate time_Passed divided by 10 then calculate the remainder of time_Passed by 10 and if is anyhting other than zero add it to the result of the first sum else add .0 
+                        var text = 'My React code started running ' + seconds_Passed + ' seconds ago!'; // Will display how many second have passed since the code has started running
+                        return React.DOM.p(null, text); // Returns the value of 'text'
+                    } // End render Function
+                }); // End createClass COUNTER
+
+                var counter_Factory = React.createFactory(Counter); // Creates factory object using the above defined 'Counter' class
+
+                var start_Counting = new Date().getTime(); // Get the current time
+                setInterval(function() {
+                    ReactDOM.render( // Render the following component
+                        counter_Factory({time_Passed: new Date().getTime() - start_Counting}), // Create a new instance of the 'Counter' class, subtract the value of start_Counting from the most recent instance of counter_Factory
+                        document.getElementById('My_React_Code') // Update the ID 'My_React_Code'
+                    ); // End of FUNCTION setInterval
+                }, 50);
+            </script>
+
+    </body> <!-- End of BODY Section -->
+
+</html> <!--End of HTML Document -->
