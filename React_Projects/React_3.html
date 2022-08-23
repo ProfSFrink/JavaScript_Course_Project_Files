@@ -1,0 +1,38 @@
+<!-- Advanced Software and Web Developer Diploma -->
+<!-- Course #6 - JavaScript - Assignment #75: JSX -->
+<!-- by Steven Partlow -->
+
+<!DOCTYPE html>
+<html lang = "en"> <!-- -Start of HTML document -->
+
+    <head> <!-- HEAD Section -->
+        <meta charset = "UTF-8" content = "width = device-width, inital-scale = 1.0" name = "viewport">
+        <title>JavaScript Course - Assignment #75: JSX</title>
+        <link rel = "stylesheet" type = "text/css" href = ""> <!-- Link to Stylesheet -->
+        <script src = "https://unpkg.com/react@16/umd/react.development.js" crossorigin></script> <!-- Link to React Library -->
+        <script src = "https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script> <!-- Link to React Library -->
+        <script src = "https://unpkg.com/@babel/standalone/babel.min.js"></script> <!-- Link to BABEL JSX Library -->
+    </head> <!-- End of HEAD Section -->
+
+    <body> <!-- BODY Section -->
+        <h1>JavaScript Course</h1>
+
+        <!-- Assignment #75: JSX -->
+        <h2>Assignment #75: JSX</h2>
+        <div id = 'JSX'></div> <!-- Create 'JSX' element and add to the DOM -->
+ 
+        <!-- JSX STARTS here -->
+        <script type = "text/babel">
+            class Greeting extends React.Component { // Create a tag called 'Greeting'
+                render() {
+                    return <h1>Hello, World!</h1> // Return an H1 element with this text
+                } // End render
+            } // End class Greeting
+            // Render a instance of our 'Greeting' tag to the DOM within the element with the ID 'JSX'
+            ReactDOM.render(<Greeting />, document.getElementById('JSX'))
+        </script>
+        <!-- JSX ENDS here -->
+    
+    </body> <!-- End of BODY Section -->
+
+</html> <!--End of HTML Document -->
