@@ -1,0 +1,32 @@
+/* Advanced Software and Web Developer Diploma - Part VI - JavaScript Course */
+/* Basic CSS Styling */
+/* by Steven Partlow */
+
+/* Challenge #28 - Use the VW unit to adjust font-size */
+
+h1 { /* Styling for h1 elements */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 6vw; /* Set the font-width to 6 vetical units */
+    text-shadow: 2px 2px lightgray;
+}
+
+h3 { /* Styling for h3 elements */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3vw; /* Set the font-width to 3 vetical units */
+    text-shadow: 1px 1px lightgray;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-left: 4px;
+}
+
+h4 { /* Styling for h4 elements */
+    font-size: 2.5vw; /* Set the font-width to 2.5 vetical units */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
+    text-shadow: 1px 1px lightgray;
+}
+
+p { /* Styling for p elements */
+    font-size: 2vw; /* Set the font-width to 2 vetical units */
+    font-family: Arial, Helvetica, sans-serif;
+}
