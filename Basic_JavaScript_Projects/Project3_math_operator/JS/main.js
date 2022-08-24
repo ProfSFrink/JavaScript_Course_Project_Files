@@ -62,3 +62,8 @@ function assign23(r) { // Define function assign23 with one parameter 'r'
 function challenge4(s) { // Define function challenge4 with one parameter 's'
     document.getElementById("SquareRoot").innerHTML = Math.sqrt(s); // Calculate the square root and 's' and store the result in the id 'SquareRoot'
 }
+
+// Challenge #29 - Element Fade In
+window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.remove('fade-elements-out');
+});

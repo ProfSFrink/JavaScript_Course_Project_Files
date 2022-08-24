@@ -1,5 +1,6 @@
 /* Advanced Software and Web Developer Diploma - Part VI - JavaScript Course */
-/* Basic CSS Styling */
+/* Challenge #28 - Use VW unit for font-size */
+/* Challenge #29 - Element Fade In */
 /* by Steven Partlow */
 
 /* Challenge #28 - Use the VW unit to adjust font-size */
@@ -29,4 +30,20 @@ h4 { /* Styling for h4 elements */
 p { /* Styling for p elements */
     font-size: 2vw; /* Set the font-width to 2 vetical units */
     font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Challenge #29 - Element Fade In */
+
+/* Styling for the body element */
+
+body { 
+    /* Fade in all elements on the page over the duration of 1 second */ 
+    opacity: 1;
+    transition: 1s opacity;
+}
+
+body.fade-elements-out {
+    /* Disable all effects */
+    opacity: 0;
+    transition: none;
 }
