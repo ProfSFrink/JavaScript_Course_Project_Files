@@ -1,0 +1,72 @@
+<!-- Advanced Software and Web Developer Diploma -->
+<!-- Course #6 - JavaScript Project 3: Math Operators -->
+<!-- by Steven Partlow -->
+
+<!DOCTYPE html>
+<html lang = "en">
+    <head> <!-- HEAD Section -->
+        <meta charset = "UTF-8">
+        <meta charset = "UTF-8" content = "width = device-width, inital-scale = 1.0" name = "viewport">
+        <title>Course #6 - JavaScript Project 3: Math Operators</title>
+        <link rel = "stylesheet" type = "text/css" href = "./CSS/Basic_CSS_Styling.css">
+        <script src = "JS/main.js"></script>
+    </head> <!-- END OF HEAD SECTION -->
+    
+    <body> <!-- BODY SECTION -->
+        <script>
+            // Add the 'fade-elements-out' class to the body tag, triggering the fade in of all elements within the body tag
+            document.body.classList.add('fade-elements-out');
+        </script>
+        
+        <h1>Project 3: Math Operators</h1>
+        
+        <!-- Assignment #16 - Addition -->
+        <h3>Assignment #16 - Addition</h3>
+        <p id = "Math" onmouseover="assign16()">Mouse over me...</p> <!-- Run JS function 'assign16' when this element is moused over by the user -->
+        
+        <!-- Assignment #17 - Subtraction -->
+        <h3>Assignment #17 - Subtraction</h3>
+        <p id = "Subtraction" onclick="assign17(100,30)">Click on me...</p> <!-- Run JS function 'assign17' when this element is mouse clicked on by the user -->
+
+        <!-- Assignment #18 - Multiplication -->
+        <h3>Assignment #18 - Multiplication</h3>
+        <p>2 * 8 = <button id = "Multiply" onclick="assign18_Multiply(2,8)">?</button> <p><strong>Click for answer</strong></p></p> <!-- When the user clicks on the button the JS function 'assign18_Multiply' is run we pass 2 and 8 in as paraemters and display the result of 2 * 8 within the button in the browser window -->
+
+        <!-- Assignment #18 - Division -->
+        <h3>Assignment #18 - Division</h3>
+        <p> 2 / 8 = <button id = "Division" onclick="assign18_Division(2,8)">?</button> <= <strong>Click for answer</strong></p> <!-- When the user clicks on the button the JS function 'assign18_Division' is run we pass 2 and 8 in as paraemters and display the result of 2 / 8 within the button in the browser window -->
+
+        <!-- Assignment #19 - Multiple Operators -->
+        <h3>Assignment #19 - Multiple Operators</h3>
+        <p>(30 + 23) * 4 / 3 - 2 = <button id = "Multiple_Operators" onclick="assign19(30, 23, 4, 3)">?</button> <strong>Click for answer</strong></p> <!-- When the user clicks on the button the JS function 'assign19' is run we pass in four parameters and calcuate the result of the above equation and display the result in the browser window -->
+
+        <!--- Assignment #20 - Modulus Operator -->
+        <h3>Assignment #20 - Modulus Operator</h3>
+        <p>63 % 3 = <button id = "Modulus" onclick = "assign20(63,5)">?</button></p>
+        <strong>Click for answer</strong> <!-- When the user clicks on the button the JS function 'assign2' is run we pass in two parameters and calculate the remainder of 63 divided by 5 and display the result in the browser window -->
+        
+        <!-- Assignment #21 - Negation Operator -->
+        <h3>Asssignemnt #21 - Negation Operator</h3>
+        <p>55 negated is = <button id = "Negation" onclick = "assign21(55)">?</button>
+        <strong>Click for answer</strong></p> <!-- When the user clicks the button JS function 'assign21' executes and negates '55' and displays the result in the browser window -->
+
+        <!-- Assignment #22 - Increment and Decrement Operators -->
+        <h3>Assignment #22 - Increment and Decrement Operators</h3>
+
+        <h4>Assignment #22.A - Increment Operator</h4>
+        <p>i = 1 <button id = "Increment" onclick = "assign22_increment()">?</button>
+        <strong>Click to Increment I by 1</strong></p> <!-- When the user clicks the button JS function 'assign22_increment' executes and displays the result in the browser window -->
+
+        <h4>Assignment #22.B - Decrement Operator</h4>
+        <p>i = 1 <button id = "Decrement" onclick = "assign22_decrement()">?</button>
+        <strong>Click to Decrement I by 1</strong></p> <!-- When the user clicks the button JS function 'assign22_increment' executes and displays the result in the browser window -->
+
+        <h3>Assignment #23 - Math.Random() Function</h3>
+        <p>r = 55 <button id = "Random" onclick = "assign23(55)">?</button>
+        <strong>Click the button to generate a random number between 0 and 55</strong></p> <!-- When the user clicks the button JS function 'assign23' executes and displays the result in the browser window -->
+
+        <h3>Challenge #4 - Math Object and Methods</h3>
+        <p></p>s = 256 <button id ="SquareRoot" onclick= "challenge4(256)">?</button>
+        <strong>Click the button to calculate the square root of 256</strong></p> <!-- When the user clicks the button JS function 'challenge4' executes and displays the result in the browser window -->
+    </body>
+</html>
