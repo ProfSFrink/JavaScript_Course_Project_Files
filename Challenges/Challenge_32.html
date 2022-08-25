@@ -1,0 +1,53 @@
+<!-- Advanced Software and Web Developer Diploma -->
+<!-- Course #6 - JavaScript - Challenge #32 - Keyframe Animation -->
+<!-- by Steven Partlow -->
+
+<!DOCTYPE html>
+<html lang = "en"> <!-- Start of HTML document -->
+
+    <head> <!-- HEAD Section -->
+        <meta charset = "UTF-8" content = "width = device-width, inital-scale = 1.0" name = "viewport">
+        <title>JavaScript Course - Challenge #32 - Keyframe Animation</title>
+        <link rel = "stylesheet" type = "text/css" href = "./CSS/Basic_CSS_Styling.css"> <!-- Link to Stylesheet -->
+        <script src = "./JS/challenge_32.js" defer></script> <!-- Link to JavaScript -->
+
+        <!-- Challenge #32 - Keyframe Animation -->
+        <!-- Inline CSS -->
+        <style>
+            .challenge_32 {
+                /* Create a green square 200 by 200 pixels */
+                width: 200px;
+                height: 200px;
+                background: darkgreen;
+                position: relative; /* Position the square relative to to ir's parent element */
+                animation: chall_32 10s infinite; /* Loop the animation over 10 second period, infinitely */
+            }
+
+            /* Will move the square in a counter-clockwise motion */
+            @keyframes chall_32 {
+                0% {top: 0px;}
+                25% {top: 500px;}
+                26% {left: 0px;}
+                50% {left: 350px;}
+                51% {top: 500px;}
+                75% {top: 0px;}
+                76% {left: 350px;}
+                100% {left: 0px;}
+            } /* End of Keyframe */
+        </style>
+        <!-- End of Inline CSS -->
+    </head> <!-- End of HEAD Section -->
+
+    <body> <!-- BODY Section -->
+        <h1>JavaScript Course</h1>
+
+        <!-- Challenge #32 - Keyframe Animation -->
+        <h3>Challenge #32 - Keyframe Animation</h3>
+        <p>The keyframe animation gradually changes from one CSS style to another.</p>
+
+        <!-- The element we are going to animate -->
+        <div class = "challenge_32"></div>
+    
+    </body> <!-- End of BODY Section -->
+
+</html> <!--End of HTML Document -->
