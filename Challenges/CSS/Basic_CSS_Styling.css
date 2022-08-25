@@ -4,6 +4,9 @@
 /* Challenge #30 - Form Validation */
 /* by Steven Partlow */
 
+/* This includes the padding and border size in an elements total width and height */
+{box-sizing: border-box;}
+
 /* Challenge #28 - Use the VW unit to adjust font-size */
 
 h1 { /* Styling for h1 elements */
@@ -60,9 +63,6 @@ label {
 }
 
 /* Challenge #31 - Popup Login Form */
-
-/* This includes the padding and border size in an elements total width and height */
-{box-sizing: border-box;}
 
 /* Styling for the button used to open the contact form - which is fixed at the bottom of the page */
 .open-popup {
@@ -137,4 +137,20 @@ label {
     font-size: 4vw; /* Set the font-width to 4 vetical units */
     text-shadow: 1.5px 1.5px lightgrey;
     text-decoration: underline;
+}
+
+/* Challenge # 33 - CSS Image Zoom */
+
+.Challenge_33 {
+    transition: transform .2s; /* The zoom effect takes .2 seconds */
+    width: 960px;
+    height: 540px;
+    margin: 0 auto;
+}
+
+.Challenge_33:hover {
+    /* Increase the size of the image by 50% */
+    -ms-transform: scale(1.5); /* IE 9 Compatiability */
+    -webkit-transform: scale(1.5); /* Safari Compatiability */
+    transform: scale(1.5);
 }
