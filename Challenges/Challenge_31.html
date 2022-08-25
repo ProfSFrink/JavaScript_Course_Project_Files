@@ -1,0 +1,47 @@
+<!-- Advanced Software and Web Developer Diploma -->
+<!-- Course #6 - JavaScript - Challenge #31 - Popup contact form -->
+<!-- by Steven Partlow -->
+
+<!DOCTYPE html>
+<html lang = "en"> <!-- Start of HTML document -->
+
+    <head> <!-- HEAD Section -->
+        <meta charset = "UTF-8" content = "width = device-width, inital-scale = 1.0" name = "viewport">
+        <title></title>
+        <link rel = "stylesheet" type = "text/css" href = "./CSS/Basic_CSS_Styling.css"> <!-- Link to Stylesheet -->
+        <script src ="./JS/challenge_31.js" defer></script> <!-- Link to JavaScript -->
+    </head> <!-- End of HEAD Section -->
+
+    <body> <!-- BODY Section -->
+        <h1>JavaScript Course</h1>
+
+        <!-- Challenge #31 - Popup Contact Form -->
+        <h3>Challenge #31 - Popup Contact Form</h3>
+        <p>This is an example of using HTML, CSS and JavaScript to create a popup contact form.</p>
+
+        <button class = "open-popup" onclick = "openForm()">Open Form</button>
+    
+        <!-- DIV for Popup Form-->
+        <div class = "challenge_31" id = "myPopup_form">
+            <form action = "" class = "form-container">
+                <h2 class = "Login">Login</h2>
+
+                <!--- NOTE: The REQUIRED attribute means that particular input MUST be filled in by the user -->
+
+                <!-- Email Address Input -->
+                <label for = "Email-Address"><b>Email</b></label>
+                <input type = "text" placeholder = "Enter E-mail Address" name = "Email-Address" required>
+
+                <!-- Password Input -->
+                <label for = "Pword"><b>Password</b></label>
+                <input type = "password" placeholder = "Enter Password" name = "Pword" required>
+
+                <!-- Login Submit Button -->
+                <button type = "submit" class = "btn">Login</button>
+                <button type = "button" class = "btn cancel" onclick = "closeForm()">Close</button>
+            </form>
+        </div> <!-- End of DIV 'challenge_31' -->
+
+    </body> <!-- End of BODY Section -->
+
+</html> <!--End of HTML Document -->

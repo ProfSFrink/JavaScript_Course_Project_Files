@@ -11,18 +11,21 @@ h1 { /* Styling for h1 elements */
     font-size: 6vw; /* Set the font-width to 6 vetical units */
     text-shadow: 2px 2px lightgray;
     text-decoration: underline;
+    margin-bottom: 0.5cm;
 }
 
 h3 { /* Styling for h3 elements */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 3vw; /* Set the font-width to 3 vetical units */
-    text-shadow: 1px 1px lightgray;
-    border: 2px solid black;
+    text-shadow: 2px 2px lightgray;
+    border: 2px solid darkblue;
     border-radius: 10px;
-    padding-left: 4px;
+    box-shadow: 3px 3px lightgray;
+    padding: 0 4px 2px 4px;
+    margin: -5px 0 3px 0;
 }
 
-h4 { /* Styling for h4 elements */
+h4, label { /* Styling for h4 elements */
     font-size: 2.5vw; /* Set the font-width to 2.5 vetical units */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-decoration: underline;
@@ -54,4 +57,84 @@ body.fade-elements-out {
 
 label {
     font-size: 2vw;
+}
+
+/* Challenge #31 - Popup Login Form */
+
+/* This includes the padding and border size in an elements total width and height */
+{box-sizing: border-box;}
+
+/* Styling for the button used to open the contact form - which is fixed at the bottom of the page */
+.open-popup {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+
+/* Styling for the actual popup form which is hidden by default */
+.challenge_31 {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+/* Styling for the container the form is displayed in */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Styling for to make the input-fields the full-width of the webpage */
+.form-container input[type=text], .form-container input[type=password] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* Change the styling for when the inputs get focus */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Styling for submit / login button */
+.form-container .btn {
+    background-color: rgb(0, 0, 150);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+/* Styles the cancel button to be red */
+.form-container .cancel {
+    background-color: red;
+}
+
+/* Hover effects for buttons */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+.Login { /* Styling for 'Login' text at the top of the popup form */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 4vw; /* Set the font-width to 4 vetical units */
+    text-shadow: 1.5px 1.5px lightgrey;
+    text-decoration: underline;
 }
