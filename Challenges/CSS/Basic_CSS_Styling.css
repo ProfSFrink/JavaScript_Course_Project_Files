@@ -2,10 +2,42 @@
 /* Challenge #28 - Use VW unit for font-size */
 /* Challenge #29 - Element Fade In */
 /* Challenge #30 - Form Validation */
+/* Challenge #31 - Popup Login Form */
+/* Challenge #33 - CSS Image Zoom */
+/* Challenge #34 - HTML Bookmarks and Smooth Scrolling */
 /* by Steven Partlow */
 
 /* This includes the padding and border size in an elements total width and height */
 {box-sizing: border-box;}
+
+/* Challenge #34 - HTML Bookmarks and Smooth Scrolling */ 
+
+html { /* Allows for smooth page scrolling when clicking on bookmarks to move around the page*/
+    scroll-behavior: smooth;
+}
+
+.main {
+    padding-left: 5px;
+}
+
+.main a {
+    color: white;
+}
+
+#red_sector { /* Styling for red sector */
+    height: 600px;
+    background-color: red;
+}
+
+#green_sector { /* Styling for green sector */
+    height: 600px;
+    background-color: green;
+}
+
+#blue_sector { /* Styling for blue sector */
+    height: 600px;
+    background-color: blue;
+}
 
 /* Challenge #28 - Use the VW unit to adjust font-size */
 
@@ -15,6 +47,12 @@ h1 { /* Styling for h1 elements */
     text-shadow: 2px 2px lightgray;
     text-decoration: underline;
     margin-bottom: 0.5cm;
+}
+
+h2 { /* Styling for h2 elements */
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
 }
 
 h3 { /* Styling for h3 elements */
@@ -139,7 +177,7 @@ label {
     text-decoration: underline;
 }
 
-/* Challenge # 33 - CSS Image Zoom */
+/* Challenge #33 - CSS Image Zoom */
 
 .Challenge_33 {
     transition: transform .2s; /* The zoom effect takes .2 seconds */
