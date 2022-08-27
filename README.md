@@ -38,6 +38,15 @@ We return to the One-page Web site from the HTML and CSS courses, this time we a
 ---
 We add JavaScript to the Hobby Blog site we did as part of the CSS course by adding a popover to the submit e-mail address button then we add a modal form so the user can sign up to the site and be updated about new releases both of these are done using jQuery. Then for challenge 26 the new bootstrap component I choose to add was simple set of list boxes showing some new releases.
 
+## __React Projects__
+
+---
+Four simple excerises to demonstrate some of the basic of the React library these include using React to create a timer, a like button, using JSX (React JavaScript XML) and making your own simple react app from the command line.
+
+## __Portfolio Web Site Challenges__
+
+---
+These challenges are to help prepare for the main project of upgrading the portfolio web site with JavaScript. These include learning how to use VW unit size for fonts, fade in effects, form validation, a popup contact form, zooming in and out of an image using CSS, smooth page scrolling, automatic slide shows utilising jQuery and sticky contact buttons.
 
 ## __Basic JavaScript Projects__
 
