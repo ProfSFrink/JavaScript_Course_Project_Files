@@ -1,0 +1,70 @@
+<!-- Advanced Software and Web Developer Diploma -->
+<!-- Course #6 - JavaScript - Challenge #36 - Sticky Contact Button -->
+<!-- by Steven Partlow -->
+
+<!DOCTYPE html>
+<html lang = "en"> <!-- Start of HTML document -->
+
+    <head> <!-- HEAD Section -->
+        <meta charset = "UTF-8" content = "width = device-width, inital-scale = 1.0" name = "viewport">
+        <title>JavaScript Course - Challenge #36 - Sticky Contact Button</title>
+        <link rel = "stylesheet" type = "text/css" href = "./CSS/Basic_CSS_Styling.css"> <!-- Link to Stylesheet -->
+        <script src ="./JS/challenge_31.js" defer></script> <!-- Link to JavaScript -->
+    </head> <!-- End of HEAD Section -->
+
+    <body> <!-- BODY Section -->
+        <h1>JavaScript Course</h1>
+
+        <!-- Challenge #36 - Sticky Contact Button -->
+        <h3>Challenge #36 - Sticky Contact Form Button</h3>
+        <p>This is an example of using HTML, CSS and JavaScript to create a sticky contact button in the bottom right hand corner of a web page. We are resuing the popup contact form from challenge 31 and the smooth scrolling page layout from challenge 34.</p>
+                <!-- Red Sector -->
+                <div class = "main" id = "red_sector">
+                    <h2>Xenoblade Chronicles 3</h2>
+                    <p>These links have smooth scrolling enabled.</p>
+                    <a href = "#green_sector">Click me to go to Neo Geo Pocket Collection Volume 1</a><br><br>
+                    <a href = "#blue_sector">Click me to go to the Sonic Mania Section</a>
+                </div> <!-- End of DIV for 'red_sector'-->
+        
+                <!-- Green Sector -->
+                <div class = "main" id = "green_sector">
+                    <h2>Neo Geo Pocket Colour Collection Vol 1</h2>
+                    <p>These links have smooth scrolling enabled.</p>
+                    <a href = "#red_sector">Click me to go to Xenoblade Chronicles 3</a><br><br>
+                    <a href = "#blue_sector">Click me to go to the Sonic Mania Section</a>
+                </div> <!-- End of DIV for 'green_sector' -->
+        
+                <!-- Blue Sector -->
+                <div class = "main" id = "blue_sector">
+                    <h2>Sonic Mania</h2>
+                    <p>These links have smooth scrolling enabled.</p>
+                    <a href = "#red_sector">Click me to go to Xenoblade Chronicles 3</a><br><br>
+                    <a href = "#green_sector">Click me to go to the Neo Geo Pocket Colour Volume 1 Section</a>
+                </div> <!-- End of DIV for 'blue_sector' -->
+
+        <!-- DIV for Popup Form-->
+        <div class = "challenge_31" id = "myPopup_form">
+            <form action = "" class = "form-container">
+                <h2 class = "Login">Login</h2>
+
+                <!--- NOTE: The REQUIRED attribute means that particular input MUST be filled in by the user -->
+
+                <!-- Email Address Input -->
+                <label for = "Email-Address"><b>Email</b></label>
+                <input type = "text" placeholder = "Enter E-mail Address" name = "Email-Address" required>
+
+                <!-- Password Input -->
+                <label for = "Pword"><b>Password</b></label>
+                <input type = "password" placeholder = "Enter Password" name = "Pword" required>
+
+                <!-- Login Submit Button -->
+                <button type = "submit" class = "btn">Login</button>
+                <button type = "button" class = "btn cancel" onclick = "closeForm()">Close</button>
+            </form>
+        </div> <!-- End of DIV 'challenge_31' -->
+
+        <button class = "open-popup" onclick = "openForm()">Contact</button>
+
+    </body> <!-- End of BODY Section -->
+
+</html> <!--End of HTML Document -->

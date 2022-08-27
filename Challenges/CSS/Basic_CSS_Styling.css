@@ -5,6 +5,8 @@
 /* Challenge #31 - Popup Login Form */
 /* Challenge #33 - CSS Image Zoom */
 /* Challenge #34 - HTML Bookmarks and Smooth Scrolling */
+/* Challenge #35 - Automatic Slideshow using jQuery */
+/* Challenge #36 - Sticky Contact Button */
 /* by Steven Partlow */
 
 /* This includes the padding and border size in an elements total width and height */
@@ -17,7 +19,10 @@ html { /* Allows for smooth page scrolling when clicking on bookmarks to move ar
 }
 
 .main {
-    padding-left: 5px;
+    padding-left: 10px;
+    box-shadow: 2px 2px black;
+    text-shadow: 1px 1px darkgrey;
+    margin-bottom: 5px;
 }
 
 .main a {
@@ -27,16 +32,24 @@ html { /* Allows for smooth page scrolling when clicking on bookmarks to move ar
 #red_sector { /* Styling for red sector */
     height: 600px;
     background-color: red;
+    border-radius: 12px;
+    border: 2px solid black;
 }
 
 #green_sector { /* Styling for green sector */
     height: 600px;
     background-color: green;
+    border-radius: 12px;
+    border: 2px solid black;
 }
 
 #blue_sector { /* Styling for blue sector */
     height: 600px;
     background-color: blue;
+    color: yellowgreen;
+    text-shadow: 1px 1px black;
+    border-radius: 12px;
+    border: 2px solid black;
 }
 
 /* Challenge #28 - Use the VW unit to adjust font-size */
@@ -51,7 +64,8 @@ h1 { /* Styling for h1 elements */
 
 h2 { /* Styling for h2 elements */
     font-family: "Segoe UI",Arial,sans-serif;
-    font-weight: 400;
+    font-size: 26pt;
+    font-weight: 600;
     margin: 10px 0;
 }
 
@@ -110,10 +124,10 @@ label {
     border: none;
     cursor: pointer;
     opacity: 0.8;
-    position: fixed;
-    bottom: 23px;
-    right: 28px;
-    width: 280px;
+    position: sticky;
+    bottom: 0;
+    left: 100%;
+    width: 80px;
 }
 
 /* Styling for the actual popup form which is hidden by default */
@@ -121,7 +135,7 @@ label {
     display: none;
     position: fixed;
     bottom: 0;
-    right: 15px;
+    right: 0px;
     border: 3px solid #f1f1f1;
     z-index: 9;
 }
