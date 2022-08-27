@@ -1,0 +1,85 @@
+<!-- Advanced Software and Web Developer Diploma -->
+<!-- Course #6 - JavaScript - Challenge #35 - Automatic Slide Show -->
+<!-- by Steven Partlow -->
+
+<!DOCTYPE html>
+<html lang = "en"> <!-- Start of HTML document -->
+
+    <head> <!-- HEAD Section -->
+        <meta charset = "UTF-8" content = "width = device-width, inital-scale = 1.0" name = "viewport">
+        <title>JavaScript Course - Challenge #35 - Automatic Slide Show</title>
+        <link rel = "stylesheet" type = "text/css" href = "./CSS/Basic_CSS_Styling.css"> <!-- Link to Stylesheet -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- Link to jQuery -->
+    </head> <!-- End of HEAD Section -->
+
+    <body> <!-- BODY Section -->
+        <h1>JavaScript Course</h1>
+
+        <!-- Challenge #35 - Automatic Slide Show -->
+        <h3>Challenge #35 - Automatic Slide Show using jQuery</h3>
+
+        <!-- The slides for the slidehow which contains six images -->
+        <div id = "auto-slideshow">
+            <!-- Screenshot #1 -->
+            <div>
+                <img src = "./Images/screenshot_1.png" alt = "Screenshot #1">
+            </div> <!-- End of DIV for Screenshot #1 -->
+
+            <!-- Screenshot #2 -->
+            <div>
+                <img src = "./Images/screenshot_2.png" alt = "Screenshot #2">
+            </div> <!-- End of DIV for Screenshot #2 -->
+
+            <!-- Screenshot #3 -->
+            <div>
+                <img src = "./Images/screenshot_3.png" alt = "Screenshot #3">
+            </div> <!-- End of DIV for Screenshot #3 -->
+
+            <!-- Screenshot #4 -->
+            <div>
+                <img src = "./Images/screenshot_4.png" alt = "Screenshot #4">
+            </div> <!-- End of DIV for Screenshot #4 -->
+
+            <!-- Screenshot #5 -->
+            <div>
+                <img src = "./Images/screenshot_5.png" alt = "Screenshot #5">
+            </div> <!-- End of DIV for Screenshot #5 -->
+
+            <!-- Screenshot #6 -->
+            <div>
+                <img src = "./Images/screenshot_6.png" alt = "Screenshot #6">
+            </div> <!-- End of DIV for Screenshot #6 -->
+
+            <!-- End of Slideshow message -->
+            <div>
+                This is the end of the automatic slideshow. It will restart soon.
+            </div>
+
+        </div> <!-- End of DIV for 'auto-slideshow'-->
+
+    <!-- jQuery Code starts here -->
+    <script>
+        // Challenge #35 - jQuery Automatic Slide Show
+
+        // Hide all div's in the 'auto-slideshow' id
+        $("#auto-slideshow > div:gt(0)").hide();
+
+        setInterval(function() {
+            // Goto the first div in 'auto-slideshow'
+            $('#auto-slideshow > div:first')
+            // Fade out the current image over 1 second
+            .fadeOut(1000)
+            // Move to the next image
+            .next()
+            // Fade the new image in over a period of 1 second
+            .fadeIn(1000)
+            // End when we run out of images
+            .end()
+            // We wait three seconds then start again
+            .appendTo('#auto-slideshow');
+        }, 3000);
+    </script>
+    
+    </body> <!-- End of BODY Section -->
+
+</html> <!--End of HTML Document -->
