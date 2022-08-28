@@ -37,14 +37,16 @@ li {
 
 
 /* Styling for the footer element */
-footer {
+.footer {
     /* Fix the footer to the bottom of the page */
     position: fixed;
     left: 0;
     bottom: 0;
 
     width: 100%; /* The footer takes up the width of the page */
+    padding-left: 5px;
     background-color: darkred;
     color: goldenrod;
     text-align: left; /* The text appears from the left of the page */
+    border-top: solid 2.5px black;
 }
