@@ -2,11 +2,49 @@
 /* ToDo App Styling */
 /* by Steven Partlow */
 
+/* General Styling for the whole page */
+html {
+    font-family: "Avenir Next", Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* Styling for the body element */
+body {
+    max-width: 500px; /* Nothing in the body can be wider than 500 pixels */
+    margin: 0 auto;
+}
+
+/* Styling for the input box */
+input {
+    padding-top: 30px; /* Padding at the top */
+    width: 500px; /* Make the input box 500 pixels wide */
+    height: 60px; /* Make the input box 60 pixels high */
+    font-size: 40px; /* The text typed into the input box is 40 pixels in size */
+    border: 0; /* No border on the input box */
+}
+
+    input:focus {
+        outline: none;
+    }
+
+/* Styling for the actual ToDo list */
+li {
+    text-align: left; /* Tasks aligned to the left hand side */
+    font-size: 40px; /* */
+    list-style: none; /* The text of the tasks appears 40 pixels in size */
+    margin: 0; /* No margins for the tasks list */
+}
+
+
+/* Styling for the footer element */
 footer {
+    /* Fix the footer to the bottom of the page */
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 100%;
+
+    width: 100%; /* The footer takes up the width of the page */
     background-color: darkred;
     color: goldenrod;
+    text-align: left; /* The text appears from the left of the page */
 }
