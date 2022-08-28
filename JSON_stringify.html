@@ -1,0 +1,43 @@
+<!-- Advanced Software and Web Developer Diploma -->
+<!-- Course #6 - JavaScript - JSON.stringify() Assignment -->
+<!-- by Steven Partlow -->
+
+<!DOCTYPE html>
+<html lang = "en"> <!-- Start of HTML document -->
+
+    <head> <!-- HEAD Section -->
+        <meta charset = "UTF-8" content = "width = device-width, inital-scale = 1.0" name = "viewport">
+        <title>JavaScript Course - JSON.stringify() Assignment</title>
+        <link rel = "stylesheet" type = "text/css" href = "/Challenges/CSS/Basic_CSS_Styling.css"> <!-- Link to Stylesheet -->
+        <script src ="" defer></script> <!-- Link to JavaScript -->
+    </head> <!-- End of HEAD Section -->
+
+    <body> <!-- BODY Section -->
+        <h1>JavaScript Course</h1>
+
+        <!-- JavaScript start here -->
+        <script> 
+            function json_stringify() {
+                // Creates a game object
+                var game_obj = { "name":"Sonic Mania", "developer":"Sega", "platform":"Switch"};
+                // Creates a JSON string from the object
+                var game_obj_json = JSON.stringify(game_obj);
+                // Outputs the resulting string to the browser window
+                document.getElementById("json").innerHTML = game_obj_json;
+            } // End FUNCTIOn json_stringify()
+        </script>
+        <!-- JavaScript ends here -->
+
+        <!-- JSON.stringify() Assignment -->
+        <h3>JSON.stringify() Assignment</h3>
+        <p>Click the button to convert the object 'game' to a JSON string.</p>
+        <p><strong>NAME: </strong> Sonic Mania</p>
+        <p><strong>DEVELOPER: </strong> Sega</p>
+        <p><strong>PLATFORM: </strong> Switch</p>
+        JSON string will appear below.
+        <p id = "json"></p>
+        <button onclick = "json_stringify()">JSON.stringify()</button>
+    
+    </body> <!-- End of BODY Section -->
+
+</html> <!--End of HTML Document -->
