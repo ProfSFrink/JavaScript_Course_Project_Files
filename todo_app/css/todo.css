@@ -1,3 +1,12 @@
 /* Advanced Software and Web Developer Diploma - Part VI - JavaScript Course */
 /* ToDo App Styling */
 /* by Steven Partlow */
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: darkred;
+    color: goldenrod;
+}
