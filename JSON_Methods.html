@@ -1,0 +1,74 @@
+<!-- Advanced Software and Web Developer Diploma -->
+<!-- Course #6 - JavaScript - JSON.stringify() Method Assignment -->
+<!-- Course #6 - JavaScript - JSON.parse() Method Assignment -->
+<!-- by Steven Partlow -->
+
+<!DOCTYPE html>
+<html lang = "en"> <!-- Start of HTML document -->
+
+    <head> <!-- HEAD Section -->
+        <meta charset = "UTF-8" content = "width = device-width, inital-scale = 1.0" name = "viewport">
+        <title>JavaScript Course - JSON.stringify() Assignment</title>
+        <link rel = "stylesheet" type = "text/css" href = "/Challenges/CSS/Basic_CSS_Styling.css"> <!-- Link to Stylesheet -->
+        <script src ="" defer></script> <!-- Link to JavaScript -->
+    </head> <!-- End of HEAD Section -->
+
+    <body> <!-- BODY Section -->
+        <h1>JavaScript Course</h1>
+
+        <!-- JavaScript start here -->
+        <script> 
+            function json_stringify() { // Define function 'json_stringify'
+                // Creates a game object
+                var game_obj = { "name":"Sonic Mania", "developer":"Sega", "platform":"Switch"};
+                // Creates a JSON string from the object
+                var game_obj_json = JSON.stringify(game_obj);
+                // Outputs the resulting string to the browser window
+                document.getElementById("json").innerHTML = game_obj_json;
+            } // End FUNCTION json_stringify()
+
+            function json_parse() { // Define function 'json_parse'
+                // Creates a second game object by using the JSON.parse() method to create a new object from a JSON string 
+                var game_obj_two = JSON.parse('{"name":"Xenoblade Chronicles 3", "developer":"Monolith", "platform":"Switch"}');
+
+                // Outputs the resulting data to the relevent browser elements
+                document.getElementById("json-name").innerHTML = "<strong>NAME: </strong>" + game_obj_two.name;
+                document.getElementById("json-developer").innerHTML = "<strong>DEVELOPER: </strong>" + game_obj_two.developer;
+                document.getElementById("json-platform").innerHTML = "<strong>PLATFORM: </strong>" + game_obj_two.platform;
+            } // End of FUNCTION json_parse
+        </script>
+        <!-- JavaScript ends here -->
+
+        <!-- JSON.stringify() Method Assignment -->
+        <!-- Demonstrate the use of the JSON.stringify() Method convert a JavaScript object to a JSON string -->
+        <h3>JSON.stringify() Method Assignment</h3>
+        <p>Click the button to convert the JavaScript object 'game' to a JSON string.</p>
+        <p><strong>NAME: </strong> Sonic Mania</p>
+        <p><strong>DEVELOPER: </strong> Sega</p>
+        <p><strong>PLATFORM: </strong> Switch</p>
+        <p>JSON string will appear below.</p>
+
+        <!-- Execute function 'json_stringify' -->
+        <button onclick = "json_stringify()">JSON.stringify()</button>
+        <!-- We will display the converted JSON string here -->
+        <p id = "json"></p>
+
+        <hr><br>
+
+        <!-- JSON.parse() Method Assignment -->
+        <h3>JSON.parse() Method Assignment</h3>
+        <p>Click the button to convert a JSON string to JavaScript game object.</p>
+        <p><strong>JSON String: </strong>{"name":"Xenoblade Chronicles 3", "developer":"Monolith", "platform":"Switch"}</p>
+        <p>JavaScript object data will appear below.</p>
+
+        <!-- Execute function 'json_parse' -->
+        <button onclick = "json_parse()">JSON.parse()</button>
+        <!-- We will display the data from the converted JSON string in these elements -->
+        <h4>Game Object</h4>
+        <p id = "json-name"></p>
+        <p id = "json-developer"></p>
+        <p id = "json-platform"></p>
+    
+    </body> <!-- End of BODY Section -->
+
+</html> <!--End of HTML Document -->
