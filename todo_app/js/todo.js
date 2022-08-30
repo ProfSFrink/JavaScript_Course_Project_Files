@@ -36,6 +36,19 @@ function add() { //Define function 'add'
     return false;
 } // End of FUNCTION 'add'
 
+// This function give us the ability to remove and item from the todo list
+function remove() { // Define function 'remove'
+    var id = this.getAttribute('id');
+    var todos = get_todos();
+
+    todos.splice(id, 1);
+    localStorage.setItem('todo', JSON.stringify(todos));
+    // This looks in the show() to display a removed item from the screen
+    show();
+
+    return false;
+} // End of FUNCTION 'remove'
+
 // This function keeps the tasks permanetly displayed on the screen
 function show() { // Define function 'show'
     // This sets the task that was retrieved as a variable
@@ -52,6 +65,12 @@ function show() { // Define function 'show'
     html += '</ul>';
     // This displays the task as a list
     document.getElementById('todos').innerHTML = html;
+
+    // This tells the browser how to display the todo array after an item has been removed
+    var buttons = document.getElementsByClassName('remove');
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', remove);
+    } // End FOR
 
 } // End of FUNCTION 'show' 
 

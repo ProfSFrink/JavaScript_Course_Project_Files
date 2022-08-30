@@ -35,6 +35,10 @@ li {
     margin: 0; /* No margins for the tasks list */
 }
 
+.remove {
+    padding-bottom: 5px;
+}
+
 
 /* Styling for the footer element */
 .footer {
