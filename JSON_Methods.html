@@ -18,6 +18,9 @@
 
         <!-- JavaScript start here -->
         <script> 
+
+            // JSON_stringify() Assignment
+
             function json_stringify() { // Define function 'json_stringify'
                 // Creates a game object
                 var game_obj = { "name":"Sonic Mania", "developer":"Sega", "platform":"Switch"};
@@ -27,6 +30,8 @@
                 document.getElementById("json").innerHTML = game_obj_json;
             } // End FUNCTION json_stringify()
 
+            // JSON_parse() Assignment 
+            
             function json_parse() { // Define function 'json_parse'
                 // Creates a second game object by using the JSON.parse() method to create a new object from a JSON string 
                 var game_obj_two = JSON.parse('{"name":"Xenoblade Chronicles 3", "developer":"Monolith", "platform":"Switch"}');
@@ -36,11 +41,25 @@
                 document.getElementById("json-developer").innerHTML = "<strong>DEVELOPER: </strong>" + game_obj_two.developer;
                 document.getElementById("json-platform").innerHTML = "<strong>PLATFORM: </strong>" + game_obj_two.platform;
             } // End of FUNCTION json_parse
+
+            // localStorage() Assignment
+            
+            function localStorage_Assign() { // Define function 'localStorage'
+                // Set variable name to the value of the input 'full-name'
+                var Name = document.getElementById("full-name").value;
+                
+                // Save the value of the variable 'Name' alongside key 'name'
+                localStorage.setItem("name", Name);
+
+                // Retrieve the key 'name' from local storage and display it in the browser window
+                document.getElementById("display-name").innerHTML = localStorage.getItem("name");
+            } // End FUNCTION 'localStorage'
+
         </script>
         <!-- JavaScript ends here -->
 
         <!-- JSON.stringify() Method Assignment -->
-        <!-- Demonstrate the use of the JSON.stringify() Method convert a JavaScript object to a JSON string -->
+        <!-- Demonstrate the use of the JSON.stringify() method to convert a JavaScript object to a JSON string -->
         <h3>JSON.stringify() Method Assignment</h3>
         <p>Click the button to convert the JavaScript object 'game' to a JSON string.</p>
         <p><strong>NAME: </strong> Sonic Mania</p>
@@ -56,6 +75,7 @@
         <hr><br>
 
         <!-- JSON.parse() Method Assignment -->
+        <!-- Demonstrate the use of the JSON.parse() method to convert a JSON string back into a JavaScript object -->
         <h3>JSON.parse() Method Assignment</h3>
         <p>Click the button to convert a JSON string to JavaScript game object.</p>
         <p><strong>JSON String: </strong>{"name":"Xenoblade Chronicles 3", "developer":"Monolith", "platform":"Switch"}</p>
@@ -68,7 +88,17 @@
         <p id = "json-name"></p>
         <p id = "json-developer"></p>
         <p id = "json-platform"></p>
-    
+
+        <hr><br>  
+
+        <!-- localStorage() Method Assignment -->
+        <!-- Use the localStorage() Method to save a value to the local browser storage then retrieve it afterwards. -->
+        <h3>localStorage() Method Assignment</h3>
+        <p>Type a name into the input box, this will then save the input to the local storage then retrieve it and display it in the browser window.</p>
+        <label><strong>NAME:</strong></label>
+        <input id = "full-name" name = "full-name" type = "text" placeholder = "Please enter your name">
+        <button id = "save-name" onclick = "localStorage_Assign()">SAVE</button>
+        <strong><p id = "display-name"></p></strong>
     </body> <!-- End of BODY Section -->
 
 </html> <!--End of HTML Document -->
