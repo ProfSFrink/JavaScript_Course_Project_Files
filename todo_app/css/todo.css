@@ -6,6 +6,7 @@
 html {
     font-family: "Avenir Next", Helvetica, sans-serif;
     text-align: center;
+    background-color: cornsilk;
 }
 
 /* Styling for the body element */
@@ -19,13 +20,41 @@ input {
     padding-top: 30px; /* Padding at the top */
     width: 500px; /* Make the input box 500 pixels wide */
     height: 60px; /* Make the input box 60 pixels high */
+
+    text-align: center; 
     font-size: 40px; /* The text typed into the input box is 40 pixels in size */
-    border: 0; /* No border on the input box */
+    background-color: darkred;
+    color: goldenrod;
+    text-shadow: 2px 2px black;
+
+    border: 2pt solid black; /* No border on the input box */
+    box-shadow: 5px 5px black;
 }
 
     input:focus {
         outline: none;
     }
+
+/* Styling for the Add Item Button*/
+.add-button {
+    margin-top: 0.25cm;
+    height: 40px;
+    
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    text-shadow: 2px 2px black;
+    color: white;
+    background-color: rgb(14, 80, 14);
+}
+
+/* Sttyling for the actual to do list */
+.todos {
+    border: 2pt solid black;
+    box-shadow: 5px 5px black;
+
+    background-color: darkred;
+    color: goldenrod;
+}
 
 /* Styling for the actual ToDo list */
 li {
@@ -33,6 +62,8 @@ li {
     font-size: 40px; /* */
     list-style: none; /* The text of the tasks appears 40 pixels in size */
     margin: 0; /* No margins for the tasks list */
+    padding: 5px;
+    text-shadow: 2px 2px black;
 }
 
 .remove {
