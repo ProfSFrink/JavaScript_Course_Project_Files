@@ -57,7 +57,7 @@ html { /* Allows for smooth page scrolling when clicking on bookmarks to move ar
 h1 { /* Styling for h1 elements */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 6vw; /* Set the font-width to 6 vetical units */
-    text-shadow: 2px 2px lightgray;
+    text-shadow: 4px 3px lightgray;
     text-decoration: underline;
     margin-bottom: 0.5cm;
 }
@@ -75,7 +75,7 @@ h3 { /* Styling for h3 elements */
     text-shadow: 2px 2px lightgray;
     border: 2px solid darkblue;
     border-radius: 10px;
-    box-shadow: 3px 3px lightgray;
+    box-shadow: 3px 3px darkblue;
     padding: 0 4px 2px 4px;
     margin: -5px 0 3px 0;
 }
@@ -235,4 +235,13 @@ label {
     left: 10px;
     right: 10px;
     bottom: 10px;
+}
+
+.challenge-container {
+    font-weight: 500;
+    text-shadow: 2px 2px lightgray;;
+    border: 3px solid black;
+    box-shadow: 5px 5px black;
+    margin-top: 0.25cm;
+    padding: 0 5px 0 5px;
 }

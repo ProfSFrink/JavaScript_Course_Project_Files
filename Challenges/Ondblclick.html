@@ -1,0 +1,39 @@
+<!-- Advanced Software and Web Developer Diploma -->
+<!-- Course #6 - JavaScript - Ondlclick() Challenge-->
+<!-- by Steven Partlow -->
+
+<!DOCTYPE html>
+<html lang = "en"> <!-- Start of HTML document -->
+
+    <head> <!-- HEAD Section -->
+        <meta charset = "UTF-8" content = "width = device-width, inital-scale = 1.0" name = "viewport">
+        <title>JavaScript Course - Ondblclick() Challenge </title>
+        <link rel = "stylesheet" type = "text/css" href = "./CSS/Basic_CSS_Styling.css"> <!-- Link to Stylesheet -->
+        <script src ="" defer></script> <!-- Link to JavaScript -->
+    </head> <!-- End of HEAD Section -->
+
+    <body> <!-- BODY Section -->
+        <script>
+            function On_Double_Click() { // Define function 'On_Double_Click'
+                // Change background colour to blue
+                document.getElementById("Double-Click").style.backgroundColor = "Blue";
+                // Change text colour to yellow
+                document.getElementById("Double-Click").style.color = "Yellow"
+                // Remove text shadow
+                document.getElementById("Double-Click").style.textShadow = "none";
+                // Change the text within the element to this
+                document.getElementById("Double-Click").innerHTML = "You just double-clicked on this element!"
+        } // End FUNCTION 'On_Double_Click'    
+        </script>
+
+        <h1>JavaScript Course</h1>
+
+        <!-- Ondblclick() Challenge -->
+        <h3>Ondblclick Challenge</h3>
+        <div class = "challenge-container">
+            <p id = "Double-Click" ondblclick = "On_Double_Click()">This challenge is demonstrate the <strong>ondblclick()</strong> event handler, when you double-click on this element the text within will change, the text will change to yellow and the background to blue.</p>
+        </div>
+    
+    </body> <!-- End of BODY Section -->
+
+</html> <!--End of HTML Document -->
