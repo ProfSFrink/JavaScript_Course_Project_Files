@@ -1,6 +1,6 @@
 /* Advanced Software and Web Developer Diploma */
-/* Course #5 CSS and Bootstrap: Final Assignment - Personal Portfolio Website (CSS) */
-/* Started: 01/07/2022 Finished: */
+/* Course #6 JavaScript: Final Assignment - Personal Portfolio Website - JavaScript Update (CSS) */
+/* Started: 01/09/2022 Finished: */
 /* by Steven Partlow */
 
 /* NOTE: We have to customise the following:
@@ -310,14 +310,8 @@ footer {
     color: white;
 }
 
-/* A version of column 1 styling for our contact form so the style does not change when hovered over */
-.Column_1_Custom {
-    float: left;
-    width: 50%; /* Ensures the column take up half the width of the page */
-    padding: 10px;
-    padding-top: 1.5%; /* Leaves some space at the top of the columns for our headings */
-    height: 500px; /* Sets the height of the column */
-    background-color: #f2f2f2;
+.Column_1:hover h1 { /* Change Column_1 Class h1 elements when they are hovered */
+    color: white;
 }
 
 /* Styling for elements using the Column_2 class */
@@ -341,19 +335,14 @@ footer {
 
 /* Make GitHub link backgrounds light gray when we hoover over them */
 .Github a:hover{
-    background-color: lightgray;
+    background-color: black;
+    color: white;
 }
 
 /* Make Github p elements have black text */
 .Github p {
     /* Display <p> elements in plain black text */
     color: black;
-}
-
-/* Override the hover effects for other columns */
-.Github:hover {
-    /* Keep the background white when we hoover over github */
-    background-color: white;
 }
 
 /* This is so we can display our footer correctly */

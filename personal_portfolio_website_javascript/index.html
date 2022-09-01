@@ -1,17 +1,23 @@
 <!-- Advanced Software and Web Developer Diploma -->
-<!-- Course #5 CSS and Bootstrap: Final Assignment - Personal Portfolio Website (HTML) -->
-<!-- Started: 01/07/2022 Finished: -->
+<!-- Course #6 JavaScript: Final Assignment - Personal Portfolio Website - JavaScript Update (HTML) -->
+<!-- Started: 01/09/2022 Finished: -->
 <!-- by Steven Partlow -->
 
 <!-- NOTE: IT IS RECOMMENDED THAT WE KEEP THE BASIC SITE LAYOUT PROVIDED -->
 <!-- AND THEN MAKE SMALL ADJUSTMENTS WHERE NEEDED. REMEMBER THAT THIS IS THE -->
 <!-- CSS COURSE SO WE NEED CUSTOMISE THE STYLING OF THE SITE. SEE CSS COMMENTS -->
 
-<!-- CONTENT FOR SITE NEEDED: -->
-<!-- Something different than the provided quote - DONE -->
-<!-- Custom Images -DONE -->
-<!-- Custom Background Video - DONE -->
-<!-- Links to personnel Email, GitHub, Social Media, LinkedIN, etc - DONE -->
+<!-- TASK LIST FOR JAVASCRIPT UPDATE -->
+<!-- 01). Copy site from CSS and Bootstrap repository to Javascript Repository, perfrom a commit. - DONE 1/9/22 Comitted -->
+<!-- 02). Carefully remove parts of the site that are no longer needed / being replaced with JavaScript. - DONE 1/9/22 Comitted-->
+<!-- 03). Add a sticky contact button to the bottom right-had corner of the web page then when the user clicks on the button the contact form appears. -->
+<!-- 04). The contact form must have form validation implementated and inform the user if they try to submit an empty form. -->
+<!-- 05). Replace personal photo with an image slideshow of myself and show case my skills (Use my own images). -->
+<!-- 06). Ensure site works correctly on mobile devices phones / tablets, etc. -->
+<!-- 07). Fully customize the site with my own text, images, icons, styling and variable / function names. -->
+<!-- 08). Fully comment all code. -->
+<!-- 09). Fully test the site and ensure all elements work in the major web browser Chrome / Edge / Firefox / Safari, etc and on mobile devices. -->
+<!-- 10). Upload and make the site live. -->
 
 <!DOCTYPE html>
 <html lang = "en">
@@ -67,14 +73,10 @@
         </div>
         <!-- End of Video Overlay Text -->
 
-        <!-- ABOUT SECTION -->
+        <!-- Top row -->
         <div class = "Row" id = "About">
-            <!-- Left-Hand side column -->
-            <div class = "Column_2">
-                <h1>This is me</h1>
-                <a href = "https://github.com/ProfSFrink" target = "_blank"><img src = "images/me.jpg" alt = "GitHub Logo"></a>
-            </div>
-            <!-- Right-Hand side column -->
+            
+            <!-- About Section -->
             <div class = "Column_1">
                 <h1>About</h1>
                 <p>
@@ -83,14 +85,10 @@
                 <p>
                     I currently work for the East of England CO-OP and have over 20+ years experience working in the industry. In my spare time I enjoy running, reading and gaming including building gaming PCs as hobby so I am fully versed in computer hardware.
                 </p>
-            </div>
-        </div>
-        <!-- END OF ABOUT SECTION -->
+            </div> <!-- End of DIV for About Section -->
 
-        <!-- GITHUB SECTION -->
-        <div class = "Row" id = "GitHub">
-            <!-- Left-Hand side column -->
-            <div class = "Column_1 Github">
+            <!-- GitHub section -->
+            <div class = "Column_2 Github" id = "GitHub">
                 <h1>GitHub</h1>
                 <p>My coding portfolio can be viewed on my GitHub profile:</p>
                     <!-- Link to GitHub Profile -->
@@ -106,10 +104,14 @@
                     <p class = "Center">
                         <a href = "https://github.com/ProfSFrink/Videogame-Database-Project/blob/main/vg_database.py" target = "_blank"><i class = "fa fa-github"></i> Python Videogame Database Project</a>
                     </p>
-            </div>
-            <!-- End of Left-Hand side column -->
+            </div> <!-- End of DIV for GitHub section -->
 
-            <!-- Right-Hand side column -->
+        </div> <!-- End of About Row -->
+
+        <!-- Bottom row -->
+        <div class = "Row">
+
+            <!-- Skills Column -->
             <div class = "Column_2">
                 <h1>Skills</h1>
                 <!-- Display Skills as an unordered list -->
@@ -120,39 +122,20 @@
                     <li>Python</li>
                     <li>GIT Version Control</li> 
                 </ul>
-            </div>
-            <!-- End of Right-Hand side column -->
-        </div>
-        <!-- END OF GITHUB SECTION -->
-
-        <!-- CONTACT SECTION -->
-        <div class = "Row" id = "Contact">
+            </div> <!-- End of DIV for Skills column -->
 
             <!-- LinkedIN Image and Link -->
-            <div class = "Column_2">
+            <div class = "Column_1">
                 <br>
                 <br>
                 <br>
                 <a href="https://www.linkedin.com/in/steven-partlow-9375b0236/" target="_blank"><img src = "images/linkedin.png" alt = "LinkedIN Image"></a>
-            </div>
+            </div> <!-- End of DIV for LinkedIN -->
 
-            <!-- Righ-Hand side contact form -->
-            <div class = "Column_1_Custom">
-                <h1>Contact</h1>
-                <!-- Connect to our formspree.io account -->
-                <form action = "https://formspree.io/f/mayvzzvw" method = "POST">
-                    <!-- Name Input -->
-                    <label>Name:</label>
-                        <input type = "text" placeholder = "Place enter your name here">
-                    <!-- Email Input -->
-                    <label>Email:</label>
-                        <input type = "text" id = "Email" name = "Email" placeholder = " Please enter you email here">
-                    <!-- Message Input -->
-                    <label>Message:</label>
-                        <input type = "text" id = "Message" name = "Message" placeholder = "Please write your message here">
-                        <input type = "submit" value = "SUBMIT">
-                </form> <!-- End of Form -->
-            </div>
+        </div> <!-- End of DIV for Bottom row -->
+
+        <!-- CONTACT SECTION -->
+        <div class = "Row" id = "Contact">
         </div>
         <!-- END OF CONTACT SECTION -->
 
@@ -171,4 +154,4 @@
     </body> 
     <!-- END OF BODY SECTION -->
 
-</html>
+</html> <!-- End of HTML Document -->
