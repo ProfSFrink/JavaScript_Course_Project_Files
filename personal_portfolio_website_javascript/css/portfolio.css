@@ -1,0 +1,416 @@
+/* Advanced Software and Web Developer Diploma */
+/* Course #5 CSS and Bootstrap: Final Assignment - Personal Portfolio Website (CSS) */
+/* Started: 01/07/2022 Finished: */
+/* by Steven Partlow */
+
+/* NOTE: We have to customise the following:
+    FONTS, COLORS, VIDEO, HOVER EFFECTS, ANIMATIONS */
+
+
+/* Using a custom font 'GT Walsheim Pro' this is to set it up correctly so we can use it */
+/* See the HTML code for how we import it */
+@font-face {
+    font-family: GT Walsheim Pro;
+    src: local("GT Walsheim Pro Regular"),local("GTWalsheimProRegular"),url(GTWalsheimProRegular.woff2) format("woff2"),url(GTWalsheimProRegular.woff) format("woff"),url(GTWalsheimProRegular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal
+    }
+    
+@font-face {
+    font-family: GT Walsheim Pro;
+    src: local("GT Walsheim Pro Bold"),local("GTWalsheimProBold"),url(GTWalsheimProBold.woff2) format("woff2"),url(GTWalsheimProBold.woff) format("woff"),url(GTWalsheimProBold.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal
+    }
+
+/*** GENERAL SITE STYLING ***/
+
+/* Body Styling */
+body {
+    margin: 0; /* Displays the site using the full width of the browser screen */
+}
+
+/* H1 element styling */
+h1, h2 {
+    text-transform: uppercase; /* Make all h1 elements uppercase */
+    font-family: "GT Walsheim Pro", sans-serif; /* Fonts for h1 elements to use */
+    text-align: center; /* Centre h1 elements */
+    color: #1a1a1a;
+    font-size: 28pt;
+}
+
+/* Portfolio Title Text Styling */
+
+/* Styling for the first heading of the title section */
+.first-head {
+    font-size: 32pt; /* Set font size to 32 pt */
+    font-weight: 700;
+    position: relative; /* This allows us to use the animation */
+    -webkit-animation: moveFirstHead 4s;
+    animation: moveFirstHead 4s;
+}
+
+/* Will move the first heading of the title section in from the left of the screen */
+@keyframes moveFirstHead {
+    from {left: -100vw;} /* The text initally appears off the to the side of the screen */
+    to {left: 0vw;} /* Move the text to it's default position */
+}
+
+/* Styling for the second heading of the title section */
+.second-head {
+    font-size: 91pt; /* Set font size to 91 pt */
+    /* Set the colour to 0 hue, 0% saturation, 100% lightness and .95 alpha */
+    margin: 10px 0px; /* Place a margin and padding around this heading so there is some between it */
+    padding: 29px 0px; /* and the headings above and below */
+    position: relative; /* This allows us to use the animation */
+    -webkit-animation: moveSecondHead 4s;
+    animation: moveSecondHead 4s;
+}
+
+/* Will move the second heading of the title section in from the right of the screen */
+@keyframes moveSecondHead {
+    from {right: -100vw;} /* The text initally appears off the to the side of the screen */
+    to {right: 0vw;} /* Move the text to it's default position */
+}
+
+/* Styling for the third heading of the title section */
+.third-head {
+    text-align: center; /* Centre the text of this heading */ 
+    font-size: xx-large; /* Set font size to xxl */
+    position: relative; /* This allows us to use the animation */
+    -webkit-animation: moveThirdHead 4s;
+    animation: moveThirdHead 4s;
+}
+
+/* Will move the third heading of the title section in from the left of the scnreen*/
+@keyframes moveThirdHead {
+    from {top: -100vw;} /* The text initally appears off the to the side of the screen */
+    to {top: 0vw;} /* Move the text to it's default position */
+}
+
+/* Styling that applies to all three of the above headings */
+.white-text {
+    font-family: "GT Walsheim Pro"; /* Use our custom font */
+    /* Set the colour to 0 hue, 0% saturation, 100% lightness and .95 alpha */
+    color: hsla(0, 0%, 100%, 0.95);
+}
+
+/* Styles anything using the 'center' class such as the footer */
+.center { 
+    text-align: center; /* Centre any text using this class */
+}
+
+/* Parargraph element styling */
+p {
+    font-family: "GT Walsheim Pro Regular", sans-serif;
+    text-align: justify; /* Justify text of paragraph elements */
+    letter-spacing: 1px; /* Expands the spacing between letters by 1px */
+    font-size: 20px; /* Set font-size to 20px */
+    padding-left: 20px; /* Leave a 20pixel gab to the left of paragraph elements */
+    padding-right: 20px; /* Leave a 20pixel gab to the right of paragraph elements */
+}
+
+/***** NOTE: WE HAVE TO CUSTOMISE THIS OURSELVES *****/
+/* Paragraph element hover effect styling */
+p:hover {
+    transition: transform 1s; /* The increase in size will happen over a duration of 1 second */
+    transform: scale(1.025); /* Paragraph elements will increase in size when we hover over them */
+}
+
+/* Styling for Anchor elements */
+a {
+    color: blue; /* By ddefauly my links blue but remove the underline */
+    text-decoration: none;
+}
+
+/* IMAGE Element Styling */
+img {
+    filter: grayscale(75%);
+    border-radius: 8px; /* Gives images rounded-edges */
+    max-width: 100%; /* Images will fill there container */
+    height: 340px; /* Set maximum height of all images to 340 pixels */
+    display: block; /* This and the two margin properties below ensure we can centre images */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* IMAGE element hover effects */
+
+img:hover {
+    filter: grayscale(0%); /* Hovering over the image will make it full-colour */
+    transition: transform 1.5s; /* The increase in size will take 1.5s */
+    transition-timing-function: ease-in; /* The increase in size will start slow and get faster */
+    transform: scale(1.2); /* Makes the image 20% bigger */
+}
+
+/* Screens 576px and smaller will shrink the images down to fit the display */
+@media screen and (max-width: 576px) {
+    img {
+        height: 100px;
+        margin-top: 150px;
+    }
+}
+
+/* Skill List element styling */
+ul { 
+    list-style-type: circle; /* Skills list will use circle bullet points */
+}
+
+li { /* Indvidual list elements will use the custom font*/
+    font-family: "GT Walsheim Pro Regular", 'Times New Roman', Times, serif;
+    font-size: 24pt; /* Set font size to 24 */
+    font-weight: 500; /* Make text slightly bold */
+    margin: 5px; /* A small margin around each skill point */
+}
+
+li:hover {
+    /* When hovering over each skill they go black and white keeping in theme */
+    color: white;
+    background-color: black;
+    transition: transform 1s; /* */
+    transform: scale(1.025);
+}
+
+/* Styling for Footer Element */
+footer {
+    padding: 2%;
+    background-color: white;
+}
+
+/*** NAVBAR STYLING ***/
+.Navbar {
+    overflow: hidden; /* Does not show content that goes outside the navbar area */
+    background-color: rgb(29, 179, 216);
+    position: fixed; /* The navbar stays fixed to the top of the browser as we scroll down the page */
+    top: 0; /* Positions the navbar at the very top-left of the browser */
+    left: 0;
+    width: 100%; /* The navbar will fill the whole width of the browser */
+    z-index: 1; /* Ensure the navbar stays on top as we scroll down the page */
+}
+
+/* Styling for Navbar link buttons */
+.Navbar a {
+    float: left; /* Keeps the links to the left-hand side of the navbar */
+    display: block; /* Displays all of the links on one-line together */
+    color: rgb(248, 247, 247);
+    padding: 14px 16px;
+    text-decoration: none; /* Removes the underline from navbar links */
+    font-family: Helvetica, sans-serif; /* Navbar text font-type */
+    font-size: 20px; /* Navbar text font-size */
+    text-align: center; /* Centers the text of each navbar link */
+    position: relative; /* The text is dislayed relative to the navbars position in the browser window, which helps for animating the navbar */
+}
+
+/* Screens 576px and samller will shrink the navbar for smaller display sizes */
+@media screen and (max-width: 576px) {
+    .Navbar a {
+        width: 25%; /* This makes each link 25% of there original size */
+        font-size: 12px; /* and reduces the font-size */
+    }
+}
+
+/* Navbar hover effect */
+.Navbar a:hover {
+    background-color: rgb(223, 189, 41); /* Changes the navbar colour when we hover over it */
+}
+
+/* Navbar HOME Button Styling */
+.Navbar a.active {
+    background-color: black;
+    /* Moves the home button in from the left of the screen */
+    -webkit-animation: moveNavActive 3s;
+    animation: moveNavActive 3s;
+}
+
+/* Navbar About and GitHub Buttons Styling */
+.Navbar a.middle-links {
+    /* Moves the about and github buttons in from above the screen */
+    -webkit-animation: moveMiddleLinks 3s;
+    animation: moveMiddleLinks 3s;   
+}
+
+/* Navbar Contact Button styling */
+.Navbar a.contact-link {
+    /* Moves the contact button in from the right of the screen */
+    -webkit-animation: moveContactLink 3s;
+    animation: moveContactLink 3s;   
+}
+
+/* Animation effect for Home Button */
+@keyframes moveNavActive {
+    from {left: -100vw;}
+    to {left: 0vw;}
+}
+
+/* Animation effects for About and GitHub buttons */
+@keyframes moveMiddleLinks {
+    from {top: -100vw;}
+    to {top: 0vw;}
+}
+
+/* Animation effects for Contact Section */
+@keyframes moveContactLink {
+    from {right: -300vw;}
+    to {right: 0vw;}
+}
+
+/*** END OF NAVBAR STYLING ***/
+
+/*** BACKGROUND VIDEO STYLING ***/
+
+/* Formatting for background coding video */
+#Background_Video {
+    position: fixed; /* Fixes the video to the page */
+    right: 0; /* Video fills to the right-most edge of the browser window */
+    bottom: 0; /* Video fills to the bottom-most edge of the browser window */
+    min-width: 100; /* The video is displayed across the width of the browser window */
+    z-index: -1; /* Places the video beneath other elements on the page */
+}
+
+/* Screens that are smaller than 576px will not display the background video */
+@media screen and (max-width: 576px) {
+    #Background_Video {
+        display: none;
+    }
+}
+
+/* Video Overlay Text Styling */
+.Video_Overlay_Text {
+    background: rgba(0, 0, 0, 0.5); /* Provide a transparent background for the video text */
+    color: white;
+    width: 100%; /* Container with video overlay text fill width of browser */
+    padding: 20px; /* Provides a gap between the edge of the window and text */
+    position: relative; 
+}
+
+/* ROW and COLUMN Styling */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Will add a scrollbar to the column if the text-overflows the height of the column */
+@media screen and (max-width: 576px) {
+    .Column_1 {
+        overflow: auto;
+    }
+}
+
+.Column_1 {
+    float: left;
+    width: 50%; /* Ensures the column take up half the width of the page */
+    padding: 10px;
+    padding-top: 1.9%; /* Leaves some space at the top of the columns for our headings */
+    height: 500px; /* Sets the height of the column */
+    background-color: #f2f2f2;
+}
+
+.Column_1:hover { /* Change to black and white when hovered over */
+    background-color: black;
+    color: white;
+}
+
+/* A version of column 1 styling for our contact form so the style does not change when hovered over */
+.Column_1_Custom {
+    float: left;
+    width: 50%; /* Ensures the column take up half the width of the page */
+    padding: 10px;
+    padding-top: 1.5%; /* Leaves some space at the top of the columns for our headings */
+    height: 500px; /* Sets the height of the column */
+    background-color: #f2f2f2;
+}
+
+/* Styling for elements using the Column_2 class */
+.Column_2 {
+    float: left;
+    width: 50%; /* Ensures the column take up half the width of the page */
+    padding: 10px; /* Space for our heading */
+    padding-top: 1.9%; /* Some extra space at the top for our headings */
+    height: 500px; /* Sets the height of the column */
+    background-color: rgb(29, 179, 216); /* Set background to light blue */
+}
+
+/* Github section styling */
+
+/* This is just to override the styling for the other columns*/
+.Github a {
+    /* Display links as black in thi column */
+    font-family: "GT Walsheim Pro";
+    color: black;
+}
+
+/* Make GitHub link backgrounds light gray when we hoover over them */
+.Github a:hover{
+    background-color: lightgray;
+}
+
+/* Make Github p elements have black text */
+.Github p {
+    /* Display <p> elements in plain black text */
+    color: black;
+}
+
+/* Override the hover effects for other columns */
+.Github:hover {
+    /* Keep the background white when we hoover over github */
+    background-color: white;
+}
+
+/* This is so we can display our footer correctly */
+.Row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* CONTACT FORM STYLING */
+
+/* Styling for the labels on each input */
+label {
+    font-family: "GT Walsheim Pro", 'Times New Roman', Times, serif;
+    font-size: 16pt; /* Use our custom font at 16pt */
+}
+
+/* Styling for input[type=text] sections in the contact form */
+input[type=text] {
+    width: 100%; /* Each input uses their maximum width */
+    padding: 12px; /* Adds padding to the actual text boxes */
+    border: 1px solid #ccc; /* Setting a solid border and colour */
+    border-radius: 4px;/* Round the edges of the text box border */
+    box-sizing: border-box; /* Adds a border around the contact form input boxes */
+    margin-top: 6px; /* Adds a margin above each text box */
+    margin-bottom: 16px; /* Adds a margin beneath each text box */
+    resize: vertical; /* Allows the user to resize the text boxes vertically */
+    font-family: "Helvetica", sans-serif;
+    font-size: 16pt; /* Set input text to Helvetica 16 pt */
+}
+
+/* Styling for the submit buttons */
+input[type=submit] {
+    background-color:rgb(29, 179, 216); /* Set submit button to sky blue */
+    color: white; /* Set text colour to white */
+    font-weight: bold; /* Make button text bold */
+    padding: 12px 20px; /* Padding around the text on the submit button */
+    border: none; 
+    border-radius: 4px; /* Slightly curve the corners of the submit button */
+    cursor: pointer; /* When clicking on the button change mouse cursor to pointer */
+    display: block; /* Display button on it's own line */
+    margin-left: auto; /* These ensure the button is centred in the column */
+    margin-right: auto;
+    font-family: "GT Walsheim Pro", Rockwell Extra Bold; /* Use of custom font */
+}
+
+/* Hover effect for the submit button */
+input[type=submit]:hover {
+    color: white; /* When hovering over submit button change text to white */
+    transform: scale(1.5); /* Increase size of the button by 50% */
+    transition: transform 1.5s;
+}
+
+/* General contact form styling */
+form {
+    border-radius: 5px; /* Rounds the edges of the contact form */
+    padding: 10px; /* Add padding to the size of 10 pixels around the contact form */
+}
+
+/* END OF CONTACT FORM STYLING */

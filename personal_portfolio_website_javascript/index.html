@@ -1,0 +1,174 @@
+<!-- Advanced Software and Web Developer Diploma -->
+<!-- Course #5 CSS and Bootstrap: Final Assignment - Personal Portfolio Website (HTML) -->
+<!-- Started: 01/07/2022 Finished: -->
+<!-- by Steven Partlow -->
+
+<!-- NOTE: IT IS RECOMMENDED THAT WE KEEP THE BASIC SITE LAYOUT PROVIDED -->
+<!-- AND THEN MAKE SMALL ADJUSTMENTS WHERE NEEDED. REMEMBER THAT THIS IS THE -->
+<!-- CSS COURSE SO WE NEED CUSTOMISE THE STYLING OF THE SITE. SEE CSS COMMENTS -->
+
+<!-- CONTENT FOR SITE NEEDED: -->
+<!-- Something different than the provided quote - DONE -->
+<!-- Custom Images -DONE -->
+<!-- Custom Background Video - DONE -->
+<!-- Links to personnel Email, GitHub, Social Media, LinkedIN, etc - DONE -->
+
+<!DOCTYPE html>
+<html lang = "en">
+
+     <!-- HEAD SECTION -->
+    <head>
+        <meta charset = "utf-8"> <!-- Use the UTF-8 Character Set -->
+        <meta name = "viewport" content = "width=device-width"> <!-- To allow us to make adjustments later depending on the size of the display -->
+        <title>Steven Partlow's Personal Portfolio Website</title>
+        <!-- Link to Portfolio CSS Stylesheet -->
+        <link rel = "stylesheet" type = "text/css" href = "./css/portfolio.css">
+        <!-- Link to Font Awesome CDN CSS Stylesheet for custom icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <!-- END OF HEAD SECTION -->
+    
+    <!-- BODY SECTION -->
+    <body> 
+
+        <!-- NAVBAR SECTION -->
+        <div class = "Navbar">
+            <a class = "active" href = "#Home"><i class = "fa fa-home"></i></a>
+            <a class = "middle-links" href = "#About"><i class = "fa fa-male"></i></a> <!-- Link to ABOUT SECTION -->
+            <a class = "middle-links" href = "#GitHub"><i class = "fa fa-github"></i></a> <!-- Link to GITHUB SECTION -->
+            <a class = "contact-link" href = "#Contact"><i class = "fa fa-envelope"></i></a> <!-- Link to CONTACT SECTION -->
+        </div>
+        <!-- END OF NAVBAR SECTION -->
+
+        <!-- Add between the site navbar and the first heading -->
+        <br>
+        <br>
+
+        <!-- Background Video -->
+        <div id = "Home">
+            <video autoplay muted loop id = "Background_Video">
+                <source src = "images/videos/Blurred_Video_of_Scripts_Being_Typed.mp4" type = "video/mp4">
+                <!-- Display the below message if the browser does not support the VIDEO tag -->
+                Your browser does not supoort HTML5 Video.
+            </video>
+        </div>
+        <!-- End of Background Video -->
+
+        <!-- Video Overlay Text -->
+        <div class = "Video_Overlay_Text">
+            <h2 class = "first-head white-text">Software and Web Developer</h2>
+            <h1 class = "second-head white-text">Steven Partlow BSc</h1>
+            <p class = "third-head">
+                <!-- NOTE: WE HAVE TO CUSTOMISE THIS OURSELVES -->
+                <br> Hi, i'm Steven a software and web developer currently training in Ipswich in the UK. 
+                <br>
+                <br> Welcome to my Portfolio Website. Thanks for visiing! 
+            </p>
+        </div>
+        <!-- End of Video Overlay Text -->
+
+        <!-- ABOUT SECTION -->
+        <div class = "Row" id = "About">
+            <!-- Left-Hand side column -->
+            <div class = "Column_2">
+                <h1>This is me</h1>
+                <a href = "https://github.com/ProfSFrink" target = "_blank"><img src = "images/me.jpg" alt = "GitHub Logo"></a>
+            </div>
+            <!-- Right-Hand side column -->
+            <div class = "Column_1">
+                <h1>About</h1>
+                <p>
+                    I'm a software developer in training living in Ipswich, in the UK. I am currently studying with Pitman Training both at home and on campus, working through the Advanced Software and Web Developer Diploma which is provided by <a href = "https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a>. When I have finished the course I will be fully trained in HTML, CSS, JavaScript, SQL and C# and hoping to work as a software and web developer. I am also fully trained in Python having completed a <a href = "https://www.udemy.com/course/complete-python-bootcamp/" target="_blank">bootcamp</a> on Udemy, and also have BSc in Software Engineering (2.2) from <a href = "https://www.uos.ac.uk/" target="_blank">Suffolk University</a> which I completed in 2001.<br>
+                </p>
+                <p>
+                    I currently work for the East of England CO-OP and have over 20+ years experience working in the industry. In my spare time I enjoy running, reading and gaming including building gaming PCs as hobby so I am fully versed in computer hardware.
+                </p>
+            </div>
+        </div>
+        <!-- END OF ABOUT SECTION -->
+
+        <!-- GITHUB SECTION -->
+        <div class = "Row" id = "GitHub">
+            <!-- Left-Hand side column -->
+            <div class = "Column_1 Github">
+                <h1>GitHub</h1>
+                <p>My coding portfolio can be viewed on my GitHub profile:</p>
+                    <!-- Link to GitHub Profile -->
+                    <p class = "Center">
+                        <a class = "Github" href = "https://github.com/ProfSFrink" target = "_blank"><i class = "fa fa-github"></i> My GitHub Profile</a>
+                    </p>
+                    <p class = "Center">MY PROJECTS</p>
+                    <!-- Link to Project code -->
+                    <p class = "Center">
+                        <a href = "https://github.com/ProfSFrink/CSS_and_Bootstrap_Course_Project_Files/blob/master/personal_portfolio_website/index.html" target = "_blank"><i class = "fa fa-github"></i> This Portfolio Website</a>
+                    </p>
+                    <!-- Link to Project code -->
+                    <p class = "Center">
+                        <a href = "https://github.com/ProfSFrink/Videogame-Database-Project/blob/main/vg_database.py" target = "_blank"><i class = "fa fa-github"></i> Python Videogame Database Project</a>
+                    </p>
+            </div>
+            <!-- End of Left-Hand side column -->
+
+            <!-- Right-Hand side column -->
+            <div class = "Column_2">
+                <h1>Skills</h1>
+                <!-- Display Skills as an unordered list -->
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS - including Bootstrap</li>
+                    <li>Object-Orientated Programming</li>
+                    <li>Python</li>
+                    <li>GIT Version Control</li> 
+                </ul>
+            </div>
+            <!-- End of Right-Hand side column -->
+        </div>
+        <!-- END OF GITHUB SECTION -->
+
+        <!-- CONTACT SECTION -->
+        <div class = "Row" id = "Contact">
+
+            <!-- LinkedIN Image and Link -->
+            <div class = "Column_2">
+                <br>
+                <br>
+                <br>
+                <a href="https://www.linkedin.com/in/steven-partlow-9375b0236/" target="_blank"><img src = "images/linkedin.png" alt = "LinkedIN Image"></a>
+            </div>
+
+            <!-- Righ-Hand side contact form -->
+            <div class = "Column_1_Custom">
+                <h1>Contact</h1>
+                <!-- Connect to our formspree.io account -->
+                <form action = "https://formspree.io/f/mayvzzvw" method = "POST">
+                    <!-- Name Input -->
+                    <label>Name:</label>
+                        <input type = "text" placeholder = "Place enter your name here">
+                    <!-- Email Input -->
+                    <label>Email:</label>
+                        <input type = "text" id = "Email" name = "Email" placeholder = " Please enter you email here">
+                    <!-- Message Input -->
+                    <label>Message:</label>
+                        <input type = "text" id = "Message" name = "Message" placeholder = "Please write your message here">
+                        <input type = "submit" value = "SUBMIT">
+                </form> <!-- End of Form -->
+            </div>
+        </div>
+        <!-- END OF CONTACT SECTION -->
+
+        <!-- FOOTER SECTION -->
+        <footer>
+            <p>
+                <p class = "center">&copy; Steven Partlow BSc. 2022, 
+                    <!-- LinkedIn Link -->
+                    <a href = "https://www.linkedin.com/in/steven-partlow-9375b0236/" target = "_blank"><i class = "fa fa-linkedin"></i></a>&nbsp;
+                    <!-- Twitter Link -->
+                        <a href = "https://twitter.com/ProfSFrink" target="_blank"><i class = "fa fa-twitter"></i></a>
+            </p>
+        </footer>
+        <!--END OF FOOTER SECTION -->
+
+    </body> 
+    <!-- END OF BODY SECTION -->
+
+</html>
