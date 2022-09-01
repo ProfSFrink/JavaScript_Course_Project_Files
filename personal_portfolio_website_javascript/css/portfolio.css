@@ -354,52 +354,89 @@ footer {
 
 /* CONTACT FORM STYLING */
 
-/* Styling for the labels on each input */
+/* Styling for the Open / Close contact button */
+.Sticky_Contact_Button {
+    position: fixed; /* Fixes the button to the display and stays in the location we specify below */
+    bottom: 1.75vw; /* Move the button up slightly from the bottom of the page */
+    right: 1.75vw; /* Move the button slightly to the right-hand side */
+    width: 15vw; /* Sets the width of the button relative to the size of the display */
+
+    background-color: black;
+    color: white;
+    border: solid black;
+    cursor: pointer;
+
+    -webkit-animation: moveContactForm 3s; /* Animation takes 3 seconds (SAFARI 4.0 - 8.0 Compatability */
+    animation: moveContactForm 3s; /* Animation takes 3 seconds*/
+}
+
+/* Animation to move the contact form button fromt the right-hand side of the screen to it fixed position */
+@keyframes moveContactForm {
+    from {right: -40vw;}
+    to {right: 1.75vw;}
+}
+
+@-webkit-keyframes moveContactForm {
+    from {right: -40vw;}
+    to {right: 1.75vw;}
+}
+
+/* Styling for Popup Contact Form */
+.Popup_Contact_Form {
+    z-index: 8; /* Make sure the contact form show above all elements */
+    display: none; /* Hide the form by default until the user clicks on the contact button */
+    position: fixed; /* Locks the form in place in the browser window */
+    bottom: .5vw; /* Position form slightly up from the bottom of the page */
+    right: .5vw; /* Position form a little from the right-hand side of the page */
+}
+
+/* Styling for the Popup Contact Form */
+.Contact_Form_Container {
+    max-width: 49vw; /* The form when shown will take up 49% of the display */
+    padding: 1vw; /* Add padding between the form container and the form itself */
+    background-color: white;
+}
+
+/* Styling for Popup Contact Form Input Fields */
+.Contact_Form_Container input[type = text] {
+    width: 100%; /* The input boxes fill the width of the container */
+    padding: .93vw; /* Adding padding to the input boxes */
+    margin: .6vw 0 .6vw 0; /* Add a small space between the labels and input boxes */
+    border: none;
+    background: Gainsboro;
+    font-size: 1vw;
+}
+
+/* Styling for all site buttons */
+button {
+    font-family: "GT Walsheim Pro", 'Times New Roman', Times, serif;
+    letter-spacing: .3vw; /* Adds spacing between letters */
+    font-size: 1.5vw; /* Adjust size of button text depending window size */
+    font-weight: bold;
+    padding: 1.5vw; /* Padding for button text */
+    cursor: pointer;
+    width: 100%; /* Buttons will fill the width of the container they are in */
+    height: auto; /* Adjust the height of the buttons relative to the window size */
+}
+
+/* Styling for the Submit Button */
+.Contact_Form_Container .Submit_Button {
+    background-color: white;
+    color: black;
+    border-color: black;
+    margin-bottom: 1vh;
+}
+
+/* Styling for the Close Button */
+.Contact_Form_Container .Close_Button {
+    background-color: black;
+    color: white;
+    border-color: gray;
+}
+
+/* Styling for the labels on each form input */
 label {
     font-family: "GT Walsheim Pro", 'Times New Roman', Times, serif;
     font-size: 16pt; /* Use our custom font at 16pt */
 }
-
-/* Styling for input[type=text] sections in the contact form */
-input[type=text] {
-    width: 100%; /* Each input uses their maximum width */
-    padding: 12px; /* Adds padding to the actual text boxes */
-    border: 1px solid #ccc; /* Setting a solid border and colour */
-    border-radius: 4px;/* Round the edges of the text box border */
-    box-sizing: border-box; /* Adds a border around the contact form input boxes */
-    margin-top: 6px; /* Adds a margin above each text box */
-    margin-bottom: 16px; /* Adds a margin beneath each text box */
-    resize: vertical; /* Allows the user to resize the text boxes vertically */
-    font-family: "Helvetica", sans-serif;
-    font-size: 16pt; /* Set input text to Helvetica 16 pt */
-}
-
-/* Styling for the submit buttons */
-input[type=submit] {
-    background-color:rgb(29, 179, 216); /* Set submit button to sky blue */
-    color: white; /* Set text colour to white */
-    font-weight: bold; /* Make button text bold */
-    padding: 12px 20px; /* Padding around the text on the submit button */
-    border: none; 
-    border-radius: 4px; /* Slightly curve the corners of the submit button */
-    cursor: pointer; /* When clicking on the button change mouse cursor to pointer */
-    display: block; /* Display button on it's own line */
-    margin-left: auto; /* These ensure the button is centred in the column */
-    margin-right: auto;
-    font-family: "GT Walsheim Pro", Rockwell Extra Bold; /* Use of custom font */
-}
-
-/* Hover effect for the submit button */
-input[type=submit]:hover {
-    color: white; /* When hovering over submit button change text to white */
-    transform: scale(1.5); /* Increase size of the button by 50% */
-    transition: transform 1.5s;
-}
-
-/* General contact form styling */
-form {
-    border-radius: 5px; /* Rounds the edges of the contact form */
-    padding: 10px; /* Add padding to the size of 10 pixels around the contact form */
-}
-
 /* END OF CONTACT FORM STYLING */

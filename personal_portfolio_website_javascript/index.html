@@ -134,10 +134,40 @@
 
         </div> <!-- End of DIV for Bottom row -->
 
-        <!-- CONTACT SECTION -->
-        <div class = "Row" id = "Contact">
-        </div>
-        <!-- END OF CONTACT SECTION -->
+        <!-- Contact Section -->
+        <div id = "Contact">
+            <button class = "Sticky_Contact_Button" onclick = "showForm()">CONTACT</button>
+
+            <div class = "Popup_Contact_Form" id = "Contact_Me">
+                <form action = "https://formspree.io/f/mayvzzvw" method = "POST" class = "Contact_Form_Container">
+                    <h1>Contact</h1>
+
+                    <!-- Name Input -->
+                    <label for = "name"><b>Name</b></label>
+                     <input type = "text" placeholder = "Type your name here" name = "name" required>
+
+                    <!-- Phone number Input -->
+                    <label for = "phone"><b>Phone</b></label>
+                     <input type = "text" placeholder = "Type your phone number here" name = "phone">
+
+                    <!-- Email Input -->
+                    <label for = "email"><b>Email</b></label>
+                     <input type = "text" placeholder = "Type your email address here" name = "email" required>
+
+                    <!-- Message Input -->
+                    <label for = "message"><b>Message</b></label>
+                     <input type = "text" placeholder = "Type your message here" name = "message">
+
+                    <!-- SUBMIT Button -->
+                    <button type = "submit" class = "Submit_Button">SUBMIT</button>
+
+                    <!-- CLOSE Form Button -->
+                    <button type = "button" class = "Close_Button" onclick = "hideForm()">CLOSE</button>
+                </form> <!-- End of Contact FORM Container -->
+
+            </div> <!-- End of DIV for Contact form-->
+
+        </div> <!-- End of DIV for Contact Section -->
 
         <!-- FOOTER SECTION -->
         <footer>
@@ -151,6 +181,7 @@
         </footer>
         <!--END OF FOOTER SECTION -->
 
+        <script src = "js/portfolio.js"></script>
     </body> 
     <!-- END OF BODY SECTION -->
 
