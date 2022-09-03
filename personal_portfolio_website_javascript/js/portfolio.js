@@ -3,14 +3,19 @@
 // Started: 01/09/2022 Finished:
 // by Steven Partlow
 
+// Pop-up Contact Form
+
+// Shows the contact form when the user clicks the contact button
 function showForm() { // Define FUNCTION 'showForm'
     document.getElementById("Contact_Me").style.display = "block";
 } // End of FUNCTION 'showForm'
 
+// Hide the contact form
 function hideForm() { // Define FUNCTION 'hideForm'
     document.getElementById("Contact_Me").style.display = "none";
 }  // End of FUNCTION 'hideForm'
 
+// Hides the contact form when the close button is clicked or when the user click anywhere on the page expect within the contact form
 
 document.addEventListener("click", function(event){
 

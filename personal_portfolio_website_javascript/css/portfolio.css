@@ -25,6 +25,10 @@
 
 /*** GENERAL SITE STYLING ***/
 
+html {
+    scroll-behavior: smooth; /*This ensures that the page scrolling is smooth when the buttons on the nav bar is clicked */
+}
+
 /* Body Styling */
 body {
     margin: 0; /* Displays the site using the full width of the browser screen */
