@@ -289,17 +289,22 @@ footer {
 
 /* Slideshow styling */
 
+.Slideshow_Background {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.mySlides {
+    display: none; /* Hide images by default */
+}
+
 /* slideshow-container class styling */
-.slideshow-container {
+.Slideshow_Container {
     max-width: 1000px; /* Set image width to 1000 pixels */
     position: relative; /* Set image position to relative depending on size of browser window */
     margin: auto; /* Set margin depending on the size of the browser window */
 } /* End 'slideshow-container' styling */
 
-/* mySlides class styling */
-.mySlides {
-    display: none; /* Hide images by default */
-} /* End 'mySlides' styling */
+
 
 /* Next & Previous button styling */
 .prev, .next {
