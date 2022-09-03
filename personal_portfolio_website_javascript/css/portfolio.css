@@ -205,14 +205,6 @@ footer {
     position: relative; /* The text is dislayed relative to the navbars position in the browser window, which helps for animating the navbar */
 }
 
-/* Screens 576px and samller will shrink the navbar for smaller display sizes */
-@media screen and (max-width: 576px) {
-    .Navbar a {
-        width: 25%; /* This makes each link 25% of there original size */
-        font-size: 12px; /* and reduces the font-size */
-    }
-}
-
 /* Navbar hover effect */
 .Navbar a:hover {
     background-color: rgb(223, 189, 41); /* Changes the navbar colour when we hover over it */
@@ -290,7 +282,7 @@ footer {
 /* Slideshow styling */
 
 .Slideshow_Background {
-    background: rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.35); /* Creates a transparent coloured background over our video */
 }
 
 .mySlides {
@@ -299,84 +291,100 @@ footer {
 
 /* slideshow-container class styling */
 .Slideshow_Container {
-    max-width: 1000px; /* Set image width to 1000 pixels */
+    width: 26.5vw;
+    height: auto;
+    padding-top: 2%;
     position: relative; /* Set image position to relative depending on size of browser window */
     margin: auto; /* Set margin depending on the size of the browser window */
 } /* End 'slideshow-container' styling */
 
+/* Remove the underline from the back and next buttons on the slideshow */
+.Slideshow_Container a {
+    text-decoration: none;
+}
 
+/* Styling for images within the Slideshow */
+.Slideshow_Images {
+    vertical-align: middle;
+    height: auto;
+    box-shadow: 0px 5px 10px 12px rgba(0, 0, 0, .75);
+    width: 100%;
+}
 
-/* Next & Previous button styling */
-.prev, .next {
+/* Next & Back button styling */
+.Back, .Next {
     cursor: pointer; /* Set cursor type to pointer */
     position: absolute; /* Set button position to absolute */
     top: 50%;
     width: auto; /* Have the buttons afjust in size depending on the size of the browser window */
-    margin-top: -22px;
-    padding: 16px; /* Add 16 pixels of padding around the image */
-    color: white; /* Set button colour to white */
+    padding: 2vw; /* Add 16 pixels of padding around the image */
+    color: darkgray; /* Set button colour to darkgray */
     font-weight: bold; /* Set button text to be bold */
-    font-size: 18px; /* Set button font-size to 18 */
-    transition: 0.6s ease; /* Image change takes 0.6 of a second */
+    font-size: 1.5vw; /* Set button font-size to 18 */
     border-radius: 0 3px 3px 0; /* SLightly curve the buttons */
-    user-select: none; /* Specifies if the user can select the element */
-} /* end Next & Previous button styling */
+    user-select: none; /* Specifies if the user cannot select the element text */
+    transition: 0.6s ease; /* Image change takes 0.6 of a second */
+}
 
 /* Additional next button styling so the 'Next' button is to the right */
-.next {
+.Next {
     right: 0; /* Place button as far to the right as possible */
     border-radius: 3px 0 0 3px; /* Slightly curve the button */
-} /* End Styling */
+}
 
 /* Make the 'Prev' and 'Next' buttons slightly transparent and change the background colour */
-.prev:hover, .next:hover {
+.Back:hover, .Next:hover {
     background-color: rgba(0, 0, 0, 0.8); /* Set background to black and make it slightly transparent */
+    color: white;
 } /* End Styling */ 
 
 /* Text Styling */
-.text {
-    color: #f2f2f2; /* Set text colour to white */
-    font-size: 15px; /* Set font size to 15 pixels */
-    padding: 8px 12px; /* Set text padding at the top-right to 8 and 12 pixels respectivley */
+.Image_Text {
+    color: white; /* Set text colour to white */
     position: absolute; /* The text is positioned relative to it's nearest element */
-    bottom: 8px; /* Set the text 8px from the bottom of it's nearest element */
+    bottom: 0; /* Set the text to appear at the bottom of the image */
     width: 100%;
     text-align: center; /* Allign image text to the centre of the image */
-} /* End of text styling */
-
-/* Number text (Appears in top-left of image) styling */
-.numbertext {
-    color: #f2f2f2; /* Set text-color to white */
-    font-size: 12px; /* Font-size to 12 pixels */
-    padding: 8px 12px; /* Padding at the top and the right */
-    position: absolute; /* The text is positioned relative to it's nearest element */
-    top: 0; /* But text near the top of the image */
- /* End styling for Number Text */}
+    font-family: "GT Walsheim Pro Regular", 'Times New Roman', Times, serif;
+    letter-spacing: .1vw;
+    font-size: 1.5vw; /* Set font size to 1.5 percent of the display width */
+    background-color: rgba(0, 0, 0, .75);
+    font-weight: bold;
+    border-radius: 0px 0px 7px 7px;
+}
 
 /* Dots / Bullets / Indicators Styling */
 .dot {
     cursor: pointer; /* Set cursor type to a pointer */
-    height: 15px; /* Set dot height to 15 pixels */
-    width: 15px; /* Set dot width to 15 pixels */
-    margin: 0 2px; /* Give dots a small margin at the top */
-    background-color: #bbb; /* Set dot background colour to grey */
+    height: 1vw; /* Set dot height to 1 percent of the display height */
+    width: 1vw; /* Set dot width to 1 percent of the display width */
+    margin: .25vw; /* Give dots a small margin between each */
+    background-color: white; /* Set dot background colour to grey */
     border-radius: 50%; /* Make dots curved */
     display: inline-block; /* */
     transition: background-color 0.6s ease; /* Change the background colour over 0.6 of a second */
-} /* End of DOT styling */
+    z-index: 1;
+}
 
 /* Styling of the active dot when the user hovers over it */
 .active, .dot:hover {
-    background-color: #717171; /* Change background colour of active dot to a darker grey */
-} /* End of Styling */
+    background-color: black; /* Change background colour of active dot to a darker grey */
+}
 
 /* Fading animation on image change */
-.fade {
+.Fade_Effect {
     animation-name: fade; /* Run animation 'fade' */
     animation-duration: 1.5s; /* Change image over 1.5 seconds */
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
 } /* End of Fade animation */
 
 @keyframes fade { /* Adjust opacity of image */
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@-webkit-keyframes fade { /* Adjust opacity of image */
     from {opacity: .4}
     to {opacity: 1}
 }
@@ -538,3 +546,95 @@ label {
     font-size: 16pt; /* Use our custom font at 16pt */
 }
 /* END OF CONTACT FORM STYLING */
+
+/* Media Query Styling */
+/* Media rules for paragraph font size for different display resolutions */
+@media screen (max-width: 527px) {
+    p {
+        font-size: 3.75vw;
+    }
+}
+
+@media screen and (min-width: 528px) and (max-width: 660px) {
+    p {
+        font-size: 3.5vw;
+    }
+}
+
+@media screen and (min-width: 661px) and (max-width: 799px) {
+    p {
+        font-size: 2.75vw;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 924px) {
+    p {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (min-width: 925px) and (max-width: 1050px) {
+    p {
+        font-size: 2.25vw;
+    }
+}
+
+@media screen and (min-width: 1051px) and (max-width: 1310px) {
+    p {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (min-width: 1311px) and (max-width: 1535px) {
+    p {
+        font-size: 1.75vw;
+    }
+}
+
+@media screen and (min-width: 1536px) and (max-width: 2269px) {
+    p {
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (min-width: 2270px) {
+    p {
+        font-size: 1.35vw;
+    }
+}
+
+/* Media rules for navigation links for different display resolutions */
+/* Screen 1080 pixels in width or smaller will display navbar links equally */
+@media screen and (max-width: 1080px) {
+    .Navbar a {
+        width: 20%;
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .quote{
+        font-size: 3.5vw;
+    }
+
+    .white-text {
+        font-size: 4.5vw;
+    }
+}
+
+/* Increase size of columns on larger screens */
+@media screen and (min-width: 1725px) {
+    .Column_1 {
+        height: 550px;
+    }
+    .Column_2 {
+        height: 550px;
+    }
+}
+
+/* Remove top margin from h1 elements on extra large screen so our text fits */
+@media screen and (min-width: 2000px) {
+    h1 {
+        margin-top: 0;;
+    }
+}

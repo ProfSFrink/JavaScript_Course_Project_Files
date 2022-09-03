@@ -12,8 +12,8 @@
 <!-- 02). Carefully remove parts of the site that are no longer needed / being replaced with JavaScript. - DONE 1/9/22 Comitted-->
 <!-- 03). Add a sticky contact button to the bottom right-had corner of the web page then when the user clicks on the button the contact form appears. - DONE 1/9/22 Comitted -->
 <!-- 04). The contact form must have form validation implementated and inform the user if they try to submit an empty form. - DONE 2/9/22 Comitted --> 
-<!-- 05). Replace personal photo with an image slideshow of myself and show case my skills (Use my own images). -->
-<!-- 06). Ensure site works correctly on mobile devices phones / tablets, etc. -->
+<!-- 05). Replace personal photo with an image slideshow of myself and show case my skills (Use my own images). DONE 3/9/22 Comitted -->
+<!-- 06). Ensure site works correctly on mobile devices phones / tablets, etc. DONE 3/9/22 Comitted -->
 <!-- 07). Fully customize the site with my own text, images, icons, styling and variable / function names. -->
 <!-- 08). Fully comment all code. -->
 <!-- 09). Fully test the site and ensure all elements work in the major web browser Chrome / Edge / Firefox / Safari, etc and on mobile devices. -->
@@ -76,41 +76,48 @@
         <div id = "Slideshow">
 
             <div class = "Slideshow_Background">
-                <!-- Slideshow container holds our slideshow -->
+
                 <div class = "Slideshow_Container">
 
                     <!-- Full-width images with number and caption text -->
 
                     <!-- Slideshow Image #1 -->
-                    <div class="mySlides fade">
-                        <img src="./images/me.jpg">
-                        <div class="text">Image #1</div>
+                    <div class="mySlides Fade_Effect">
+                        <img class = "Slideshow_Images" src = "./images/me.jpg">
+                        <div class = "Image_Text">I'm a Software / Web Developer in Training.</div>
                     </div> <!-- End of First Image DIV -->
 
                     <!-- Slideshow Image #2 -->
-                    <div class="mySlides fade">
-                        <img src="./images/HTML_CSS_and_JavaScript.jpeg">
-                        <div class="text">Image #2</div>
+                    <div class="mySlides Fade_Effect">
+                        <img class = "Slideshow_Images" src = "./images/HTML_CSS_and_JavaScript.jpeg">
+                        <div class = "Image_Text">Fully trained in HTML / CSS and JavaScript.</div>
                     </div> <!-- End of Second Image DIV -->
 
                     <!-- Slideshow Image #3 -->
-                    <div class="mySlides fade">
-                        <img src="./images/Python.png">
-                        <div class="text">Image #3</div>
+                    <div class="mySlides Fade_Effect">
+                        <img  class = "Slideshow_Images" src = "./images/Python.png">
+                        <div class = "Image_Text">and Python.</div>
                     </div> <!-- End of Third Image DIV -->
+
+                    <!-- Slideshow Image #4 -->
+                    <div class="mySlides Fade_Effect">
+                        <img  class = "Slideshow_Images" src = "./images/Square Custom Picture.png">
+                        <div class = "Image_Text">view my GitHub.</div>
+                    </div> <!-- End of Fourth Image DIV -->
         
                     <!-- Next and previous buttons -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <a class = "Back" onclick = "plusSlides(-1)">&#10094;</a>
+                    <a class = "Next" onclick = "plusSlides(1)">&#10095;</a>
             
-                </div>
+                </div> <!-- End of DIV for Slideshow_Container -->
                 <br>
         
                 <!-- The dots/circles at the bottom of each image -->
                 <div style="text-align:center"> <!-- Center dots beneath the images -->
-                    <span class="dot" onclick="currentSlide(1)"></span> <!-- Executes JS function 'currentSlide' which set the gallary to the first image -->
-                    <span class="dot" onclick="currentSlide(2)"></span> <!-- Executes JS function 'currentSlide' which set the gallary to the second image -->
-                    <span class="dot" onclick="currentSlide(3)"></span> <!-- Executes JS function 'currentSlide' which set the gallary to the third image -->
+                    <span class = "dot" onclick = "currentSlide(1)"></span> <!-- Executes JS function 'currentSlide' which set the gallary to the first image -->
+                    <span class = "dot" onclick = "currentSlide(2)"></span> <!-- Executes JS function 'currentSlide' which set the gallary to the second image -->
+                    <span class = "dot" onclick = "currentSlide(3)"></span> <!-- Executes JS function 'currentSlide' which set the gallary to the third image -->
+                    <span class = "dot" onclick = "currentSlide(4)"></span> <!-- Executes JS function 'currentSlide' which set the gallary to the third image -->
                 </div> <!-- End of DIV for Dots -->
 
             </div> <!-- End of DIV for Slideshow Background -->
@@ -162,6 +169,7 @@
                 <ul>
                     <li>HTML</li>
                     <li>CSS - including Bootstrap</li>
+                    <li>JavaScript</li>
                     <li>Object-Orientated Programming</li>
                     <li>Python</li>
                     <li>GIT Version Control</li> 
