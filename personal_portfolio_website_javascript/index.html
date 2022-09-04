@@ -24,8 +24,8 @@
 
      <!-- HEAD SECTION -->
     <head>
-        <meta charset = "utf-8"> <!-- Use the UTF-8 Character Set -->
-        <meta name = "viewport" content = "width=device-width"> <!-- To allow us to make adjustments later depending on the size of the display -->
+        <meta charset = "UTF-8"> <!-- Use the UTF-8 Character Set -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- To allow us to make adjustments later depending on the size of the display -->
         <title>Steven Partlow's Personal Portfolio Website</title>
         <!-- Link to Portfolio CSS Stylesheet -->
         <link rel = "stylesheet" type = "text/css" href = "./css/portfolio.css">
@@ -65,7 +65,6 @@
             <h2 class = "first-head white-text">Software and Web Developer</h2>
             <h1 class = "second-head white-text">Steven Partlow BSc</h1>
             <p class = "third-head">
-                <!-- NOTE: WE HAVE TO CUSTOMISE THIS OURSELVES -->
                 <br> Hi, i'm Steven a software and web developer currently training in Ipswich in the UK. 
                 <br>
                 <br> Welcome to my Portfolio Website. Thanks for visiing! 
@@ -163,7 +162,7 @@
         <div class = "Row">
 
             <!-- Skills Column -->
-            <div class = "Column_2">
+            <div class = "Column_2 Small">
                 <h1>Skills</h1>
                 <!-- Display Skills as an unordered list -->
                 <ul>
@@ -177,7 +176,7 @@
             </div> <!-- End of DIV for Skills column -->
 
             <!-- LinkedIN Image and Link -->
-            <div class = "Column_1">
+            <div class = "Column_1 Small">
                 <br>
                 <br>
                 <br>
@@ -192,11 +191,11 @@
 
             <div class = "Popup_Contact_Form" id = "Contact_Me">
                 <form action = "https://formspree.io/f/mayvzzvw" method = "POST" class = "Contact_Form_Container">
-                    <h1>Contact</h1>
+                    <h1 class = "Contact_Header">Contact</h1>
 
                     <!-- Name Input -->
                     <label for = "name"><b>Name</b></label>
-                     <input type = "text" placeholder = "Type your name here" name = "name" required>
+                     <input type = "text" placeholder = "Type your full name here" name = "name" required>
 
                     <!-- Phone number Input -->
                     <label for = "phone"><b>Phone</b></label>
@@ -204,7 +203,7 @@
 
                     <!-- Email Input -->
                     <label for = "email"><b>Email</b></label>
-                     <input type = "text" placeholder = "Type your email address here" name = "email" required>
+                     <input type = "text" placeholder = "Type your e-mail address here" name = "email" required>
 
                     <!-- Message Input -->
                     <label for = "message"><b>Message</b></label>
@@ -233,6 +232,7 @@
         </footer>
         <!--END OF FOOTER SECTION -->
 
+        <!-- Link to JavaScript that controls our image slideshow and contact form-->
         <script src = "./js/portfolio.js"></script>
     </body> 
     <!-- END OF BODY SECTION -->

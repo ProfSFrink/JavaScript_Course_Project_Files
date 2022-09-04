@@ -31,6 +31,7 @@ html {
 
 /* Body Styling */
 body {
+    width: 100%;
     margin: 0; /* Displays the site using the full width of the browser screen */
 }
 
@@ -40,14 +41,13 @@ h1, h2 {
     font-family: "GT Walsheim Pro", sans-serif; /* Fonts for h1 elements to use */
     text-align: center; /* Centre h1 elements */
     color: #1a1a1a;
-    font-size: 28pt;
 }
 
 /* Portfolio Title Text Styling */
 
 /* Styling for the first heading of the title section */
 .first-head {
-    font-size: 32pt; /* Set font size to 32 pt */
+    font-size: 3.2vw; /* Set font size to 32 pt */
     font-weight: 700;
     position: relative; /* This allows us to use the animation */
     -webkit-animation: moveFirstHead 4s;
@@ -62,7 +62,7 @@ h1, h2 {
 
 /* Styling for the second heading of the title section */
 .second-head {
-    font-size: 91pt; /* Set font size to 91 pt */
+    font-size: 6vw; /* Set font size to 91 pt */
     /* Set the colour to 0 hue, 0% saturation, 100% lightness and .95 alpha */
     margin: 10px 0px; /* Place a margin and padding around this heading so there is some between it */
     padding: 29px 0px; /* and the headings above and below */
@@ -80,7 +80,7 @@ h1, h2 {
 /* Styling for the third heading of the title section */
 .third-head {
     text-align: center; /* Centre the text of this heading */ 
-    font-size: xx-large; /* Set font size to xxl */
+    font-size: 1.8vw; /* Set font size to xxl */
     position: relative; /* This allows us to use the animation */
     -webkit-animation: moveThirdHead 4s;
     animation: moveThirdHead 4s;
@@ -108,10 +108,10 @@ h1, h2 {
 p {
     font-family: "GT Walsheim Pro Regular", sans-serif;
     text-align: justify; /* Justify text of paragraph elements */
-    letter-spacing: 1px; /* Expands the spacing between letters by 1px */
-    font-size: 20px; /* Set font-size to 20px */
-    padding-left: 20px; /* Leave a 20pixel gab to the left of paragraph elements */
-    padding-right: 20px; /* Leave a 20pixel gab to the right of paragraph elements */
+    letter-spacing: .1vw; /* Expands the spacing between letters by 1px */
+    font-size: 1.7vw; /* Set font-size to 20px */
+    padding-left: 1vw; /* Leave a 20pixel gab to the left of paragraph elements */
+    padding-right: 1vw; /* Leave a 20pixel gab to the right of paragraph elements */
 }
 
 /***** NOTE: WE HAVE TO CUSTOMISE THIS OURSELVES *****/
@@ -132,27 +132,15 @@ img {
     filter: grayscale(75%);
     border-radius: 8px; /* Gives images rounded-edges */
     max-width: 100%; /* Images will fill there container */
-    max-height: 340px; /* Set maximum height of all images to 340 pixels */
+    max-height: 100%;
     display: block; /* This and the two margin properties below ensure we can centre images */
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto auto auto auto;
 }
 
 /* IMAGE element hover effects */
 
 img:hover {
     filter: grayscale(0%); /* Hovering over the image will make it full-colour */
-    transition: transform 1.5s; /* The increase in size will take 1.5s */
-    transition-timing-function: ease-in; /* The increase in size will start slow and get faster */
-    transform: scale(1.2); /* Makes the image 20% bigger */
-}
-
-/* Screens 576px and smaller will shrink the images down to fit the display */
-@media screen and (max-width: 576px) {
-    img {
-        height: 100px;
-        margin-top: 150px;
-    }
 }
 
 /* Skill List element styling */
@@ -162,7 +150,7 @@ ul {
 
 li { /* Indvidual list elements will use the custom font*/
     font-family: "GT Walsheim Pro Regular", 'Times New Roman', Times, serif;
-    font-size: 24pt; /* Set font size to 24 */
+    font-size: 2.3vw; /* Set font size to 24 */
     font-weight: 500; /* Make text slightly bold */
     margin: 5px; /* A small margin around each skill point */
 }
@@ -184,7 +172,7 @@ footer {
 /*** NAVBAR STYLING ***/
 .Navbar {
     overflow: hidden; /* Does not show content that goes outside the navbar area */
-    background-color: rgb(29, 179, 216);
+    background-color: cornflowerblue;
     position: fixed; /* The navbar stays fixed to the top of the browser as we scroll down the page */
     top: 0; /* Positions the navbar at the very top-left of the browser */
     left: 0;
@@ -291,7 +279,7 @@ footer {
 
 /* slideshow-container class styling */
 .Slideshow_Container {
-    width: 26.5vw;
+    width: 28.5vw;
     height: auto;
     padding-top: 2%;
     position: relative; /* Set image position to relative depending on size of browser window */
@@ -405,9 +393,9 @@ footer {
 .Column_1 {
     float: left;
     width: 50%; /* Ensures the column take up half the width of the page */
-    padding: 10px;
+    padding: 1.6%;
     padding-top: 1.9%; /* Leaves some space at the top of the columns for our headings */
-    height: 500px; /* Sets the height of the column */
+    height: 820px; /* Sets the height of the column */
     background-color: #f2f2f2;
 }
 
@@ -424,10 +412,13 @@ footer {
 .Column_2 {
     float: left;
     width: 50%; /* Ensures the column take up half the width of the page */
-    padding: 10px; /* Space for our heading */
-    padding-top: 1.9%; /* Some extra space at the top for our headings */
-    height: 500px; /* Sets the height of the column */
+    padding: 1.6%; /* Space for our heading */
+    height: 820px; /* Sets the height of the column */
     background-color: rgb(29, 179, 216); /* Set background to light blue */
+}
+
+.Small {
+    height: 650px;
 }
 
 /* Github section styling */
@@ -496,6 +487,11 @@ footer {
     right: .5vw; /* Position form a little from the right-hand side of the page */
 }
 
+.Contact_Header {
+    font-size: 2.75vw;
+    color: white;
+}
+
 /* Styling for the Popup Contact Form */
 .Contact_Form_Container {
     max-width: 49vw; /* The form when shown will take up 49% of the display */
@@ -526,7 +522,7 @@ button {
 }
 
 /* Styling for the Submit Button */
-.Contact_Form_Container .Submit_Button {
+.Contact_Form_Container, .Submit_Button {
     background-color: white;
     color: black;
     border-color: black;
@@ -534,7 +530,7 @@ button {
 }
 
 /* Styling for the Close Button */
-.Contact_Form_Container .Close_Button {
+.Contact_Form_Container, .Close_Button {
     background-color: black;
     color: white;
     border-color: gray;
@@ -548,8 +544,15 @@ label {
 /* END OF CONTACT FORM STYLING */
 
 /* Media Query Styling */
+
+/* Screens 576px and smaller will shrink the images down to fit the display */
+@media screen and (max-width: 576px) {
+    img {
+        height: 100px;
+        margin-top: 5vw;
+}
 /* Media rules for paragraph font size for different display resolutions */
-@media screen (max-width: 527px) {
+@media screen and (max-width: 527px) {
     p {
         font-size: 3.75vw;
     }
@@ -613,11 +616,7 @@ label {
 }
 
 @media screen and (max-width: 1080px) {
-    .quote{
-        font-size: 3.5vw;
-    }
-
-    .white-text {
+    .white-text .third-head {
         font-size: 4.5vw;
     }
 }
@@ -625,10 +624,10 @@ label {
 /* Increase size of columns on larger screens */
 @media screen and (min-width: 1725px) {
     .Column_1 {
-        height: 550px;
+        height: 36vw;
     }
     .Column_2 {
-        height: 550px;
+        height: 36vw;
     }
 }
 
