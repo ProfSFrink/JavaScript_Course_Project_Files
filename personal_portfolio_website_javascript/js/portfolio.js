@@ -19,7 +19,7 @@ function hideForm() { // Define FUNCTION 'hideForm'
 
 document.addEventListener("click", function(event){
 
-    if (event.target.matches(".Close_Button") || !event.target.closest(".Contact_Form_Container") && !event.target.closest(".Sticky_Contact_Button") && !event.target.closest(".contact")){
+    if (event.target.matches(".Close_Button") || !event.target.closest(".Contact_Form_Container") && !event.target.closest(".Sticky_Contact_Button") && !event.target.closest(".contact-link")){
         hideForm()
     }
 }, false )

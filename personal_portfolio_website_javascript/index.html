@@ -14,7 +14,7 @@
 <!-- 04). The contact form must have form validation implementated and inform the user if they try to submit an empty form. - DONE 2/9/22 Comitted --> 
 <!-- 05). Replace personal photo with an image slideshow of myself and show case my skills (Use my own images). DONE 3/9/22 Comitted -->
 <!-- 06). Ensure site works correctly on mobile devices phones / tablets, etc. DONE 3/9/22 Comitted -->
-<!-- 07). Fully customize the site with my own text, images, icons, styling and variable / function names. -->
+<!-- 07). Fully customize the site with my own text, images, icons, styling and variable / function names. DONE 5/9/22 Comitted -->
 <!-- 08). Fully comment all code. -->
 <!-- 09). Fully test the site and ensure all elements work in the major web browser Chrome / Edge / Firefox / Safari, etc and on mobile devices. -->
 <!-- 10). Upload and make the site live. -->
@@ -39,10 +39,11 @@
 
         <!-- NAVBAR SECTION -->
         <div class = "Navbar">
-            <a class = "active" href = "#Home"><i class = "fa fa-home"></i></a>
+            <a class = "active" href = "#Home"><i class = "fa fa-home"></i></a> <!-- Link to the Top of the page -->
+            <a class = "middle-links" href = "#Slideshow"><i class="fa fa-image"></i></a> <!-- Link to Image Slideshow -->
             <a class = "middle-links" href = "#About"><i class = "fa fa-male"></i></a> <!-- Link to ABOUT SECTION -->
             <a class = "middle-links" href = "#GitHub"><i class = "fa fa-github"></i></a> <!-- Link to GITHUB SECTION -->
-            <a class = "contact-link" href = "#Contact"><i class = "fa fa-envelope"></i></a> <!-- Link to CONTACT SECTION -->
+            <a class = "contact-link" onclick = "showForm()" ondblclick = "hideForm()"><i class = "fa fa-envelope"></i></a> <!-- Link to CONTACT SECTION -->
         </div>
         <!-- END OF NAVBAR SECTION -->
 
@@ -67,7 +68,7 @@
             <p class = "third-head">
                 <br> Hi, i'm Steven a software and web developer currently training in Ipswich in the UK. 
                 <br>
-                <br> Welcome to my Portfolio Website. Thanks for visiing! 
+                <br> Welcome to my Portfolio Website. Thanks for visiting! 
             </p>
         </div>
         <!-- End of Video Overlay Text -->
@@ -80,29 +81,41 @@
 
                     <!-- Full-width images with number and caption text -->
 
-                    <!-- Slideshow Image #1 -->
+                    <!-- Slideshow Me Image -->
                     <div class="mySlides Fade_Effect">
-                        <img class = "Slideshow_Images" src = "./images/me.jpg">
-                        <div class = "Image_Text">I'm a Software / Web Developer in Training.</div>
+                        <img class = "Slideshow_Images" src = "./images/Photo_of_me.jpeg">
+                        <div class = "Image_Text">Hi i'm Steven a Software and Web Developer in Training.</div>
                     </div> <!-- End of First Image DIV -->
 
-                    <!-- Slideshow Image #2 -->
+                    <!-- Slideshow HTML5 Image -->
                     <div class="mySlides Fade_Effect">
-                        <img class = "Slideshow_Images" src = "./images/HTML_CSS_and_JavaScript.jpeg">
-                        <div class = "Image_Text">Fully trained in HTML / CSS and JavaScript.</div>
+                        <img class = "Slideshow_Images" src = "./images/HTML5_Logo.png">
+                        <div class = "Image_Text">Fully trained in HTML5</div>
                     </div> <!-- End of Second Image DIV -->
 
-                    <!-- Slideshow Image #3 -->
+                    <!-- Slideshow CSS3 Image -->
                     <div class="mySlides Fade_Effect">
-                        <img  class = "Slideshow_Images" src = "./images/Python.png">
-                        <div class = "Image_Text">and Python.</div>
+                        <img  class = "Slideshow_Images" src = "./images/CSS3_Logo.png">
+                        <div class = "Image_Text">alongside CSS3,</div>
                     </div> <!-- End of Third Image DIV -->
 
-                    <!-- Slideshow Image #4 -->
+                    <!-- Slideshow JavaScript Image -->
                     <div class="mySlides Fade_Effect">
-                        <img  class = "Slideshow_Images" src = "./images/Square Custom Picture.png">
-                        <div class = "Image_Text">view my GitHub.</div>
+                        <img  class = "Slideshow_Images" src = "./images/JavaScript_Logo.png">
+                        <div class = "Image_Text">JavaScript</div>
                     </div> <!-- End of Fourth Image DIV -->
+
+                     <!-- Slideshow Python Image -->
+                     <div class="mySlides Fade_Effect">
+                        <img  class = "Slideshow_Images" src = "./images/Python_Logo.png">
+                        <div class = "Image_Text">and Python.</div>
+                    </div> <!-- End of Fifth Image DIV -->                   
+
+                    <!-- Slideshow GitHub Image -->
+                    <div class="mySlides Fade_Effect">
+                        <a href = "https://github.com/ProfSFrink" target  = "_blank"><img  class = "Slideshow_Images" src = "./images/GitHub_Logo.png"></a>
+                        <div class = "Image_Text">View my GitHub.</div>
+                    </div> <!-- End of Sixth Image DIV -->
         
                     <!-- Next and previous buttons -->
                     <a class = "Back" onclick = "plusSlides(-1)">&#10094;</a>
@@ -116,7 +129,9 @@
                     <span class = "dot" onclick = "currentSlide(1)"></span> <!-- Executes JS function 'currentSlide' which set the gallary to the first image -->
                     <span class = "dot" onclick = "currentSlide(2)"></span> <!-- Executes JS function 'currentSlide' which set the gallary to the second image -->
                     <span class = "dot" onclick = "currentSlide(3)"></span> <!-- Executes JS function 'currentSlide' which set the gallary to the third image -->
-                    <span class = "dot" onclick = "currentSlide(4)"></span> <!-- Executes JS function 'currentSlide' which set the gallary to the third image -->
+                    <span class = "dot" onclick = "currentSlide(4)"></span> <!-- Executes JS function 'currentSlide' which set the gallary to the fourth image -->
+                    <span class = "dot" onclick = "currentSlide(5)"></span> <!-- Executes JS function 'currentSlide' which set the gallary to the fifth image -->                                        
+                    <span class = "dot" onclick = "currentSlide(6)"></span> <!-- Executes JS function 'currentSlide' which set the gallary to the sixth image -->
                 </div> <!-- End of DIV for Dots -->
 
             </div> <!-- End of DIV for Slideshow Background -->
@@ -148,11 +163,11 @@
                     <p class = "Center">MY PROJECTS</p>
                     <!-- Link to Project code -->
                     <p class = "Center">
-                        <a href = "https://github.com/ProfSFrink/CSS_and_Bootstrap_Course_Project_Files/blob/master/personal_portfolio_website/index.html" target = "_blank"><i class = "fa fa-github"></i> This Portfolio Website</a>
+                        <a href = "https://github.com/ProfSFrink/JavaScript_Course_Project_Files/blob/main/personal_portfolio_website_javascript/index.html" target = "_blank"><i class = "fa fa-github"></i> This Portfolio Website</a>
                     </p>
                     <!-- Link to Project code -->
                     <p class = "Center">
-                        <a href = "https://github.com/ProfSFrink/Videogame-Database-Project/blob/main/vg_database.py" target = "_blank"><i class = "fa fa-github"></i> Python Videogame Database Project</a>
+                        <a href = "https://github.com/ProfSFrink/Videogame-Database-Project/blob/main/vg_database.py" target = "_blank"><i class = "fa fa-github"></i> Python Bootcamp Capstone Project - Command Line Database Project</a>
                     </p>
             </div> <!-- End of DIV for GitHub section -->
 
@@ -227,7 +242,10 @@
                     <!-- LinkedIn Link -->
                     <a href = "https://www.linkedin.com/in/steven-partlow-9375b0236/" target = "_blank"><i class = "fa fa-linkedin"></i></a>&nbsp;
                     <!-- Twitter Link -->
-                        <a href = "https://twitter.com/ProfSFrink" target="_blank"><i class = "fa fa-twitter"></i></a>
+                    <a href = "https://twitter.com/ProfSFrink" target ="_blank"><i class = "fa fa-twitter"></i></a>
+                    <!-- Facebook Link -->
+                    <a href = "https://www.facebook.com/profsfrink/" target = "_blank"><i class = "fa fa-facebook"></i></a>
+
             </p>
         </footer>
         <!--END OF FOOTER SECTION -->
