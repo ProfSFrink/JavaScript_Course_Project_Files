@@ -306,7 +306,7 @@ footer {
     top: 50%;
     width: auto; /* Have the buttons afjust in size depending on the size of the browser window */
     padding: 2vw; /* Add 16 pixels of padding around the image */
-    color: darkgray; /* Set button colour to darkgray */
+    color: black; /* Set button colour to black */
     font-weight: bold; /* Set button text to be bold */
     font-size: 1.5vw; /* Set button font-size to 18 */
     border-radius: 0 3px 3px 0; /* SLightly curve the buttons */

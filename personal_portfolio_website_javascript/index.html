@@ -22,30 +22,31 @@
 <!DOCTYPE html>
 <html lang = "en">
 
-     <!-- HEAD SECTION -->
+     <!-- HEAD Section -->
     <head>
         <meta charset = "UTF-8"> <!-- Use the UTF-8 Character Set -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- To allow us to make adjustments later depending on the size of the display -->
         <title>Steven Partlow's Personal Portfolio Website</title>
+        <!-- Favicon that appears as an icon in the browser tab -->
+        <link rel="shortcut icon" type="img/jpg" href="./images/favicon-512x512.png">
         <!-- Link to Portfolio CSS Stylesheet -->
         <link rel = "stylesheet" type = "text/css" href = "./css/portfolio.css">
-        <!-- Link to Font Awesome CDN CSS Stylesheet for custom icons -->
+        <!-- Link to Font Awesome CDN CSS Stylesheet for custom icons on the Navbar -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <!-- END OF HEAD SECTION -->
+    </head> <!-- End of HEAD Section -->
     
-    <!-- BODY SECTION -->
+    <!-- BODY Section -->
     <body> 
 
-        <!-- NAVBAR SECTION -->
+        <!-- NAVBAR Section -->
         <div class = "Navbar">
             <a class = "active" href = "#Home"><i class = "fa fa-home"></i></a> <!-- Link to the Top of the page -->
             <a class = "middle-links" href = "#Slideshow"><i class="fa fa-image"></i></a> <!-- Link to Image Slideshow -->
             <a class = "middle-links" href = "#About"><i class = "fa fa-male"></i></a> <!-- Link to ABOUT SECTION -->
             <a class = "middle-links" href = "#GitHub"><i class = "fa fa-github"></i></a> <!-- Link to GITHUB SECTION -->
+            <!-- Display the contact form if the contact icon is clicked once and then hide the form when it is double clicked on -->
             <a class = "contact-link" onclick = "showForm()" ondblclick = "hideForm()"><i class = "fa fa-envelope"></i></a> <!-- Link to CONTACT SECTION -->
-        </div>
-        <!-- END OF NAVBAR SECTION -->
+        </div> <!-- End of DIV for NAVBAR Section -->
 
         <!-- Add between the site navbar and the first heading -->
         <br>
@@ -58,8 +59,7 @@
                 <!-- Display the below message if the browser does not support the VIDEO tag -->
                 Your browser does not supoort HTML5 Video.
             </video>
-        </div>
-        <!-- End of Background Video -->
+        </div> <!-- End of DIV for Background Video -->
 
         <!-- Video Overlay Text -->
         <div class = "Video_Overlay_Text">
@@ -70,8 +70,7 @@
                 <br>
                 <br> Welcome to my Portfolio Website. Thanks for visiting! 
             </p>
-        </div>
-        <!-- End of Video Overlay Text -->
+        </div> <!-- End of DIV for Video Overlay Text -->
 
         <div id = "Slideshow">
 
@@ -138,7 +137,8 @@
 
         </div> <!-- End of DIV for Slideshow -->
 
-        <!-- Top row -->
+        <!-- TOP ROW -->
+        
         <div class = "Row" id = "About">
             
             <!-- About Section -->
@@ -173,7 +173,8 @@
 
         </div> <!-- End of About Row -->
 
-        <!-- Bottom row -->
+        <!-- BOTTOM ROW -->
+
         <div class = "Row">
 
             <!-- Skills Column -->
@@ -235,7 +236,7 @@
 
         </div> <!-- End of DIV for Contact Section -->
 
-        <!-- FOOTER SECTION -->
+        <!-- FOOTER Section -->
         <footer>
             <p>
                 <p class = "center">&copy; Steven Partlow BSc. 2022, 
@@ -247,12 +248,10 @@
                     <a href = "https://www.facebook.com/profsfrink/" target = "_blank"><i class = "fa fa-facebook"></i></a>
 
             </p>
-        </footer>
-        <!--END OF FOOTER SECTION -->
+        </footer> <!--End of FOOTER Section -->
 
         <!-- Link to JavaScript that controls our image slideshow and contact form-->
         <script src = "./js/portfolio.js"></script>
-    </body> 
-    <!-- END OF BODY SECTION -->
+    </body>  <!-- End of BODY Section -->
 
 </html> <!-- End of HTML Document -->
