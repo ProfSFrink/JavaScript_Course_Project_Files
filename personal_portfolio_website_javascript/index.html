@@ -15,9 +15,9 @@
 <!-- 05). Replace personal photo with an image slideshow of myself and show case my skills (Use my own images). DONE 3/9/22 Comitted -->
 <!-- 06). Ensure site works correctly on mobile devices phones / tablets, etc. DONE 3/9/22 Comitted -->
 <!-- 07). Fully customize the site with my own text, images, icons, styling and variable / function names. DONE 5/9/22 Comitted -->
-<!-- 08). Fully comment all code. -->
-<!-- 09). Fully test the site and ensure all elements work in the major web browser Chrome / Edge / Firefox / Safari, etc and on mobile devices. -->
-<!-- 10). Upload and make the site live. -->
+<!-- 08). Fully comment all code. DONE 6/9/22 Comitted -->
+<!-- 09). Fully test the site and ensure all elements work in the major web browser Chrome / Edge / Firefox / Safari, etc and on mobile devices. DONE 6/9/22 Comitted -->
+<!-- 10). Upload and make the site live. DONE 6/9/22 Uploaded -->
 
 <!DOCTYPE html>
 <html lang = "en">
@@ -72,47 +72,46 @@
             </p>
         </div> <!-- End of DIV for Video Overlay Text -->
 
+        <!-- Image Slideshow -->
         <div id = "Slideshow">
 
-            <div class = "Slideshow_Background">
+            <div class = "Slideshow_Background"> <!-- Background the Slideshow sits above -->
 
-                <div class = "Slideshow_Container">
+                <div class = "Slideshow_Container"> <!-- The container the slieshow appears in -->
 
-                    <!-- Full-width images with number and caption text -->
-
-                    <!-- Slideshow Me Image -->
+                    <!-- Slideshow Image of me -->
                     <div class="mySlides Fade_Effect">
-                        <img class = "Slideshow_Images" src = "./images/Photo_of_me.jpeg">
+                        <img class = "Slideshow_Images" src = "./images/Photo_of_me.jpeg" alt = "Photo of Steven">
                         <div class = "Image_Text">Hi i'm Steven a Software and Web Developer in Training.</div>
                     </div> <!-- End of First Image DIV -->
 
                     <!-- Slideshow HTML5 Image -->
                     <div class="mySlides Fade_Effect">
-                        <img class = "Slideshow_Images" src = "./images/HTML5_Logo.png">
+                        <img class = "Slideshow_Images" src = "./images/HTML5_Logo.png" alt = "HTML5 Logo">
                         <div class = "Image_Text">Fully trained in HTML5</div>
                     </div> <!-- End of Second Image DIV -->
 
                     <!-- Slideshow CSS3 Image -->
                     <div class="mySlides Fade_Effect">
-                        <img  class = "Slideshow_Images" src = "./images/CSS3_Logo.png">
+                        <img  class = "Slideshow_Images" src = "./images/CSS3_Logo.png" alt = "CSS3 Logo">
                         <div class = "Image_Text">alongside CSS3,</div>
                     </div> <!-- End of Third Image DIV -->
 
                     <!-- Slideshow JavaScript Image -->
                     <div class="mySlides Fade_Effect">
-                        <img  class = "Slideshow_Images" src = "./images/JavaScript_Logo.png">
+                        <img  class = "Slideshow_Images" src = "./images/JavaScript_Logo.png" alt = "JavaScript Logo">
                         <div class = "Image_Text">JavaScript</div>
                     </div> <!-- End of Fourth Image DIV -->
 
                      <!-- Slideshow Python Image -->
                      <div class="mySlides Fade_Effect">
-                        <img  class = "Slideshow_Images" src = "./images/Python_Logo.png">
+                        <img  class = "Slideshow_Images" src = "./images/Python_Logo.png" alt = "Python Logo">
                         <div class = "Image_Text">and Python.</div>
                     </div> <!-- End of Fifth Image DIV -->                   
 
-                    <!-- Slideshow GitHub Image -->
+                    <!-- Slideshow GitHub Image - clicking on image will take user to GitHub Profile -->
                     <div class="mySlides Fade_Effect">
-                        <a href = "https://github.com/ProfSFrink" target  = "_blank"><img  class = "Slideshow_Images" src = "./images/GitHub_Logo.png"></a>
+                        <a href = "https://github.com/ProfSFrink" target  = "_blank"><img  class = "Slideshow_Images" src = "./images/GitHub_Logo.png" alt = "GitHub Logo"></a>
                         <div class = "Image_Text">View my GitHub.</div>
                     </div> <!-- End of Sixth Image DIV -->
         
@@ -141,7 +140,7 @@
         
         <div class = "Row" id = "About">
             
-            <!-- About Section -->
+            <!-- Top / Left - About Section -->
             <div class = "Column_1">
                 <h1>About</h1>
                 <p>
@@ -152,7 +151,7 @@
                 </p>
             </div> <!-- End of DIV for About Section -->
 
-            <!-- GitHub section -->
+            <!-- Top / Right - GitHub section -->
             <div class = "Column_2 Github" id = "GitHub">
                 <h1>GitHub</h1>
                 <p>My coding portfolio can be viewed on my GitHub profile:</p>
@@ -177,7 +176,7 @@
 
         <div class = "Row">
 
-            <!-- Skills Column -->
+            <!-- Bottom / Left - Skills Column -->
             <div class = "Column_2 Small">
                 <h1>Skills</h1>
                 <!-- Display Skills as an unordered list -->
@@ -191,7 +190,7 @@
                 </ul>
             </div> <!-- End of DIV for Skills column -->
 
-            <!-- LinkedIN Image and Link -->
+            <!-- Bottom / Right - LinkedIN Image and Link -->
             <div class = "Column_1 Small">
                 <br>
                 <br>
@@ -201,28 +200,30 @@
 
         </div> <!-- End of DIV for Bottom row -->
 
-        <!-- Contact Section -->
+        <!-- Contact Form -->
         <div id = "Contact">
+            <!-- Contact Form popup Button when the user clicks the button the contact form displays -->
             <button class = "Sticky_Contact_Button" onclick = "showForm()">CONTACT</button>
 
             <div class = "Popup_Contact_Form" id = "Contact_Me">
+                <!-- Connection to formspree.io which sends submitted form data to -->
                 <form action = "https://formspree.io/f/mayvzzvw" method = "POST" class = "Contact_Form_Container">
                     <h1 class = "Contact_Header">Contact</h1>
 
                     <!-- Name Input -->
-                    <label for = "name"><b>Name</b></label>
+                    <label for = "name"><b>Name:</b></label>
                      <input type = "text" placeholder = "Type your full name here" name = "name" required>
 
                     <!-- Phone number Input -->
-                    <label for = "phone"><b>Phone</b></label>
+                    <label for = "phone"><b>Phone:</b></label>
                      <input type = "text" placeholder = "Type your phone number here" name = "phone">
 
                     <!-- Email Input -->
-                    <label for = "email"><b>Email</b></label>
+                    <label for = "email"><b>E-Mail:</b></label>
                      <input type = "text" placeholder = "Type your e-mail address here" name = "email" required>
 
                     <!-- Message Input -->
-                    <label for = "message"><b>Message</b></label>
+                    <label for = "message"><b>Message:</b></label>
                      <input type = "text" placeholder = "Type your message here" name = "message">
 
                     <!-- SUBMIT Button -->
@@ -238,19 +239,17 @@
 
         <!-- FOOTER Section -->
         <footer>
-            <p>
-                <p class = "center">&copy; Steven Partlow BSc. 2022, 
-                    <!-- LinkedIn Link -->
-                    <a href = "https://www.linkedin.com/in/steven-partlow-9375b0236/" target = "_blank"><i class = "fa fa-linkedin"></i></a>&nbsp;
-                    <!-- Twitter Link -->
-                    <a href = "https://twitter.com/ProfSFrink" target ="_blank"><i class = "fa fa-twitter"></i></a>
-                    <!-- Facebook Link -->
-                    <a href = "https://www.facebook.com/profsfrink/" target = "_blank"><i class = "fa fa-facebook"></i></a>
-
+            <p class = "center">&copy; Steven Partlow BSc. 2022, 
+                <!-- LinkedIn Link -->
+                <a href = "https://www.linkedin.com/in/steven-partlow-9375b0236/" target = "_blank"><i class = "fa fa-linkedin"></i></a>&nbsp;
+                <!-- Twitter Link -->
+                <a href = "https://twitter.com/ProfSFrink" target ="_blank"><i class = "fa fa-twitter"></i></a>
+                <!-- Facebook Link -->
+                <a href = "https://www.facebook.com/profsfrink/" target = "_blank"><i class = "fa fa-facebook"></i></a>
             </p>
         </footer> <!--End of FOOTER Section -->
 
-        <!-- Link to JavaScript that controls our image slideshow and contact form-->
+        <!-- Link to JavaScript that controls our image slideshow and contact form -->
         <script src = "./js/portfolio.js"></script>
     </body>  <!-- End of BODY Section -->
 

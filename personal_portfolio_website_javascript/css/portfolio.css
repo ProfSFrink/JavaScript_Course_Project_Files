@@ -6,7 +6,6 @@
 /* NOTE: We have to customise the following:
     FONTS, COLORS, VIDEO, HOVER EFFECTS, ANIMATIONS */
 
-
 /* Using a custom font 'GT Walsheim Pro' this is to set it up correctly so we can use it */
 /* See the HTML code for how we import it */
 @font-face {
@@ -35,7 +34,7 @@ body {
     margin: 0; /* Displays the site using the full width of the browser screen */
 }
 
-/* H1 element styling */
+/* H1, H2 element styling */
 h1, h2 {
     text-transform: uppercase; /* Make all h1 elements uppercase */
     font-family: "GT Walsheim Pro", sans-serif; /* Fonts for h1 elements to use */
@@ -43,18 +42,28 @@ h1, h2 {
     color: #1a1a1a;
 }
 
+h1:hover, h2:hover { /* Increase size of heading elements when we hover over them */
+    transition: transform 1s; /* The increase in size will happen over a duration of 1 second */
+    transform: scale(1.025); /* Paragraph elements will increase in size when we hover over them */
+}
+
 /* Portfolio Title Text Styling */
 
 /* Styling for the first heading of the title section */
 .first-head {
-    font-size: 3.2vw; /* Set font size to 32 pt */
+    font-size: 3.2vw; /* Set font size to 3.2vw (3.2% of the display width */
     font-weight: 700;
     position: relative; /* This allows us to use the animation */
-    -webkit-animation: moveFirstHead 4s;
-    animation: moveFirstHead 4s;
+    -webkit-animation: moveFirstHead 4s; /* Safari Compatabilty */
+    animation: moveFirstHead 4s; /* Animation that moves heading from left to right (SEE BELOW) */
 }
 
 /* Will move the first heading of the title section in from the left of the screen */
+@-webkit-keyframes moveFirstHead { /* Safari Compatabilty */
+    from {left: -100vw;} /* The text initally appears off the to the side of the screen */
+    to {left: 0vw;} /* Move the text to it's default position */
+}
+
 @keyframes moveFirstHead {
     from {left: -100vw;} /* The text initally appears off the to the side of the screen */
     to {left: 0vw;} /* Move the text to it's default position */
@@ -62,16 +71,21 @@ h1, h2 {
 
 /* Styling for the second heading of the title section */
 .second-head {
-    font-size: 6vw; /* Set font size to 91 pt */
+    font-size: 6vw; /* Set font size to 6vw (6% of the display width) */
     /* Set the colour to 0 hue, 0% saturation, 100% lightness and .95 alpha */
     margin: 10px 0px; /* Place a margin and padding around this heading so there is some between it */
     padding: 29px 0px; /* and the headings above and below */
     position: relative; /* This allows us to use the animation */
-    -webkit-animation: moveSecondHead 4s;
-    animation: moveSecondHead 4s;
+    -webkit-animation: moveSecondHead 4s; /* Safari Compatabilty */
+    animation: moveSecondHead 4s; /* Animation that moves heading from right to left (SEE BELOW) */
 }
 
 /* Will move the second heading of the title section in from the right of the screen */
+@-webkit-keyframes moveSecondHead { /* Safari Compatabilty */
+    from {right: -100vw;} /* The text initally appears off the to the side of the screen */
+    to {right: 0vw;} /* Move the text to it's default position */
+}
+
 @keyframes moveSecondHead {
     from {right: -100vw;} /* The text initally appears off the to the side of the screen */
     to {right: 0vw;} /* Move the text to it's default position */
@@ -80,13 +94,18 @@ h1, h2 {
 /* Styling for the third heading of the title section */
 .third-head {
     text-align: center; /* Centre the text of this heading */ 
-    font-size: 1.8vw; /* Set font size to xxl */
+    font-size: 1.8vw; /* Set font size to 1.8vw (1.8% of the display width */
     position: relative; /* This allows us to use the animation */
-    -webkit-animation: moveThirdHead 4s;
-    animation: moveThirdHead 4s;
+    -webkit-animation: moveThirdHead 4s; /* Safari Compatabilty */
+    animation: moveThirdHead 4s; /* Animation that moves heading from left to right (SEE BELOW) */
 }
 
 /* Will move the third heading of the title section in from the left of the scnreen*/
+@-webkit-keyframes moveThirdHead { /* Safari Compatabilty */
+    from {top: -100vw;} /* The text initally appears off the to the side of the screen */
+    to {top: 0vw;} /* Move the text to it's default position */
+}
+
 @keyframes moveThirdHead {
     from {top: -100vw;} /* The text initally appears off the to the side of the screen */
     to {top: 0vw;} /* Move the text to it's default position */
@@ -108,10 +127,10 @@ h1, h2 {
 p {
     font-family: "GT Walsheim Pro Regular", sans-serif;
     text-align: justify; /* Justify text of paragraph elements */
-    letter-spacing: .1vw; /* Expands the spacing between letters by 1px */
-    font-size: 1.7vw; /* Set font-size to 20px */
-    padding-left: 1vw; /* Leave a 20pixel gab to the left of paragraph elements */
-    padding-right: 1vw; /* Leave a 20pixel gab to the right of paragraph elements */
+    letter-spacing: .1vw; /* Expands the spacing between letters by .1vw */
+    font-size: 1.7vw; /* Set font-size to 1.7vw (1.7% of the display width */
+    padding-left: 1vw; /* Leave a 1vw gap to the left of paragraph elements */
+    padding-right: 1vw; /* Leave a 1vw gap to the right of paragraph elements */
 }
 
 /***** NOTE: WE HAVE TO CUSTOMISE THIS OURSELVES *****/
@@ -123,7 +142,7 @@ p:hover {
 
 /* Styling for Anchor elements */
 a {
-    color: blue; /* By ddefauly my links blue but remove the underline */
+    color: blue; /* By default my links appear blue but remove the underline */
     text-decoration: none;
 }
 
@@ -133,7 +152,7 @@ img {
     border-radius: 8px; /* Gives images rounded-edges */
     max-width: 100%; /* Images will fill there container */
     max-height: 100%;
-    display: block; /* This and the two margin properties below ensure we can centre images */
+    display: block; /* This and the margin properties below ensure we can centre images */
     margin: auto auto auto auto;
 }
 
@@ -150,13 +169,13 @@ ul {
 
 li { /* Indvidual list elements will use the custom font*/
     font-family: "GT Walsheim Pro Regular", 'Times New Roman', Times, serif;
-    font-size: 2.3vw; /* Set font size to 24 */
+    font-size: 2.3vw; /* Set font size to 2.3vw (2.3% of the display width */
     font-weight: 500; /* Make text slightly bold */
     margin: 5px; /* A small margin around each skill point */
 }
 
 li:hover {
-    /* When hovering over each skill they go white keeping in theme */
+    /* When hovering over each skill they go white with a slight shadow */
     color: white;
     text-shadow: 3px 3px black;
     transition: transform 1s; /* */
@@ -202,38 +221,52 @@ footer {
 .Navbar a.active {
     background-color: black;
     /* Moves the home button in from the left of the screen */
-    -webkit-animation: moveNavActive 3s;
-    animation: moveNavActive 3s;
+    -webkit-animation: moveNavActive 3s; /* Safari Compatabilty */
+    animation: moveNavActive 3s; /* Moves the home icon in from the left of the screen (SEE BELOW) */
+}
+
+/* Animation effect for Home Button (Safari Compatabilty) */
+@-webkit-keyframes moveNavActive { /* Moves the home icon in from the left of the screen */
+    from {left: -100vw;}
+    to {left: 0vw;}
+}
+
+@keyframes moveNavActive { /* Moves the home icon in from the left of the screen */
+    from {left: -100vw;}
+    to {left: 0vw;}
 }
 
 /* Navbar About and GitHub Buttons Styling */
 .Navbar a.middle-links {
     /* Moves the about and github buttons in from above the screen */
-    -webkit-animation: moveMiddleLinks 3s;
-    animation: moveMiddleLinks 3s;   
+    -webkit-animation: moveMiddleLinks 3s; /* Safari Compatabilty */
+    animation: moveMiddleLinks 3s; /* Moves the Image Slideshow, About and GitHub links in from the top of the screen (SEE BELOW) */
 }
 
-/* Navbar Contact Button styling */
-.Navbar a.contact-link {
-    /* Moves the contact button in from the right of the screen */
-    -webkit-animation: moveContactLink 3s;
-    animation: moveContactLink 3s;   
+/* Animation effects for About and GitHub buttons (Safari Compatabilty) */
+@-webkit-keyframes moveMiddleLinks { /* Moves the Image Slideshow, About and GitHub links in from the top of the screen */
+    from {top: -100vw;}
+    to {top: 0vw;}
 }
-
-/* Animation effect for Home Button */
-@keyframes moveNavActive {
-    from {left: -100vw;}
-    to {left: 0vw;}
-}
-
-/* Animation effects for About and GitHub buttons */
 @keyframes moveMiddleLinks {
     from {top: -100vw;}
     to {top: 0vw;}
 }
 
-/* Animation effects for Contact Section */
-@keyframes moveContactLink {
+/* Navbar Contact Button styling */
+.Navbar a.contact-link {
+    /* Moves the contact button in from the right of the screen */
+    -webkit-animation: moveContactLink 3s; /* Safari Compatabilty */
+    animation: moveContactLink 3s; /* Move the contact form link in from far right of the page (SEE BELOW) */   
+}
+
+/* Animation effects for Contact Section (Safari Compatabilty) */
+@-webkit-keyframes moveContactLink { /* Move the contact form link in from far right of the page */
+    from {right: -300vw;}
+    to {right: 0vw;}
+}
+
+@keyframes moveContactLink { /* Move the contact form link in from far right of the page */
     from {right: -300vw;}
     to {right: 0vw;}
 }
@@ -269,6 +302,7 @@ footer {
 
 /* Slideshow styling */
 
+/* Styling for Slideshow background */
 .Slideshow_Background {
     background: rgba(255, 255, 255, 0.35); /* Creates a transparent coloured background over our video */
 }
@@ -277,10 +311,10 @@ footer {
     display: none; /* Hide images by default */
 }
 
-/* slideshow-container class styling */
+/* Styling for the container the slideshow appears in */
 .Slideshow_Container {
-    width: 28.5vw;
-    height: auto;
+    width: 28.5vw; /* Make the container take up 28.5vw of the screen (28.5% of the display width) */
+    height: auto; /* Set the height of the container to match the image */
     padding-top: 2%;
     position: relative; /* Set image position to relative depending on size of browser window */
     margin: auto; /* Set margin depending on the size of the browser window */
@@ -293,10 +327,10 @@ footer {
 
 /* Styling for images within the Slideshow */
 .Slideshow_Images {
-    vertical-align: middle;
-    height: auto;
-    box-shadow: 0px 5px 10px 12px rgba(0, 0, 0, .75);
-    width: 100%;
+    vertical-align: middle; /* Ensure the images appear in the centre of the container */
+    height: auto; /* The images will fit the height of the container */
+    box-shadow: 0px 5px 10px 12px rgba(0, 0, 0, .75); /* Give images a slight shadow effect */
+    width: 100%; /* Images will fill the width of the container */
 }
 
 /* Next & Back button styling */
@@ -304,12 +338,12 @@ footer {
     cursor: pointer; /* Set cursor type to pointer */
     position: absolute; /* Set button position to absolute */
     top: 50%;
-    width: auto; /* Have the buttons afjust in size depending on the size of the browser window */
-    padding: 2vw; /* Add 16 pixels of padding around the image */
+    width: auto; /* Have the buttons adjust in size depending on the size of the browser window */
+    padding: 2vw; /* Add 2vw of padding around the image */
     color: black; /* Set button colour to black */
     font-weight: bold; /* Set button text to be bold */
-    font-size: 1.5vw; /* Set button font-size to 18 */
-    border-radius: 0 3px 3px 0; /* SLightly curve the buttons */
+    font-size: 1.5vw; /* Set button font-size to 1.5vw (1.5% of the display width */
+    border-radius: 0 3px 3px 0; /* Slightly curve the buttons */
     user-select: none; /* Specifies if the user cannot select the element text */
     transition: 0.6s ease; /* Image change takes 0.6 of a second */
 }
@@ -320,22 +354,22 @@ footer {
     border-radius: 3px 0 0 3px; /* Slightly curve the button */
 }
 
-/* Make the 'Prev' and 'Next' buttons slightly transparent and change the background colour */
+/* Make the 'Prev' and 'Next' buttons slightly transparent and change the background colour when hovered over by the user */
 .Back:hover, .Next:hover {
     background-color: rgba(0, 0, 0, 0.8); /* Set background to black and make it slightly transparent */
     color: white;
 } /* End Styling */ 
 
-/* Text Styling */
+/* Image Text Styling */
 .Image_Text {
     color: white; /* Set text colour to white */
     position: absolute; /* The text is positioned relative to it's nearest element */
     bottom: 0; /* Set the text to appear at the bottom of the image */
     width: 100%;
-    text-align: center; /* Allign image text to the centre of the image */
-    font-family: "GT Walsheim Pro Regular", 'Times New Roman', Times, serif;
+    text-align: center; /* Allign text to the centre of the image */
+    font-family: "GT Walsheim Pro Regular", 'Times New Roman', Times, serif; /* Uses our custom font */
     letter-spacing: .1vw;
-    font-size: 1.5vw; /* Set font size to 1.5 percent of the display width */
+    font-size: 1.5vw; /* Set font size to 1.5vw (1.5% of the display width) */
     background-color: rgba(0, 0, 0, .75);
     font-weight: bold;
     border-radius: 0px 0px 7px 7px;
@@ -351,7 +385,7 @@ footer {
     border-radius: 50%; /* Make dots curved */
     display: inline-block; /* */
     transition: background-color 0.6s ease; /* Change the background colour over 0.6 of a second */
-    z-index: 1;
+    z-index: 1; /* Ensures the dot appear above other elements */
 }
 
 /* Styling of the active dot when the user hovers over it */
@@ -361,18 +395,18 @@ footer {
 
 /* Fading animation on image change */
 .Fade_Effect {
-    animation-name: fade; /* Run animation 'fade' */
+    animation-name: fade; /* Run animation 'fade' which fades the current image out and the next image in */
     animation-duration: 1.5s; /* Change image over 1.5 seconds */
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
 } /* End of Fade animation */
 
-@keyframes fade { /* Adjust opacity of image */
+@-webkit-keyframes fade { /* Fades the current image out and the next image in (Safari Compatabilty) */
     from {opacity: .4}
     to {opacity: 1}
 }
 
-@-webkit-keyframes fade { /* Adjust opacity of image */
+@keyframes fade { /* Fades the current image out and the next image in */
     from {opacity: .4}
     to {opacity: 1}
 }
@@ -380,7 +414,7 @@ footer {
 /* ROW and COLUMN Styling */
 
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; /* Include element border and padding in total width and height */
 }
 
 /* Will add a scrollbar to the column if the text-overflows the height of the column */
@@ -390,13 +424,14 @@ footer {
     }
 }
 
+/* Styling for elements using the Column_1 Class */
 .Column_1 {
     float: left;
     width: 50%; /* Ensures the column take up half the width of the page */
     padding: 1.6%;
     padding-top: 1.9%; /* Leaves some space at the top of the columns for our headings */
     height: 820px; /* Sets the height of the column */
-    background-color: aliceblue;
+    background-color: aliceblue; /* Set background colour */
 }
 
 .Column_1:hover { /* Change to black and white when hovered over */
@@ -408,29 +443,30 @@ footer {
     color: white;
 }
 
-/* Styling for elements using the Column_2 class */
+/* Styling for elements using the Column_2 Class */
 .Column_2 {
     float: left;
     width: 50%; /* Ensures the column take up half the width of the page */
     padding: 1.6%; /* Space for our heading */
     height: 820px; /* Sets the height of the column */
-    background-color: cornflowerblue; /* Set background to light blue */
+    background-color: cornflowerblue; /* Set background colour */
 }
 
+/* This is so we can have smaller column height for the bottom row of columns as do need to be a high */
 .Small {
     height: 650px;
 }
 
 /* Github section styling */
 
-/* This is just to override the styling for the other columns*/
+/* This is just to override the styling from the other columns*/
 .Github a {
-    /* Display links as black in thi column */
+    /* Display links as black in this column */
     font-family: "GT Walsheim Pro";
     color: black;
 }
 
-/* Make GitHub link backgrounds light gray when we hoover over them */
+/* Make GitHub link backgrounds white with a slight shadow when we hoover over them */
 .Github a:hover{
     color: white;
     text-shadow: 3px 3px black;
@@ -458,45 +494,48 @@ footer {
     right: 1.75vw; /* Move the button slightly to the right-hand side */
     width: 15vw; /* Sets the width of the button relative to the size of the display */
 
-    background-color: black;
-    color: white;
-    border: solid black;
-    cursor: pointer;
+    background-color: black; /* Button Background colour */
+    color: white; /* Button Text Colour */
+    border: solid black; /* Button Border */
+    cursor: pointer; /* Change mouse cursor to a pointer when the user hover over contact button */
 
     -webkit-animation: moveContactForm 3s; /* Animation takes 3 seconds (SAFARI 4.0 - 8.0 Compatability */
     animation: moveContactForm 3s; /* Animation takes 3 seconds*/
 }
 
 /* Animation to move the contact form button fromt the right-hand side of the screen to it fixed position */
-@keyframes moveContactForm {
+
+@-webkit-keyframes moveContactForm { /* (Safari Compatabilty) */
     from {right: -40vw;}
     to {right: 1.75vw;}
 }
 
-@-webkit-keyframes moveContactForm {
+@keyframes moveContactForm {
     from {right: -40vw;}
     to {right: 1.75vw;}
 }
 
 /* Styling for Popup Contact Form */
 .Popup_Contact_Form {
-    z-index: 8; /* Make sure the contact form show above all elements */
-    display: none; /* Hide the form by default until the user clicks on the contact button */
+    z-index: 8; /* Make sure the contact form shown above all elements */
+    display: none; /* Hide the form by default until the user clicks on the contact button, we will use JavaScript to revel it */
     position: fixed; /* Locks the form in place in the browser window */
     bottom: .5vw; /* Position form slightly up from the bottom of the page */
     right: .5vw; /* Position form a little from the right-hand side of the page */
 }
 
+/* Styling for the contact form header */
 .Contact_Header {
-    font-size: 2.75vw;
-    color: white;
+    font-size: 2.75vw; /* Set font size to 2.75vw (2.75% of the display width) */
+    color: white; /* Set heading font colour */
+    text-shadow: 4px 4px black; /* Give heading a shadow effect */
 }
 
 /* Styling for the Popup Contact Form */
 .Contact_Form_Container {
     max-width: 49vw; /* The form when shown will take up 49% of the display */
     padding: 1vw; /* Add padding between the form container and the form itself */
-    background-color: white;
+    background-color: white; /* Set Contact form container back ground colour */
 }
 
 /* Styling for Popup Contact Form Input Fields */
@@ -504,9 +543,10 @@ footer {
     width: 100%; /* The input boxes fill the width of the container */
     padding: .93vw; /* Adding padding to the input boxes */
     margin: .6vw 0 .6vw 0; /* Add a small space between the labels and input boxes */
-    border: none;
-    background: Gainsboro;
-    font-size: 1vw;
+    border: none; /* Remove border from contact input boxes */
+    background: Gainsboro; /* Set input background colour */
+    font-size: 1.25vw; /* Set font-size to 1.25vw (1.25% of the dipslay width) */
+    box-shadow: 3px 3px 3px 3px black; /* Give form inputs a shadow effect */
 }
 
 /* Styling for all site buttons */
@@ -516,38 +556,40 @@ button {
     font-size: 1.5vw; /* Adjust size of button text depending window size */
     font-weight: bold;
     padding: 1.5vw; /* Padding for button text */
-    cursor: pointer;
+    cursor: pointer; /* Change mouse pointer to a cursor when the user hovers over a button */
     width: 100%; /* Buttons will fill the width of the container they are in */
     height: auto; /* Adjust the height of the buttons relative to the window size */
 }
 
 /* Styling for the Contact Form Submit Button */
 .Contact_Form_Container, .Submit_Button {
-    background-color: white;
-    color: black;
-    border-color: black;
-    margin-bottom: 1vh;
-    box-shadow: 2px 2px black;
+    background-color: white; /* Set Submit button background colour */
+    color: black; /* Set Submit button text colour */
+    border-color: black; /* Set Submit button border colour */
+    margin-top: 1vh;
+    margin-bottom: 1vh; /* Add a small margin between the button and the bottom of the contact form */
+    box-shadow: 2px 2px black; /* Give the Submit button a sligt shadow effect */
 }
 
 /* Styling for the Contct Form Container */
 .Contact_Form_Container {
-    background-color: cornflowerblue;
-    color: white;
-    border-color: gray;
+    background-color: rgb(34, 106, 240); /* Set form background colour */
+    color: white; /* Set form text colour */
+    border-color: gray; /* Set form border colour */
 }
 
 /* Styling for the Contact Form Close Button */
 .Close_Button {
-    background-color: black;
-    color: white;
-    box-shadow: 2px 2px black;
+    background-color: black; /* Set Close button background colour */
+    color: white; /* Set Close button text colour */
+    box-shadow: 2px 2px black; /* Give Close button a box shaow*/
 }
 
 /* Styling for the labels on each form input */
 label {
-    font-family: "GT Walsheim Pro", 'Times New Roman', Times, serif;
+    font-family: "GT Walsheim Pro", 'Times New Roman', Times, serif; /* Use our custom font */
     font-size: 16pt; /* Use our custom font at 16pt */
+    text-shadow: 2px 2px black;
 }
 /* END OF CONTACT FORM STYLING */
 
@@ -562,55 +604,55 @@ label {
 /* Media rules for paragraph font size for different display resolutions */
 @media screen and (max-width: 527px) {
     p {
-        font-size: 3.75vw;
+        font-size: 3.75vw; /* Set font-size to 3.75vw (3.75% of the display width) */
     }
 }
 
 @media screen and (min-width: 528px) and (max-width: 660px) {
     p {
-        font-size: 3.5vw;
+        font-size: 3.5vw; /* Set font-size to 3.5vw (3.5% of the display width) */
     }
 }
 
 @media screen and (min-width: 661px) and (max-width: 799px) {
     p {
-        font-size: 2.75vw;
+        font-size: 2.75vw; /* Set font-size to 2.75vw (2.75% of the display width) */
     }
 }
 
 @media screen and (min-width: 800px) and (max-width: 924px) {
     p {
-        font-size: 2.5vw;
+        font-size: 2.5vw; /* Set font-size to 2.5vw (2.5% of the display width) */
     }
 }
 
 @media screen and (min-width: 925px) and (max-width: 1050px) {
     p {
-        font-size: 2.25vw;
+        font-size: 2.25vw; /* Set font-size to 2.25vw (2.25% of the display width) */
     }
 }
 
 @media screen and (min-width: 1051px) and (max-width: 1310px) {
     p {
-        font-size: 2vw;
+        font-size: 2vw; /* Set font-size to 2vw (2% of the display width) */
     }
 }
 
 @media screen and (min-width: 1311px) and (max-width: 1535px) {
     p {
-        font-size: 1.75vw;
+        font-size: 1.75vw; /* Set font-size to 1.75vw (1.75% of the display width) */
     }
 }
 
 @media screen and (min-width: 1536px) and (max-width: 2269px) {
     p {
-        font-size: 1.5vw;
+        font-size: 1.5vw; /* Set font-size to 1.5vw (1.5% of the display width) */
     }
 }
 
 @media screen and (min-width: 2270px) {
     p {
-        font-size: 1.35vw;
+        font-size: 1.35vw; /* Set font-size to 1.35vw (1.35% of the display width) */
     }
 }
 
@@ -618,14 +660,15 @@ label {
 /* Screen 1080 pixels in width or smaller will display navbar links equally */
 @media screen and (max-width: 1080px) {
     .Navbar a {
-        width: 20%;
-        font-size: 2.5vw;
+        width: 20%; /* Set navbar links to 20% of there total size */
+        font-size: 2.5vw; /* Set navbar links to 2.5vw (2.5% of the display width) */
     }
 }
 
+/* Specific rules for headings text so they appear in the correct size on smaller displays */
 @media screen and (max-width: 1080px) {
     .white-text .third-head {
-        font-size: 4.5vw;
+        font-size: 4.5vw; /* Set font-size to 4.5vw (4.5% of the display width) */
     }
 }
 
