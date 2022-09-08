@@ -70,4 +70,6 @@ h3 { /* Styling for headline three elements */
     margin: 10px 0px 0px 100px; /* Add a margin of 10 pixel above the button and 100 pixels below it */
     width: 100px; /* Sets the width of the button to 100 pixels */
     height: 40px; /* Sets the height of the buttton to 40 pixels */
+    box-shadow: 2pt 2pt black;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }

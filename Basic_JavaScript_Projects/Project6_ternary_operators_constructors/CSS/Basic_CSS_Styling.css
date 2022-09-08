@@ -1,0 +1,254 @@
+/* Advanced Software and Web Developer Diploma - Part VI - JavaScript Course */
+/* Challenge #28 - Use VW unit for font-size */
+/* Challenge #29 - Element Fade In */
+/* Challenge #30 - Form Validation */
+/* Challenge #31 - Popup Login Form */
+/* Challenge #33 - CSS Image Zoom */
+/* Challenge #34 - HTML Bookmarks and Smooth Scrolling */
+/* Challenge #35 - Automatic Slideshow using jQuery */
+/* Challenge #36 - Sticky Contact Button */
+/* by Steven Partlow */
+
+/* This includes the padding and border size in an elements total width and height */
+{box-sizing: border-box;}
+
+button {
+    height: auto;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 2vw;
+    padding: 0.5vw;
+}
+
+/* Challenge #34 - HTML Bookmarks and Smooth Scrolling */ 
+
+html { /* Allows for smooth page scrolling when clicking on bookmarks to move around the page*/
+    scroll-behavior: smooth;
+}
+
+.main {
+    padding-left: 10px;
+    box-shadow: 2px 2px black;
+    text-shadow: 1px 1px darkgrey;
+    margin-bottom: 5px;
+}
+
+.main a {
+    color: white;
+}
+
+#red_sector { /* Styling for red sector */
+    height: 600px;
+    background-color: red;
+    border-radius: 12px;
+    border: 2px solid black;
+}
+
+#green_sector { /* Styling for green sector */
+    height: 600px;
+    background-color: green;
+    border-radius: 12px;
+    border: 2px solid black;
+}
+
+#blue_sector { /* Styling for blue sector */
+    height: 600px;
+    background-color: blue;
+    color: yellowgreen;
+    text-shadow: 1px 1px black;
+    border-radius: 12px;
+    border: 2px solid black;
+}
+
+/* Challenge #28 - Use the VW unit to adjust font-size */
+
+h1 { /* Styling for h1 elements */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 6vw; /* Set the font-width to 6 vetical units */
+    text-shadow: 4px 3px lightgray;
+    text-decoration: underline;
+    margin-bottom: 0.5cm;
+}
+
+h2 { /* Styling for h2 elements */
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-size: 26pt;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+h3 { /* Styling for h3 elements */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3vw; /* Set the font-width to 3 vetical units */
+    text-shadow: 2px 2px lightgray;
+    border: 2px solid darkblue;
+    border-radius: 10px;
+    box-shadow: 3px 3px darkblue;
+    padding: 0 4px 2px 4px;
+    margin: -5px 0 3px 0;
+}
+
+h4, label { /* Styling for h4 elements */
+    font-size: 2.5vw; /* Set the font-width to 2.5 vetical units */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
+    text-shadow: 1px 1px lightgray;
+}
+
+p { /* Styling for p elements */
+    font-size: 2vw; /* Set the font-width to 2 vetical units */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Challenge #29 - Element Fade In */
+
+/* Styling for the body element */
+
+body { 
+    /* Fade in all elements on the page over the duration of 1 second */ 
+    opacity: 1;
+    transition: 1s opacity;
+}
+
+body.fade-elements-out {
+    /* Disable all effects */
+    opacity: 0;
+    transition: none;
+}
+
+/* Challenge #30 - Form Validation */
+
+label {
+    font-size: 2vw;
+}
+
+/* Challenge #31 - Popup Login Form */
+
+/* Styling for the button used to open the contact form - which is fixed at the bottom of the page */
+.open-popup {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: sticky;
+    bottom: 0;
+    left: 100%;
+    width: 80px;
+}
+
+/* Styling for the actual popup form which is hidden by default */
+.challenge_31 {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+/* Styling for the container the form is displayed in */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Styling for to make the input-fields the full-width of the webpage */
+.form-container input[type=text], .form-container input[type=password] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* Change the styling for when the inputs get focus */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Styling for submit / login button */
+.form-container .btn {
+    background-color: rgb(0, 0, 150);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+/* Styles the cancel button to be red */
+.form-container .cancel {
+    background-color: red;
+}
+
+/* Hover effects for buttons */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+.Login { /* Styling for 'Login' text at the top of the popup form */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 4vw; /* Set the font-width to 4 vetical units */
+    text-shadow: 1.5px 1.5px lightgrey;
+    text-decoration: underline;
+}
+
+/* Challenge #33 - CSS Image Zoom */
+
+.Challenge_33 {
+    transition: transform .2s; /* The zoom effect takes .2 seconds */
+    width: 960px;
+    height: 540px;
+    margin: 0 auto;
+}
+
+.Challenge_33:hover {
+    /* Increase the size of the image by 50% */
+    -ms-transform: scale(1.5); /* IE 9 Compatiability */
+    -webkit-transform: scale(1.5); /* Safari Compatiability */
+    transform: scale(1.5);
+}
+
+
+/* Challenge #35 - Automatic Slideshow using jQuery */
+
+/* Styling for the slideshow container */
+#auto-slideshow {
+    margin: 50px auto; /* Margin of 50 pixels */
+    position: relative; /* Position the container relative to it's parent element */
+    width: 960px; /* This displays the screenshots at half their width and height */
+    height: 540px;
+    padding: 10px;
+    border: 5px double black;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Gives the images a slight shadow effect */
+}
+
+/* Styling for all images within the container */
+#auto-slideshow img {
+    /* Makes the images the extact size to fit in the container */
+    width: 960px;
+    height: 540px;
+}
+
+#auto-slideshow > div {
+    /* Fixes the position of the images within the container */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+.challenge-container {
+    font-weight: 500;
+    text-shadow: 2px 2px lightgray;;
+    border: 3px solid black;
+    box-shadow: 5px 5px black;
+    margin-top: 0.25cm;
+    padding: 0 5px 0 5px;
+}
